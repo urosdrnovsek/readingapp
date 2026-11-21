@@ -99,11 +99,41 @@ svg { flex: none; vertical-align: middle; }
 .surprise svg { width: 18px; }
 .surprise:disabled { opacity: .62; cursor: default; }
 .collection { margin-top: clamp(1.65rem, 4vw, 2.7rem); }
-.section-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: .6rem 1.1rem; margin-bottom: .95rem; }
+.section-title { display: flex; align-items: center; flex-wrap: wrap; gap: .25rem 1rem; margin-bottom: .6rem; }
 .section-title h2 { font-family: Lexend, sans-serif; font-size: clamp(1.3rem, 3vw, 1.7rem); letter-spacing: -.04em; }
 #result-count { color: var(--muted); font-size: .95rem; }
+.theme-reset { margin-inline-start: auto; }
+.theme-reset .button { color: #5b3e80; }
+.picture-shelf {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .68rem;
+  list-style: none; padding: .35rem; margin: 0 -.35rem .85rem;
+}
+.picture-shelf li { min-width: 0; display: flex; }
+.picture-card {
+  width: 100%; min-height: 48px; display: flex; flex-direction: column; align-items: stretch;
+  border: 2px solid transparent; padding: 0; background: var(--picture-paper);
+  border-radius: 16px; overflow: hidden; text-align: start;
+  transition: transform 140ms ease-out, border-color 140ms ease-out;
+}
+.picture-card img {
+  width: 100%; height: auto; aspect-ratio: 1.62; object-fit: cover; display: block;
+  background: var(--picture-paper);
+}
+.picture-card span { display: block; font-size: .98rem; line-height: 1.25; font-weight: 700; padding: .58rem .55rem; }
+.picture-card:hover { border-color: #a491ba; }
+.picture-card:active { transform: scale(.975); }
+.picture-card[aria-pressed="true"] { border-color: #593b7c; }
+.picture-card.stories { --picture-paper: #f9dded; }
+.picture-card.animal_facts { --picture-paper: #dcf2d5; }
+.picture-card.around_the_world { --picture-paper: #d9edfb; }
+.picture-card.amazing_science { --picture-paper: #e9e0ff; }
+.picture-card.nature_seasons { --picture-paper: #fbebbd; }
+@media (prefers-reduced-motion: reduce) {
+  .picture-card { transition: none; }
+  .picture-card:active { transform: none; }
+}
 .filters {
-  display: grid; grid-template-columns: 1fr 1fr .8fr 1.45fr;
+  display: grid; grid-template-columns: 1fr .8fr 1.45fr;
   gap: .65rem 1rem; margin-bottom: 1.1rem;
 }
 label:has(> select), .filters label { display: grid; gap: .27rem; font-size: .87rem; font-weight: 700; min-width: 0; }
@@ -124,12 +154,6 @@ select, .search-input input, .extra-letter input {
 .card-content { min-width: 0; flex: 1; overflow-wrap: anywhere; }
 .card-content strong { display: block; font-size: 1.04rem; line-height: 1.25; }
 .card-content > span { display: block; color: var(--muted); font-size: .83rem; margin-top: .22rem; }
-.tile { display: inline-grid; place-items: center; flex: none; width: 35px; height: 35px; border-radius: 50%; }
-.stories { background: #ece4fa; color: #573f73; }
-.animal_facts { background: #f7e8c4; color: #684918; }
-.around_the_world { background: #e4eef7; color: #27546b; }
-.amazing_science { background: #f5e2e8; color: #713f54; }
-.nature_seasons { background: #e5efd6; color: #3e592d; }
 .more { text-align: center; margin-top: 1.2rem; }
 .empty { padding: 1rem; text-align: center; }
 
@@ -147,10 +171,13 @@ select, .search-input input, .extra-letter input {
 }
 [data-tint="cream"] { background: #faf0dc; }
 [data-tint="mint"] { background: #eaf3e5; }
+.reader-title { display: flex; align-items: center; justify-content: space-between; gap: .65rem; margin-bottom: 1rem; }
 .reader h1 {
-  margin-bottom: .45em; font-family: Lexend, system-ui, sans-serif;
+  min-width: 0; font-family: Lexend, system-ui, sans-serif;
   font-size: clamp(2rem, 5.35vw, 3.8rem); letter-spacing: -.062em; overflow-wrap: anywhere;
 }
+.passage-illustration { width: clamp(72px, 18vw, 132px); height: auto; flex-shrink: 0; border-radius: 18px; }
+[data-plain="true"] .passage-illustration { display: none; }
 [data-font="Andika"] { --reading-font: Andika, sans-serif; }
 [data-font="Lexend"] { --reading-font: Lexend, sans-serif; }
 [data-font="System"] { --reading-font: system-ui, sans-serif; }
@@ -300,4 +327,10 @@ dialog h2 { margin-bottom: 1rem; }
   .hero { grid-template-columns: 1fr; }
   .hero-art { display: none; }
   .cards { grid-template-columns: 1fr; }
+  .picture-shelf {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: clamp(115px, 31vw, 145px);
+    overflow-x: auto; scroll-snap-type: inline proximity;
+  }
+  .picture-shelf li { scroll-snap-align: start; }
+  .filters label:last-child { grid-column: 1 / -1; }
 }

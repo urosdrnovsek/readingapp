@@ -38,6 +38,7 @@ export const strings = {
   coloured: ['Marked', 'Označeno'],
   erased: ['Erased', 'Izbrisano'],
   surprise: ['Surprise me', 'Preseneti me'],
+  wovenNestPicture: ['A bird beside a woven grass nest hanging from a branch.', 'Ptica ob spletenem travnatem gnezdu, ki visi z veje.'],
   highlights: ['Saved highlights', 'Shranjene oznake'],
   guide: ['Guide', 'Vodilo'],
   listen: ['Listen', 'Poslušaj'],

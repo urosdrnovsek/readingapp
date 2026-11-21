@@ -1,5 +1,5 @@
 import './style.css';
-import { byKey, languages, loadLibrary, passages, themes, type Language, type Passage } from './content';
+import { byKey, languages, loadLibrary, passages, themes, type Language, type Passage, type Theme } from './content';
 import { defaults, escape, locate, makeAnchor, paintColours, passageMarkup, readStructure, repaint, type Highlight, type PaintColour, type Preferences, type Span } from './reading';
 import { emptyData, loadStore, type ReadingData } from './storage';
 import { strings, type Message } from './strings';
@@ -15,7 +15,7 @@ let storageError = false;
 let offline: Message = 'offlinePreparing';
 let preferences = { ...defaults };
 let language: Language = 'en';
-let theme = '';
+let theme: Theme | '' = '';
 let level = '';
 let search = '';
 let pageLimit = PAGE_SIZE;
@@ -218,10 +218,17 @@ function renderLibrary() {
       <div class="hero-art" aria-hidden="true"></div>
     </section>
     <section aria-labelledby="browse" class="collection">
-      <div class="section-title"><h2 id="browse">${t('browse')}</h2><span id="result-count" aria-live="polite"></span></div>
+      <div class="section-title"><h2 id="browse">${t('browse')}</h2><span id="result-count" aria-live="polite"></span>
+        <div class="theme-reset" hidden>${button('clearTheme', 'allThemes', 'button quiet')}</div>
+      </div>
+      <ul class="picture-shelf" aria-label="${t('theme')}">
+        ${themes.map(item => `<li><button class="picture-card ${item}" data-action="theme-picture" data-theme="${item}" aria-pressed="false">
+          <img src="${import.meta.env.BASE_URL}pictures/${item}.webp" width="480" height="480" alt="" draggable="false">
+          <span>${t(item)}</span>
+        </button></li>`).join('')}
+      </ul>
       <div class="filters">
         <label>${t('passageLanguage')}<select id="language">${Object.entries(languages).map(([code, label]) => option(code, label, language)).join('')}</select></label>
-        <label>${t('theme')}<select id="theme">${option('', t('allThemes'), theme)}${themes.map(item => option(item, t(item), theme)).join('')}</select></label>
         <label>${t('level')}<select id="level">${option('', t('allLevels'), level)}${[1, 2, 3, 4, 5].map(item => option(String(item), `${t('level')} ${item}`, level)).join('')}</select></label>
         <label>${t('search')}<span class="search-input">${icon('search')}<input type="search" id="search" value="${escape(search)}" placeholder="${t('search')}"></span></label>
       </div>
@@ -242,11 +249,14 @@ function renderResults() {
   if (!results) return;
   const matching = matchingPassages();
   controlFor('surprise')!.disabled = !matching.length;
+  app.querySelectorAll<HTMLButtonElement>('[data-theme]').forEach(card => {
+    card.setAttribute('aria-pressed', String(card.dataset.theme === theme));
+  });
+  app.querySelector<HTMLElement>('.theme-reset')!.hidden = !theme;
   app.querySelector('#result-count')!.textContent = `${matching.length} ${t('allPassages').toLocaleLowerCase()}`;
   results.innerHTML = matching.length
     ? `<ul class="cards">${matching.slice(0, pageLimit).map(p => `<li>
       <button class="card" data-action="open" data-card data-key="${escape(p.key)}">
-        <span class="tile ${p.theme}">${icon(p.theme)}</span>
         <span class="card-content">
           <strong lang="${p.language}">${escape(p.title)}</strong>
           <span>${t(p.theme)} <span aria-hidden="true">·</span> ${t('level')} ${p.level}</span>
@@ -264,6 +274,9 @@ function renderResults() {
 }
 
 function renderReader(passage: Passage) {
+  const picture = passage.key === 'en/animal_facts_weaverbird_1'
+    ? `<img class="passage-illustration" src="${import.meta.env.BASE_URL}pictures/woven-nest.webp" width="480" height="480" alt="${t('wovenNestPicture')}">`
+    : '';
   return `<div class="reader-wrap">
     <div class="reader-nav">
       <button class="button" data-action="library">${icon('back')} ${t('library')}</button>
@@ -272,7 +285,7 @@ function renderReader(passage: Passage) {
     <div class="reader-layout">
       <aside id="reader-tools" aria-label="${t('tools')}" hidden></aside>
       <article class="reader" id="reader">
-        <h1 tabindex="-1" lang="${passage.language}">${escape(passage.title)}</h1>
+        <div class="reader-title"><h1 tabindex="-1" lang="${passage.language}">${escape(passage.title)}</h1>${picture}</div>
         <div id="guide-tools" hidden></div>
         ${renderListening(passage)}
         <p class="passage-body" id="passage" lang="${passage.language}"></p>
@@ -302,6 +315,7 @@ function refreshPassage() {
   if (!current || !structure) return;
   const reader = app.querySelector<HTMLElement>('#reader')!;
   reader.dataset.tint = preferences.tint;
+  reader.dataset.plain = String(preferences.plain);
   reader.dataset.font = preferences.font;
   reader.style.setProperty('--reading-size', `${preferences.fontSize / 16}rem`);
   reader.style.setProperty('--line-height', String(preferences.lineHeight));
@@ -811,6 +825,22 @@ app.addEventListener('click', event => {
       if (pick) openPassage(pick.key);
       break;
     }
+    case 'theme-picture': {
+      const picked = themes.find(item => item === control.dataset.theme);
+      if (!picked) break;
+      theme = theme === picked ? '' : picked;
+      pageLimit = PAGE_SIZE;
+      renderResults();
+      break;
+    }
+    case 'clearTheme': {
+      const previous = theme;
+      theme = '';
+      pageLimit = PAGE_SIZE;
+      renderResults();
+      app.querySelector<HTMLButtonElement>(`[data-theme="${previous}"]`)?.focus();
+      break;
+    }
     case 'finish': closePassage(true); break;
     case 'tools':
       toolsOpen = !toolsOpen;
@@ -962,7 +992,6 @@ app.addEventListener('change', event => {
       activeData().passageLanguage = language;
       persist();
       break;
-    case 'theme': theme = input.value; break;
     case 'level': level = input.value; break;
     case 'interface-language':
       activeData().interfaceLanguage = input.value as 'en' | 'sl';
