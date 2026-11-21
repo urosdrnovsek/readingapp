@@ -1,0 +1,37 @@
+export const languages = {
+  en: 'English', sl: 'Slovenščina', de: 'Deutsch', fr: 'Français',
+  es: 'Español', hr: 'Hrvatski', ro: 'Română', sk: 'Slovenčina',
+} as const;
+
+export type Language = keyof typeof languages;
+export type Theme = 'stories' | 'animal_facts' | 'around_the_world' | 'amazing_science' | 'nature_seasons';
+
+type Entry = {
+  id: string;
+  version: number;
+  title: string;
+  body: string;
+  syllable_body?: string;
+  theme: Theme;
+  level: number;
+  review: { status: string; syllablesReviewed: boolean };
+};
+export type Passage = Entry & { language: Language; key: string };
+type Pack = { language: Language; entries: Entry[] };
+
+const files = import.meta.glob<Pack>('../content/*.json', { import: 'default' });
+export const passages: Passage[] = [];
+export const byKey = new Map<string, Passage>();
+
+export async function loadLibrary() {
+  const packs = await Promise.all(Object.values(files).map(load => load()));
+  for (const { language, entries } of packs) {
+    for (const entry of entries) {
+      if (entry.review.status !== 'reviewed') continue;
+      const passage = { ...entry, language, key: `${language}/${entry.id}` };
+      passages.push(passage);
+      byKey.set(passage.key, passage);
+    }
+  }
+}
+export const themes: Theme[] = ['stories', 'animal_facts', 'around_the_world', 'amazing_science', 'nature_seasons'];
