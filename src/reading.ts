@@ -3,7 +3,10 @@ import type { SpeechRate } from './speech';
 
 export type Span = { start: number; end: number };
 export type Anchor = Span & { version: number; quote: string };
-export type Highlight = Anchor & { id: string };
+export const paintColours = ['sun', 'rose', 'mint', 'sky', 'lilac'] as const;
+export type PaintColour = typeof paintColours[number];
+export type Highlight = Anchor & { id: string; colour?: PaintColour };
+export type PaintSpan = Span & { colour?: PaintColour };
 
 export type Preferences = {
   syllables: boolean;
@@ -42,6 +45,37 @@ export function locate(anchor: Anchor, passage: Passage, spans: Span[]): Span | 
   return { start: matches[0].start, end: matches[0].start + anchor.quote.length };
 }
 
+export function makeHighlight(passage: Passage, range: Span, colour?: PaintColour): Highlight {
+  return { ...makeAnchor(passage, range), colour, id: crypto.getRandomValues(new Uint32Array(4)).join('-') };
+}
+
+export function repaint(
+  passage: Passage, words: Span[], marks: Highlight[], range: Span, colour?: PaintColour,
+): Highlight[] {
+  const overlapping = new Map<Highlight, Span>();
+  for (const mark of marks) {
+    const span = locate(mark, passage, words);
+    if (span && span.start < range.end && span.end > range.start) overlapping.set(mark, span);
+  }
+  if (!overlapping.size && !colour) return marks;
+  if (overlapping.size === 1 && colour) {
+    const [[mark, span]] = overlapping;
+    if ((mark.colour ?? 'sun') === colour && span.start <= range.start && range.end <= span.end) return marks;
+  }
+  const result = marks.flatMap(mark => {
+    const located = overlapping.get(mark);
+    if (!located) return [mark];
+    const remaining = (start: number, end: number) => {
+      const kept = words.filter(word => word.start >= start && word.end <= end);
+      if (!kept.length) return [];
+      return [makeHighlight(passage, { start: kept[0].start, end: kept[kept.length - 1].end }, mark.colour)];
+    };
+    return [...remaining(located.start, range.start), ...remaining(range.end, located.end)];
+  });
+  if (colour) result.push(makeHighlight(passage, range, colour));
+  return result;
+}
+
 function segments(passage: Passage, granularity: 'word' | 'sentence' | 'grapheme') {
   return [...new Intl.Segmenter(passage.language, { granularity }).segment(passage.body)];
 }
@@ -70,7 +104,7 @@ export const escape = (value: string) => value.replace(/[&<>"']/g, character => 
 export function passageMarkup(
   passage: Passage,
   structure: ReturnType<typeof readStructure>,
-  options: { preferences: Preferences; wordTargets: boolean; marks: Span[]; pending?: Span; guide: number },
+  options: { preferences: Preferences; wordTargets: boolean; marks: PaintSpan[]; pending?: Span; guide: number },
 ) {
   const { preferences, wordTargets, marks, pending, guide } = options;
   const { words, sentences, graphemes, breaks } = structure;
@@ -110,7 +144,10 @@ export function passageMarkup(
 
     const classes: string[] = [];
     if (contains(pending, index)) classes.push('pending');
-    else if (!preferences.plain && marks.some(mark => contains(mark, index))) classes.push('marked');
+    else if (!preferences.plain) {
+      const mark = marks.find(mark => contains(mark, index));
+      if (mark) classes.push('marked', `ink-${paintColours.find(colour => colour === mark.colour) ?? 'sun'}`);
+    }
     if (!preferences.plain) {
       const letter = preferences.uppercase ? segment.toLocaleLowerCase(passage.language) : segment;
       if (letters.has(letter)) {

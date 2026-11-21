@@ -1,4 +1,7 @@
 const paths = {
+  eraser: '<path d="m4 13 8-9a2 2 0 0 1 3 0l5 5a2 2 0 0 1 0 3l-7 8H9l-5-4a2 2 0 0 1 0-3Zm4-4 8 8m-3 3h8"/>',
+  undo: '<path d="M9 6 4 11l5 5m-5-5h10a5 5 0 0 1 5 5v2"/>',
+  close: '<path d="m6 6 12 12M18 6 6 18"/>',
   listen: '<path d="M3 9v6h4l5 4V5L7 9H3Zm13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
   book: '<path d="M12 6c-3-3-7-3-10-2v15c4-1 7-1 10 2 3-3 6-3 10-2V4c-3-1-7-1-10 2v15"/>',
   arrow: '<path d="M4 12h15m-6-6 6 6-6 6"/>',

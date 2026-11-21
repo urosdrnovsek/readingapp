@@ -17,6 +17,8 @@ The interface is available in English and Slovenian. Choose any of the eight pas
 
 **Listen** reads a word or sentence using an installed device voice that matches the passage language. If the device has no matching local voice, it shows a message and the text remains available.
 
+Open **Paint words** to pick a colour and mark a word with a tap or a phrase with a swipe. **Choose words** offers the same controls by keyboard or screen reader. Colours are saved with the passage, and the palette includes an eraser and undo.
+
 Use the [tablet test checklist](docs/tablet-test.md) for the first test. To compare the bundled library with the pinned Text Generator revision, run `npm run check:content -- /path/to/textgenerator`.
 
 [Read the app blueprint](docs/reading-app-blueprint.md) · [Browse the passage library](content/)

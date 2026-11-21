@@ -1,6 +1,6 @@
 import './style.css';
 import { byKey, languages, loadLibrary, passages, themes, type Language, type Passage } from './content';
-import { defaults, escape, locate, makeAnchor, passageMarkup, readStructure, type Highlight, type Preferences, type Span } from './reading';
+import { defaults, escape, locate, makeAnchor, paintColours, passageMarkup, readStructure, repaint, type Highlight, type PaintColour, type Preferences, type Span } from './reading';
 import { emptyData, loadStore, type ReadingData } from './storage';
 import { strings, type Message } from './strings';
 import { icon } from './icons';
@@ -30,7 +30,11 @@ let selecting = false;
 let startWord = 0;
 let endWord = 0;
 let awaitingEnd = false;
-let removed: Highlight | undefined;
+let paintOpen = false;
+let paintColour: PaintColour | 'eraser' = 'sun';
+let stroke: { pointer: number; first: number; last: number } | undefined;
+let swatchTap: { pointer: number; control: HTMLElement } | undefined;
+let undoStack: Highlight[][] = [];
 let scrollFrame = 0;
 let ignoreScrollUntil = 0;
 let settingTimer: number | undefined;
@@ -53,6 +57,10 @@ const option = (value: string, label: string, selected: string) =>
 const button = (action: string, label: Message, classes = 'button') =>
   `<button type="button" class="${classes}" data-action="${action}">${t(label)}</button>`;
 const marks = () => current ? activeData().highlights[current.key] ?? [] : [];
+const colourLabels: Record<PaintColour, Message> = { sun: 'sun', rose: 'rose', mint: 'mintInk', sky: 'sky', lilac: 'lilac' };
+const measureDock = new ResizeObserver(([entry]) => {
+  app.style.setProperty('--dock-height', `${entry.target.getBoundingClientRect().height}px`);
+});
 
 function persist() {
   if (!guestData) database?.save(data).catch(() => {
@@ -130,7 +138,9 @@ function showRoute(finished = false) {
   current = route();
   structure = current && readStructure(current);
   guide = selecting = toolsOpen = awaitingEnd = false;
-  removed = undefined;
+  paintOpen = false;
+  stroke = undefined;
+  undoStack = [];
   sentence = 0;
   if (current && structure) {
     const lastVisited = activeData().bookmark;
@@ -156,9 +166,11 @@ function showRoute(finished = false) {
 }
 
 function render() {
+  measureDock.disconnect();
   document.documentElement.lang = activeData().interfaceLanguage ?? 'en';
   document.title = current ? `${current.title} · ${t('brand')}` : t('brand');
-  app.innerHTML = `<header class="site-header">
+  app.dataset.view = current ? 'reader' : 'library';
+  app.innerHTML = `${current ? '' : `<header class="site-header">
     <div class="header-inner">
       <button class="brand" data-action="library"><span class="brand-icon">${icon('book')}</span><span>${t('brand')}</span></button>
       <div class="header-actions">
@@ -167,15 +179,17 @@ function render() {
         <button class="button settings" data-action="settings">${icon('settings')}<span>${t('settings')}</span></button>
       </div>
     </div>
-  </header>
+  </header>`}
   <main id="main">${current ? renderReader(current) : renderLibrary()}</main>
   <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>
   <dialog id="highlights-dialog" aria-labelledby="highlights-title"></dialog>
   `;
   updateStatus();
   if (current) {
-    refreshPassage();
     refreshControls();
+    refreshPassage();
+    const dock = app.querySelector('#paint-dock');
+    if (dock) measureDock.observe(dock);
   } else renderResults();
 }
 
@@ -196,9 +210,9 @@ function renderLibrary() {
     <section class="hero" aria-labelledby="welcome">
       <div class="hero-copy">
         <h1 id="welcome" tabindex="-1">${t('heroTitle')}</h1>
-        <p>${t('heroDescription')}</p>
-        <button class="button primary" data-action="open" data-key="${escape(featured.key)}"
-          id="start-reading">${t(continuation ? 'resume' : 'start')} ${icon('arrow')}</button>
+        <div class="inline-actions"><button class="button primary" data-action="open" data-key="${escape(featured.key)}"
+          id="start-reading">${t(continuation ? 'resume' : 'start')}</button>
+        <button class="button surprise" data-action="surprise">${icon('stories')} ${t('surprise')}</button></div>
         <span class="featured-title" lang="${featured.language}" id="featured-title">${escape(featured.title)}</span>
       </div>
       <div class="hero-art" aria-hidden="true"></div>
@@ -217,12 +231,17 @@ function renderLibrary() {
   </div>`;
 }
 
+function matchingPassages() {
+  const needle = search.trim().normalize('NFC').toLocaleLowerCase(language);
+  return passages.filter(p => p.language === language && (!theme || p.theme === theme) &&
+    (!level || String(p.level) === level) && p.title.normalize('NFC').toLocaleLowerCase(language).includes(needle));
+}
+
 function renderResults() {
   const results = app.querySelector<HTMLDivElement>('#results');
   if (!results) return;
-  const needle = search.trim().normalize('NFC').toLocaleLowerCase(language);
-  const matching = passages.filter(p => p.language === language && (!theme || p.theme === theme) &&
-    (!level || String(p.level) === level) && p.title.normalize('NFC').toLocaleLowerCase(language).includes(needle));
+  const matching = matchingPassages();
+  controlFor('surprise')!.disabled = !matching.length;
   app.querySelector('#result-count')!.textContent = `${matching.length} ${t('allPassages').toLocaleLowerCase()}`;
   results.innerHTML = matching.length
     ? `<ul class="cards">${matching.slice(0, pageLimit).map(p => `<li>
@@ -232,7 +251,6 @@ function renderResults() {
           <strong lang="${p.language}">${escape(p.title)}</strong>
           <span>${t(p.theme)} <span aria-hidden="true">·</span> ${t('level')} ${p.level}</span>
         </span>
-        <span class="card-arrow">${icon('arrow')}</span>
       </button></li>`).join('')}</ul>`
     : `<div class="empty"><p>${t('noResults')}</p>${button('clearFilters', 'clearFilters')}</div>`;
   app.querySelector('#more')!.innerHTML = matching.length > pageLimit ? button('more', 'more') : '';
@@ -254,26 +272,30 @@ function renderReader(passage: Passage) {
     <div class="reader-layout">
       <aside id="reader-tools" aria-label="${t('tools')}" hidden></aside>
       <article class="reader" id="reader">
-        <div class="reader-meta"><span class="tile ${passage.theme}">${icon(passage.theme)}</span>
-          <span>${t(passage.theme)} · ${t('level')} ${passage.level}</span></div>
         <h1 tabindex="-1" lang="${passage.language}">${escape(passage.title)}</h1>
-        <div class="reader-controls" id="reader-controls"></div>
-        <div id="range-tools" hidden></div>
         <div id="guide-tools" hidden></div>
         ${renderListening(passage)}
-        <div id="removal" role="status" hidden></div>
         <p class="passage-body" id="passage" lang="${passage.language}"></p>
       </article>
     </div>
+    <div id="paint-dock" class="paint-dock"><div id="paint-controls"></div><div id="range-tools" hidden></div></div>
+    <span id="paint-status" class="sr-only" role="status"></span>
   </div>`;
 }
 
-function pendingRange(): Span | undefined {
-  if (!selecting || !structure?.words.length) return;
-  return {
-    start: structure.words[Math.min(startWord, endWord)].start,
-    end: structure.words[Math.max(startWord, endWord)].end,
-  };
+function wordRange(first: number, last: number): Span | undefined {
+  if (!structure?.words.length) return;
+  const start = structure.words[Math.min(first, last)];
+  const end = structure.words[Math.max(first, last)];
+  if (!start || !end) return;
+  return { start: start.start, end: end.end };
+}
+
+function resolvedMarks(passage: Passage, words: Span[]) {
+  return marks().flatMap(mark => {
+    const span = locate(mark, passage, words);
+    return span ? [{ ...span, colour: mark.colour }] : [];
+  });
 }
 
 function refreshPassage() {
@@ -285,12 +307,14 @@ function refreshPassage() {
   reader.style.setProperty('--line-height', String(preferences.lineHeight));
   reader.style.setProperty('--letter-spacing', `${preferences.letterSpacing}em`);
   reader.style.setProperty('--word-spacing', `${preferences.wordSpacing}em`);
-  const marksOnPage = marks().flatMap(mark => locate(mark, current!, structure!.words) ?? []);
-  const body = app.querySelector('#passage')!;
+  const marksOnPage = resolvedMarks(current, structure.words);
+  const body = app.querySelector<HTMLElement>('#passage')!;
   body.classList.toggle('is-selecting', selecting);
+  body.classList.toggle('is-painting', paintOpen && !selecting);
+  body.dataset.ink = paintColour;
   body.innerHTML = passageMarkup(current, structure, {
-    preferences, wordTargets: selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
-    pending: pendingRange(), guide: guide && !preferences.plain ? sentence : -1,
+    preferences, wordTargets: paintOpen || selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
+    pending: selecting ? wordRange(startWord, endWord) : undefined, guide: guide && !preferences.plain ? sentence : -1,
   });
   updateListeningTarget();
   const sample = app.querySelector('#cue-sample');
@@ -320,12 +344,7 @@ function refreshPassage() {
 
 function refreshControls() {
   if (!structure) return;
-  app.querySelector('#reader-controls')!.innerHTML = `
-    <button class="button" data-action="highlight" aria-pressed="${selecting}">${icon('highlight')} ${t('highlight')}</button>
-    <button class="button" data-action="guide" aria-pressed="${guide && !preferences.plain}">${icon('guide')} ${t('guide')}</button>
-    <button class="button" data-action="listen" aria-controls="listen-tools" aria-expanded="${listenOpen}">${icon('listen')} ${t('listen')}</button>
-    ${button('highlights', 'highlights')}
-    ${button('finish', 'finish', 'button primary finish')}`;
+  refreshPaintControls();
   const range = app.querySelector<HTMLElement>('#range-tools')!;
   range.hidden = !selecting;
   if (selecting) {
@@ -336,14 +355,20 @@ function refreshControls() {
   }
   const guideTools = app.querySelector<HTMLElement>('#guide-tools')!;
   guideTools.hidden = !guide || preferences.plain;
-  guideTools.innerHTML = guide ? `<div class="inline-actions">${button('prev', 'prev')}<span id="sentence-position" role="status"></span>${button('next', 'next')}</div>` : '';
-  refreshRemoval();
+  guideTools.innerHTML = guide ? `<div class="inline-actions">
+    <button class="button" aria-label="${t('prev')}" data-action="prev">${icon('back')}</button>
+    <span id="sentence-position" role="status"></span>
+    <button class="button" aria-label="${t('next')}" data-action="next">${icon('arrow')}</button>
+    <button class="button quiet" aria-label="${t('close')}" data-action="guide">${icon('close')}</button>
+  </div>` : '';
+  app.querySelector('#reader-tools [data-action="guide"]')?.setAttribute('aria-pressed', String(guide && !preferences.plain));
   refreshListening();
 }
 
 function renderListening(passage: Passage) {
   return `<section id="listen-tools" aria-labelledby="listen-title" hidden>
-    <h2 id="listen-title">${t('listen')}</h2>
+    <div class="tools-heading"><h2 id="listen-title" tabindex="-1">${t('listen')}</h2>
+      <button class="button quiet" data-action="listen" aria-label="${t('close')}">${icon('close')}</button></div>
     <p id="listen-status" role="status"></p>
     <div id="listen-options" hidden>
       <p>${t('tapToListen')}</p>
@@ -425,6 +450,8 @@ function toggleListening() {
   listenOpen = !listenOpen;
   if (listenOpen) {
     selecting = false;
+    paintOpen = false;
+    stroke = undefined;
     resetListeningTarget();
   }
   refreshControls();
@@ -460,10 +487,89 @@ function playSelection() {
   speech.play(current.body.slice(span.start, span.end).trim(), current.language, preferences.speechRate);
 }
 
-function refreshRemoval() {
-  const removal = app.querySelector<HTMLElement>('#removal')!;
-  removal.hidden = !removed;
-  removal.innerHTML = removed ? button('undo', 'undo') : '';
+function renderPaintControls() {
+  if (!paintOpen) {
+    return `<button class="button paint-launch" data-action="paint" aria-expanded="false" aria-controls="paint-controls">
+      <span class="paint-emblem">${icon('highlight')}</span>${t('paint')}
+    </button>`;
+  }
+  return `<div class="paint-tray" role="group" aria-label="${t('paint')}">
+    <div class="paint-swatches">
+      ${paintColours.map(colour => `<button class="swatch ink-${colour}" data-action="colour" data-colour="${colour}"
+        aria-label="${t(colourLabels[colour])}" title="${t(colourLabels[colour])}" aria-pressed="false">
+        <span>${icon('check')}</span></button>`).join('')}
+    </div>
+    <div class="paint-actions">
+      <button class="button quiet" data-action="colour" data-colour="eraser" aria-label="${t('eraser')}" title="${t('eraser')}" aria-pressed="false">${icon('eraser')}</button>
+      <button class="button quiet" data-action="undo-paint" aria-label="${t('undo')}" title="${t('undo')}">${icon('undo')}</button>
+      <button class="button quiet choose-words" data-action="highlight" aria-controls="range-tools" aria-expanded="false">${t('chooseWords')}</button>
+      ${button('paint', 'done', 'button primary')}
+    </div>
+  </div>
+  <p class="paint-help" id="paint-hint"></p>`;
+}
+
+function refreshPaintControls() {
+  const dock = app.querySelector<HTMLElement>('#paint-dock')!;
+  const controls = dock.querySelector<HTMLElement>('#paint-controls')!;
+  if (dock.dataset.open !== String(paintOpen) || !controls.firstChild) {
+    dock.dataset.open = String(paintOpen);
+    controls.innerHTML = renderPaintControls();
+  }
+  if (!paintOpen) return;
+  controls.querySelectorAll<HTMLButtonElement>('[data-colour]').forEach(swatch => {
+    swatch.setAttribute('aria-pressed', String(swatch.dataset.colour === paintColour));
+  });
+  controls.querySelector('#paint-hint')!.textContent = t(paintColour === 'eraser' ? 'eraseHint' : 'paintHint');
+  controlFor('undo-paint')?.setAttribute('aria-disabled', String(!undoStack.length));
+  controlFor('highlight')?.setAttribute('aria-expanded', String(selecting));
+}
+
+function togglePaint() {
+  paintOpen = !paintOpen;
+  selecting = false;
+  stroke = undefined;
+  if (paintOpen) {
+    speech.stop();
+    listenOpen = false;
+    if (preferences.plain) setPreferences({ ...preferences, plain: false });
+  }
+  refreshControls();
+  refreshPassage();
+  (paintOpen
+    ? app.querySelector<HTMLButtonElement>('#paint-controls [aria-pressed="true"]')
+    : controlFor('paint'))?.focus({ preventScroll: true });
+}
+
+function saveMarks(next: Highlight[]) {
+  if (!current) return;
+  activeData().highlights[current.key] = next;
+  persist();
+  refreshPassage();
+  refreshPaintControls();
+}
+
+function changeMarks(next: Highlight[]) {
+  const previous = marks();
+  if (previous === next) return;
+  undoStack.push(previous);
+  if (undoStack.length > 30) undoStack.shift();
+  saveMarks(next);
+}
+
+function paintRange(range: Span) {
+  if (!current || !structure) return;
+  const colour = paintColour === 'eraser' ? undefined : paintColour;
+  changeMarks(repaint(current, structure.words, marks(), range, colour));
+  const announcement = app.querySelector('#paint-status');
+  if (announcement) announcement.textContent = `${t(colour ? 'coloured' : 'erased')}: ${current.body.slice(range.start, range.end)}`;
+}
+
+function chooseColour(colour: PaintColour | 'eraser') {
+  if (paintColour === colour) return;
+  paintColour = colour;
+  refreshPaintControls();
+  refreshPassage();
 }
 
 function endpoint(name: string, label: Message) {
@@ -482,7 +588,7 @@ function refreshWords() {
   }
   app.querySelector('#first-word')!.textContent = wordAt(Math.min(startWord, endWord));
   app.querySelector('#last-word')!.textContent = wordAt(Math.max(startWord, endWord));
-  const span = pendingRange();
+  const span = wordRange(startWord, endWord);
   app.querySelector('#pending-quote')!.textContent = span ? current.body.slice(span.start, span.end) : '';
 }
 
@@ -511,7 +617,7 @@ function setHighlight(on: boolean) {
   }
   refreshControls();
   refreshPassage();
-  app.querySelector<HTMLButtonElement>('[data-action="highlight"]')?.focus({ preventScroll: true });
+  controlFor('highlight')?.focus({ preventScroll: true });
 }
 
 function showHighlights() {
@@ -521,11 +627,12 @@ function showHighlights() {
   dialog.innerHTML = `<h2 id="highlights-title">${t('highlights')}</h2>
     ${saved.length ? `<ul class="highlights-list">${saved.map(mark => {
       const match = locate(mark, current!, structure!.words);
-      return `<li><div><q lang="${current!.language}">${escape(mark.quote)}</q>${match ? '' : `<small>${t('unmatched')}</small>`}</div>
+      const colour = mark.colour && paintColours.includes(mark.colour) ? mark.colour : 'sun';
+      return `<li><div><q class="marked ink-${colour}" lang="${current!.language}">${escape(mark.quote)}</q>${match ? '' : `<small>${t('unmatched')}</small>`}</div>
       <div class="inline-actions">${match ? `<button class="button" data-action="find-mark" data-id="${escape(mark.id)}">${t('guide')}</button>` : ''}
       <button class="button" data-action="remove" data-id="${escape(mark.id)}">${t('remove')}</button></div></li>`;
     }).join('')}</ul>` : `<p>${t('noHighlights')}</p>`}
-    <div class="inline-actions">${removed ? button('undo', 'undo') : ''}${button('close', 'close', 'button primary')}</div>`;
+    <div class="inline-actions">${undoStack.length ? button('undo', 'undo') : ''}${button('close', 'close', 'button primary')}</div>`;
   if (!dialog.open) dialog.showModal();
 }
 
@@ -544,7 +651,13 @@ function renderTools() {
   panel.hidden = !toolsOpen;
   app.querySelector('#toggle-tools')!.setAttribute('aria-expanded', String(toolsOpen));
   if (!toolsOpen) return;
-  panel.innerHTML = `<h2>${t('tools')}</h2>
+  panel.innerHTML = `<div class="tools-heading"><h2>${t('tools')}</h2>
+    <button class="button quiet" data-action="tools" aria-label="${t('close')}">${icon('close')}</button></div>
+    <div class="panel-actions">
+      <button class="button" data-action="listen" aria-controls="listen-tools" aria-expanded="${listenOpen}">${icon('listen')} ${t('listen')}</button>
+      <button class="button" data-action="guide" aria-pressed="${guide && !preferences.plain}">${icon('guide')} ${t('guide')}</button>
+      ${button('highlights', 'highlights')}
+    </div>
     <div class="tool-preview"><p id="cue-sample" lang="${current!.language}"></p></div>
     <fieldset><legend>${t('syllables')}</legend>
       ${checkbox('syllables', 'syllableColours', preferences.syllables)}
@@ -566,7 +679,9 @@ function renderTools() {
       ${slider('wordSpacing','wordSpacing',0,.4,.05,' em')}
       <label>${t('tint')}<select data-preference="tint">${(['paper','cream','mint'] as const).map(tint => option(tint,t(tint),preferences.tint)).join('')}</select></label>
     </fieldset>
-    <button class="button" data-action="plain" aria-pressed="${preferences.plain}">${t('plain')}</button>`;
+    <div class="panel-actions"><button class="button" data-action="plain" aria-pressed="${preferences.plain}">${t('plain')}</button>
+      ${button('settings', 'settings')}${guestData ? button('endGuest', 'endGuest') : ''}
+      ${button('finish', 'finish', 'button primary')}</div>`;
   refreshPassage();
 }
 
@@ -589,6 +704,68 @@ function resetFilters() {
   theme = level = search = '';
   pageLimit = PAGE_SIZE;
 }
+
+function wordAtPointer(event: PointerEvent) {
+  const word = document.elementFromPoint(event.clientX, event.clientY)?.closest<HTMLElement>('#passage [data-word]');
+  return word ? Number(word.dataset.word) : undefined;
+}
+
+function paintStrokePreview() {
+  const first = stroke ? Math.min(stroke.first, stroke.last) : -1;
+  const last = stroke ? Math.max(stroke.first, stroke.last) : -1;
+  app.querySelectorAll<HTMLElement>('#passage [data-word]').forEach(word => {
+    const index = Number(word.dataset.word);
+    word.classList.toggle('stroke-preview', first <= index && index <= last);
+  });
+}
+
+app.addEventListener('pointerdown', event => {
+  if (!paintOpen || !event.isPrimary || event.button !== 0) return;
+  const swatch = (event.target as Element).closest<HTMLElement>('[data-colour]');
+  if (swatch && event.pointerType === 'touch') {
+    swatchTap = { pointer: event.pointerId, control: swatch };
+    return;
+  }
+  if (selecting || stroke) return;
+  const word = wordAtPointer(event);
+  if (word === undefined) return;
+  stroke = { pointer: event.pointerId, first: word, last: word };
+  app.setPointerCapture(event.pointerId);
+  paintStrokePreview();
+});
+
+app.addEventListener('pointermove', event => {
+  if (stroke?.pointer !== event.pointerId) return;
+  const word = wordAtPointer(event);
+  if (word === undefined || word === stroke.last) return;
+  stroke.last = word;
+  paintStrokePreview();
+});
+
+app.addEventListener('pointerup', event => {
+  if (swatchTap?.pointer === event.pointerId) {
+    const { control } = swatchTap;
+    swatchTap = undefined;
+    if (control.contains(document.elementFromPoint(event.clientX, event.clientY))) {
+      chooseColour(control.dataset.colour as PaintColour | 'eraser');
+    }
+    return;
+  }
+  if (stroke?.pointer !== event.pointerId) return;
+  const range = wordRange(stroke.first, wordAtPointer(event) ?? stroke.last);
+  stroke = undefined;
+  paintStrokePreview();
+  if (range) paintRange(range);
+});
+
+function cancelStroke(event: PointerEvent) {
+  if (swatchTap?.pointer === event.pointerId) swatchTap = undefined;
+  if (stroke?.pointer !== event.pointerId) return;
+  stroke = undefined;
+  paintStrokePreview();
+}
+app.addEventListener('pointercancel', cancelStroke);
+app.addEventListener('lostpointercapture', cancelStroke);
 
 function newSession(guest: boolean) {
   if (guest) saveBookmark();
@@ -628,15 +805,30 @@ app.addEventListener('click', event => {
   switch (action) {
     case 'library': if (current) closePassage(); else window.scrollTo(0, 0); break;
     case 'open': if (control.dataset.key) openPassage(control.dataset.key); break;
+    case 'surprise': {
+      const choices = matchingPassages();
+      const pick = choices[Math.floor(Math.random() * choices.length)];
+      if (pick) openPassage(pick.key);
+      break;
+    }
     case 'finish': closePassage(true); break;
     case 'tools':
       toolsOpen = !toolsOpen;
       renderTools();
-      if (toolsOpen) app.querySelector<HTMLInputElement>('#reader-tools input')?.focus({ preventScroll: true });
+      if (toolsOpen) app.querySelector<HTMLButtonElement>('#reader-tools button')?.focus({ preventScroll: true });
+      else app.querySelector<HTMLButtonElement>('#toggle-tools')?.focus({ preventScroll: true });
       break;
+    case 'paint': togglePaint(); break;
+    case 'colour': chooseColour(control.dataset.colour as PaintColour | 'eraser'); break;
     case 'highlight': setHighlight(!selecting); break;
     case 'cancel': setHighlight(false); break;
-    case 'listen': toggleListening(); break;
+    case 'listen':
+      toggleListening();
+      toolsOpen = false;
+      renderTools();
+      if (listenOpen) app.querySelector<HTMLElement>('#listen-title')?.focus();
+      else app.querySelector<HTMLButtonElement>('#toggle-tools')?.focus({ preventScroll: true });
+      break;
     case 'listen-play': playSelection(); break;
     case 'listen-stop': speech.stop(); break;
     case 'listen-prev': case 'listen-next':
@@ -648,7 +840,9 @@ app.addEventListener('click', event => {
       if (preferences.plain) setPreferences({ ...preferences, plain: false });
       refreshControls();
       refreshPassage();
-      controlFor('guide')?.focus({ preventScroll: true });
+      toolsOpen = false;
+      renderTools();
+      (guide ? controlFor('next') : app.querySelector<HTMLButtonElement>('#toggle-tools'))?.focus({ preventScroll: true });
       break;
     case 'prev': changeSentence(-1); break;
     case 'next': changeSentence(1); break;
@@ -656,13 +850,9 @@ app.addEventListener('click', event => {
       changeEndpoint(action.startsWith('first'), action.endsWith('+1') ? 1 : -1);
       break;
     case 'save': {
-      const span = pendingRange();
+      const span = wordRange(startWord, endWord);
       if (!current || !span) break;
-      if (preferences.plain) setPreferences({ ...preferences, plain: false });
-      const list = marks();
-      const id = crypto.getRandomValues(new Uint32Array(4)).join('-');
-      (activeData().highlights[current.key] ??= list).push({ ...makeAnchor(current, span), id });
-      persist();
+      paintRange(span);
       setHighlight(false);
       break;
     }
@@ -681,26 +871,21 @@ app.addEventListener('click', event => {
       const list = marks();
       const index = list.findIndex(mark => mark.id === control.dataset.id);
       if (index < 0) break;
-      [removed] = list.splice(index, 1);
-      persist();
-      refreshPassage();
-      refreshRemoval();
+      changeMarks(list.filter((_, position) => position !== index));
       showHighlights();
       app.querySelector<HTMLButtonElement>('#highlights-dialog [data-action="undo"]')?.focus();
       break;
     }
+    case 'undo-paint':
     case 'undo': {
-      if (!current || !removed) break;
-      marks().push(removed);
-      removed = undefined;
-      persist();
-      refreshPassage();
-      refreshRemoval();
+      const before = undoStack.pop();
+      if (!before) break;
+      saveMarks(before);
       const dialog = app.querySelector<HTMLDialogElement>('#highlights-dialog');
       if (dialog?.open) {
         showHighlights();
         dialog.querySelector<HTMLButtonElement>('[data-action="close"]')?.focus();
-      } else controlFor('highlights')?.focus();
+      }
       break;
     }
     case 'plain':
@@ -816,7 +1001,7 @@ app.addEventListener('change', event => {
 
 window.addEventListener('popstate', () => showRoute());
 window.addEventListener('scroll', () => {
-  if (!current || guide || selecting || listenOpen || scrollFrame || performance.now() < ignoreScrollUntil) return;
+  if (!current || guide || selecting || stroke || listenOpen || scrollFrame || performance.now() < ignoreScrollUntil) return;
   scrollFrame = requestAnimationFrame(() => {
     scrollFrame = 0;
     const viewportLine = Math.min(innerHeight * .3, Math.max(100, innerHeight - 100));
