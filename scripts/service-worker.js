@@ -1,12 +1,31 @@
 const prefix = `reading-room:${self.registration.scope}:`;
 const cacheName = prefix + revision;
 const indexUrl = new URL('index.html', self.registration.scope).href;
-const assets = new Set(files.map(file => new URL(file, self.registration.scope).href));
+const assets = new Map(Object.entries(files).map(([file, digest]) => [
+  new URL(file, self.registration.scope).href,
+  digest,
+]));
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(cacheName).then(cache => {
-    return cache.addAll([...assets].map(url => new Request(url, { cache: 'reload' })));
-  }));
+  event.waitUntil((async () => {
+    // Verify the whole revision before storing it. A partially deployed site
+    // may return a successful HTML fallback for a missing build file.
+    const responses = await Promise.all([...assets].map(async ([url, expected]) => {
+      const response = await fetch(url, { cache: 'reload', redirect: 'error' });
+      if (!response.ok) throw new Error(`Could not download ${url}`);
+      const bytes = await response.clone().arrayBuffer();
+      const digest = await crypto.subtle.digest('SHA-256', bytes);
+      const actual = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
+      if (actual !== expected) throw new Error(`Unexpected contents for ${url}`);
+      return [url, response];
+    }));
+    const cache = await caches.open(cacheName);
+    const writes = await Promise.allSettled(responses.map(([url, response]) => cache.put(url, response)));
+    if (writes.some(write => write.status === 'rejected')) {
+      await caches.delete(cacheName);
+      throw new Error('The new library could not be saved.');
+    }
+  })());
 });
 
 self.addEventListener('activate', event => {

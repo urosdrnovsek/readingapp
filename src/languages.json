@@ -1,0 +1,10 @@
+{
+  "en": { "name": "English", "voiceLocale": "en-GB" },
+  "sl": { "name": "Slovenščina", "voiceLocale": "sl-SI" },
+  "de": { "name": "Deutsch", "voiceLocale": "de-DE" },
+  "fr": { "name": "Français", "voiceLocale": "fr-FR" },
+  "es": { "name": "Español", "voiceLocale": "es-ES" },
+  "hr": { "name": "Hrvatski", "voiceLocale": "hr-HR" },
+  "ro": { "name": "Română", "voiceLocale": "ro-RO" },
+  "sk": { "name": "Slovenčina", "voiceLocale": "sk-SK" }
+}

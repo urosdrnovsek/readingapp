@@ -1,9 +1,10 @@
-export const languages = {
-  en: 'English', sl: 'Slovenščina', de: 'Deutsch', fr: 'Français',
-  es: 'Español', hr: 'Hrvatski', ro: 'Română', sk: 'Slovenčina',
-} as const;
+import languageRegistry from './languages.json';
 
-export type Language = keyof typeof languages;
+export const languages = Object.fromEntries(
+  Object.entries(languageRegistry).map(([code, { name }]) => [code, name]),
+) as Record<Language, string>;
+
+export type Language = keyof typeof languageRegistry;
 export type Theme = 'stories' | 'animal_facts' | 'around_the_world' | 'amazing_science' | 'nature_seasons';
 
 type Entry = {

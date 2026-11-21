@@ -1,4 +1,5 @@
 const paths = {
+  listen: '<path d="M3 9v6h4l5 4V5L7 9H3Zm13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
   book: '<path d="M12 6c-3-3-7-3-10-2v15c4-1 7-1 10 2 3-3 6-3 10-2V4c-3-1-7-1-10 2v15"/>',
   arrow: '<path d="M4 12h15m-6-6 6 6-6 6"/>',
   back: '<path d="M20 12H5m6-6-6 6 6 6"/>',

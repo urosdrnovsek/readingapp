@@ -8,6 +8,11 @@ const files = (await readdir('dist', { recursive: true, withFileTypes: true }))
 const hash = createHash('sha256');
 const worker = await readFile('scripts/service-worker.js', 'utf8');
 hash.update(worker);
-for (const file of files) hash.update(file).update(await readFile(`dist/${file}`));
+const digests = {};
+for (const file of files) {
+  const bytes = await readFile(`dist/${file}`);
+  hash.update(file).update(bytes);
+  digests[file] = createHash('sha256').update(bytes).digest('hex');
+}
 
-await writeFile('dist/sw.js', `const revision = "${hash.digest('hex').slice(0, 16)}";\nconst files = ${JSON.stringify(files)};\n${worker}`);
+await writeFile('dist/sw.js', `const revision = "${hash.digest('hex').slice(0, 16)}";\nconst files = ${JSON.stringify(digests)};\n${worker}`);

@@ -1,4 +1,5 @@
 import type { Passage } from './content';
+import type { SpeechRate } from './speech';
 
 export type Span = { start: number; end: number };
 export type Anchor = Span & { version: number; quote: string };
@@ -18,12 +19,13 @@ export type Preferences = {
   wordSpacing: number;
   tint: 'paper' | 'cream' | 'mint';
   plain: boolean;
+  speechRate: SpeechRate;
 };
 
 export const defaults: Preferences = {
   syllables: false, ticks: false, letters: [], extra: '', uppercase: false, underline: false,
   font: 'Andika', fontSize: 24, lineHeight: 1.6, letterSpacing: 0, wordSpacing: 0,
-  tint: 'paper', plain: false,
+  tint: 'paper', plain: false, speechRate: 0.8,
 };
 
 export function makeAnchor(passage: Passage, range: Span): Anchor {
@@ -68,9 +70,9 @@ export const escape = (value: string) => value.replace(/[&<>"']/g, character => 
 export function passageMarkup(
   passage: Passage,
   structure: ReturnType<typeof readStructure>,
-  options: { preferences: Preferences; marking: boolean; marks: Span[]; pending?: Span; guide: number },
+  options: { preferences: Preferences; wordTargets: boolean; marks: Span[]; pending?: Span; guide: number },
 ) {
-  const { preferences, marking, marks, pending, guide } = options;
+  const { preferences, wordTargets, marks, pending, guide } = options;
   const { words, sentences, graphemes, breaks } = structure;
   const letters = new Set([...preferences.letters, preferences.extra].filter(Boolean));
   const contains = (span: Span | undefined, offset: number) => span && span.start <= offset && offset < span.end;
@@ -92,7 +94,7 @@ export function passageMarkup(
     const beginsWord = wordStart.get(index);
     const endsWord = word !== undefined && wordEnds.has(index);
     if (sentence !== undefined || beginsWord !== undefined || endsWord) flush();
-    if (endsWord && marking) html += '</span>';
+    if (endsWord && wordTargets) html += '</span>';
     if (endsWord) word = undefined;
     if (sentence !== undefined) {
       if (sentence > 0) html += '</span>';
@@ -101,7 +103,7 @@ export function passageMarkup(
     if (beginsWord !== undefined) {
       word = beginsWord;
       syllable = 0;
-      if (marking) html += `<span data-word="${word}">`;
+      if (wordTargets) html += `<span data-word="${word}">`;
     }
     const atBreak = word !== undefined && index !== words[word].start && breaks.has(index);
     if (atBreak) syllable += 1;
@@ -129,7 +131,7 @@ export function passageMarkup(
     if (classes.includes('syllable-break')) flush();
   }
   flush();
-  if (marking && word !== undefined) html += '</span>';
+  if (wordTargets && word !== undefined) html += '</span>';
   if (sentences.length) html += '</span>';
   return html;
 }

@@ -4,6 +4,7 @@ import { defaults, escape, locate, makeAnchor, passageMarkup, readStructure, typ
 import { emptyData, loadStore, type ReadingData } from './storage';
 import { strings, type Message } from './strings';
 import { icon } from './icons';
+import { createSpeech, speechRates, type SpeechRate } from './speech';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const PAGE_SIZE = 12;
@@ -33,6 +34,16 @@ let removed: Highlight | undefined;
 let scrollFrame = 0;
 let ignoreScrollUntil = 0;
 let settingTimer: number | undefined;
+let listenOpen = false;
+let listenMode: 'word' | 'sentence' = 'sentence';
+let listenWord = 0;
+let hasPlayed = false;
+let playback: 'idle' | 'playing' | 'error' = 'idle';
+const speech = createSpeech(status => {
+  playback = status;
+  refreshListening();
+  if (listenOpen) updateListeningTarget();
+});
 
 const activeData = () => guestData ?? data;
 const t = (message: Message) => strings[message][activeData().interfaceLanguage === 'sl' ? 1 : 0];
@@ -73,15 +84,21 @@ function showSentence(behavior: ScrollBehavior = 'instant') {
 
 function changeSentence(offset: number) {
   if (!structure) return;
+  speech.stop();
   sentence = Math.max(0, Math.min(structure.sentences.length - 1, sentence + offset));
+  resetListeningTarget();
   saveBookmark();
   refreshPassage();
   showSentence();
 }
 
 function route() {
-  const key = location.hash.startsWith('#read/') ? location.hash.slice(6) : '';
-  return byKey.get(key);
+  if (!location.hash.startsWith('#read/')) return;
+  try {
+    return byKey.get(decodeURIComponent(location.hash.slice(6)));
+  } catch {
+    return undefined;
+  }
 }
 
 function openPassage(key: string) {
@@ -104,6 +121,8 @@ function closePassage(finished = false) {
 }
 
 function showRoute(finished = false) {
+  speech.stop();
+  listenOpen = false;
   cancelAnimationFrame(scrollFrame);
   scrollFrame = 0;
   const previous = current;
@@ -241,6 +260,7 @@ function renderReader(passage: Passage) {
         <div class="reader-controls" id="reader-controls"></div>
         <div id="range-tools" hidden></div>
         <div id="guide-tools" hidden></div>
+        ${renderListening(passage)}
         <div id="removal" role="status" hidden></div>
         <p class="passage-body" id="passage" lang="${passage.language}"></p>
       </article>
@@ -269,9 +289,10 @@ function refreshPassage() {
   const body = app.querySelector('#passage')!;
   body.classList.toggle('is-selecting', selecting);
   body.innerHTML = passageMarkup(current, structure, {
-    preferences, marking: selecting, marks: marksOnPage,
+    preferences, wordTargets: selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
     pending: pendingRange(), guide: guide && !preferences.plain ? sentence : -1,
   });
+  updateListeningTarget();
   const sample = app.querySelector('#cue-sample');
   if (sample) {
     const snippet = structure.sentences[sentence];
@@ -285,7 +306,7 @@ function refreshPassage() {
         return inRange;
       }).join('');
     }
-    sample.innerHTML = passageMarkup(preview, readStructure(preview), { preferences, marks: [], marking: false, guide: -1 });
+    sample.innerHTML = passageMarkup(preview, readStructure(preview), { preferences, marks: [], wordTargets: false, guide: -1 });
     const previewBox = sample.parentElement!;
     previewBox.dataset.font = reader.dataset.font;
     previewBox.dataset.tint = reader.dataset.tint;
@@ -302,6 +323,7 @@ function refreshControls() {
   app.querySelector('#reader-controls')!.innerHTML = `
     <button class="button" data-action="highlight" aria-pressed="${selecting}">${icon('highlight')} ${t('highlight')}</button>
     <button class="button" data-action="guide" aria-pressed="${guide && !preferences.plain}">${icon('guide')} ${t('guide')}</button>
+    <button class="button" data-action="listen" aria-controls="listen-tools" aria-expanded="${listenOpen}">${icon('listen')} ${t('listen')}</button>
     ${button('highlights', 'highlights')}
     ${button('finish', 'finish', 'button primary finish')}`;
   const range = app.querySelector<HTMLElement>('#range-tools')!;
@@ -316,6 +338,126 @@ function refreshControls() {
   guideTools.hidden = !guide || preferences.plain;
   guideTools.innerHTML = guide ? `<div class="inline-actions">${button('prev', 'prev')}<span id="sentence-position" role="status"></span>${button('next', 'next')}</div>` : '';
   refreshRemoval();
+  refreshListening();
+}
+
+function renderListening(passage: Passage) {
+  return `<section id="listen-tools" aria-labelledby="listen-title" hidden>
+    <h2 id="listen-title">${t('listen')}</h2>
+    <p id="listen-status" role="status"></p>
+    <div id="listen-options" hidden>
+      <p>${t('tapToListen')}</p>
+      <div class="listen-settings">
+        <label>${t('listenTo')}<select id="listen-mode">
+          ${option('sentence', t('sentence'), listenMode)}${option('word', t('word'), listenMode)}
+        </select></label>
+        <label>${t('speed')}<select id="listen-rate">
+          ${speechRates.map((rate, index) => option(String(rate), t((['slow', 'steady', 'normal'] as const)[index]), String(preferences.speechRate))).join('')}
+        </select></label>
+      </div>
+      <div class="stepper listen-stepper">
+        <button class="button" data-action="listen-prev">←</button>
+        <span id="listen-quote" lang="${passage.language}" aria-live="polite"></span>
+        <button class="button" data-action="listen-next">→</button>
+      </div>
+      <div class="inline-actions">
+        ${button('listen-play', 'play', 'button primary')}
+        ${button('listen-stop', 'stop')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function canListen() {
+  return listenOpen && current && !!speech.voiceFor(current.language);
+}
+
+function listenSelector() {
+  return listenMode === 'word' ? `[data-word="${listenWord}"]` : `[data-sentence="${sentence}"]`;
+}
+
+function updateListeningTarget() {
+  const body = app.querySelector('#passage');
+  if (!body) return;
+  const available = !!canListen();
+  body.classList.toggle('is-listening', available);
+  body.querySelector('.listen-target')?.classList.remove('listen-target');
+  if (available && !preferences.plain) body.querySelector(listenSelector())?.classList.add('listen-target');
+}
+
+function resetListeningTarget() {
+  const from = structure?.sentences[sentence]?.start ?? 0;
+  listenWord = Math.max(0, structure?.words.findIndex(word => word.start >= from) ?? 0);
+  hasPlayed = false;
+  playback = 'idle';
+  refreshListening();
+}
+
+function refreshListening() {
+  const panel = app.querySelector<HTMLElement>('#listen-tools');
+  if (!panel || !structure || !current) return;
+  panel.hidden = !listenOpen;
+  if (!listenOpen) return;
+  const available = !!canListen();
+  const status = panel.querySelector('#listen-status')!;
+  const message = available ? (playback === 'error' ? t('voiceError') : '') : t('voiceUnavailable');
+  if (status.textContent !== message) status.textContent = message;
+  panel.querySelector<HTMLElement>('#listen-options')!.hidden = !available;
+  const wordMode = listenMode === 'word';
+  const span = wordMode ? structure.words[listenWord] : structure.sentences[sentence];
+  const quote = span ? current.body.slice(span.start, span.end).trim() : '';
+  const text = panel.querySelector('#listen-quote')!;
+  if (text.textContent !== quote) text.textContent = quote;
+  const play = controlFor('listen-play')!;
+  play.textContent = t(hasPlayed ? 'replay' : 'play');
+  play.disabled = !quote;
+  controlFor('listen-stop')!.setAttribute('aria-disabled', String(playback !== 'playing'));
+  controlFor('listen-prev')!.setAttribute('aria-label', t(wordMode ? 'prevWord' : 'prev'));
+  controlFor('listen-next')!.setAttribute('aria-label', t(wordMode ? 'nextWord' : 'next'));
+  const index = wordMode ? listenWord : sentence;
+  const count = wordMode ? structure.words.length : structure.sentences.length;
+  controlFor('listen-prev')!.setAttribute('aria-disabled', String(index <= 0));
+  controlFor('listen-next')!.setAttribute('aria-disabled', String(index >= count - 1));
+}
+
+function toggleListening() {
+  speech.stop();
+  listenOpen = !listenOpen;
+  if (listenOpen) {
+    selecting = false;
+    resetListeningTarget();
+  }
+  refreshControls();
+  refreshPassage();
+  controlFor('listen')?.focus({ preventScroll: true });
+}
+
+function selectListeningTarget(index: number) {
+  if (!structure) return;
+  speech.stop();
+  if (listenMode === 'word') {
+    const word = structure.words[index];
+    if (!word) return;
+    listenWord = index;
+    const containing = structure.sentences.findIndex(span => span.start <= word.start && word.start < span.end);
+    if (containing >= 0) sentence = containing;
+  } else {
+    if (!structure.sentences[index]) return;
+    sentence = index;
+  }
+  hasPlayed = false;
+  playback = 'idle';
+  saveBookmark();
+  refreshPassage();
+  refreshListening();
+}
+
+function playSelection() {
+  if (!canListen() || !current || !structure) return;
+  const span = listenMode === 'word' ? structure.words[listenWord] : structure.sentences[sentence];
+  if (!span) return;
+  hasPlayed = true;
+  speech.play(current.body.slice(span.start, span.end).trim(), current.language, preferences.speechRate);
 }
 
 function refreshRemoval() {
@@ -360,6 +502,10 @@ function setHighlight(on: boolean) {
   selecting = on && !!structure?.words.length;
   awaitingEnd = false;
   if (selecting) {
+    if (listenOpen) {
+      speech.stop();
+      listenOpen = false;
+    }
     const from = structure!.sentences[sentence]?.start ?? 0;
     startWord = endWord = Math.max(0, structure!.words.findIndex(word => word.start >= from));
   }
@@ -468,10 +614,17 @@ app.addEventListener('click', event => {
       awaitingEnd = !awaitingEnd;
       refreshWords();
       refreshPassage();
+    } else if (canListen() && target.closest('#passage') && window.getSelection()?.isCollapsed !== false) {
+      const node = listenMode === 'word' ? word : target.closest<HTMLElement>('[data-sentence]');
+      if (node) {
+        selectListeningTarget(Number(node.dataset[listenMode]));
+        playSelection();
+      }
     }
     return;
   }
   const action = control.dataset.action;
+  if (control.getAttribute('aria-disabled') === 'true') return;
   switch (action) {
     case 'library': if (current) closePassage(); else window.scrollTo(0, 0); break;
     case 'open': if (control.dataset.key) openPassage(control.dataset.key); break;
@@ -483,6 +636,13 @@ app.addEventListener('click', event => {
       break;
     case 'highlight': setHighlight(!selecting); break;
     case 'cancel': setHighlight(false); break;
+    case 'listen': toggleListening(); break;
+    case 'listen-play': playSelection(); break;
+    case 'listen-stop': speech.stop(); break;
+    case 'listen-prev': case 'listen-next':
+      selectListeningTarget((listenMode === 'word' ? listenWord : sentence) + (action === 'listen-prev' ? -1 : 1));
+      app.querySelector(listenSelector())?.scrollIntoView({ block: 'nearest' });
+      break;
     case 'guide':
       guide = preferences.plain || !guide;
       if (preferences.plain) setPreferences({ ...preferences, plain: false });
@@ -603,6 +763,15 @@ app.addEventListener('input', event => {
 app.addEventListener('change', event => {
   const input = event.target as HTMLInputElement | HTMLSelectElement;
   switch (input.id) {
+    case 'listen-mode':
+      speech.stop();
+      listenMode = input.value === 'word' ? 'word' : 'sentence';
+      resetListeningTarget();
+      refreshPassage();
+      return;
+    case 'listen-rate':
+      setPreferences({ ...preferences, speechRate: Number(input.value) as SpeechRate });
+      return;
     case 'language':
       language = input.value as Language;
       activeData().passageLanguage = language;
@@ -647,7 +816,7 @@ app.addEventListener('change', event => {
 
 window.addEventListener('popstate', () => showRoute());
 window.addEventListener('scroll', () => {
-  if (!current || guide || selecting || scrollFrame || performance.now() < ignoreScrollUntil) return;
+  if (!current || guide || selecting || listenOpen || scrollFrame || performance.now() < ignoreScrollUntil) return;
   scrollFrame = requestAnimationFrame(() => {
     scrollFrame = 0;
     const viewportLine = Math.min(innerHeight * .3, Math.max(100, innerHeight - 100));
@@ -657,7 +826,7 @@ window.addEventListener('scroll', () => {
     saveBookmark();
   });
 }, { passive: true });
-window.addEventListener('pagehide', () => { saveBookmark(); persist(); });
+window.addEventListener('pagehide', () => { speech.stop(); saveBookmark(); persist(); });
 
 async function enableOffline() {
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) {
@@ -680,7 +849,7 @@ async function enableOffline() {
     navigator.serviceWorker.addEventListener('controllerchange', () => watch());
     watch(registration.installing);
   } catch {
-    offline = 'offlineUnavailable';
+    offline = navigator.serviceWorker.controller ? 'offlineReady' : 'offlineUnavailable';
     updateStatus();
   }
 }

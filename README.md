@@ -15,4 +15,8 @@ For installation and offline testing, run `npm run build` followed by `npm run p
 
 The interface is available in English and Slovenian. Choose any of the eight passage languages from the library. Personal reading preferences, progress and highlights live in the browser. **Guest reading** starts a temporary session.
 
+**Listen** reads a word or sentence using an installed device voice that matches the passage language. If the device has no matching local voice, it shows a message and the text remains available.
+
+Use the [tablet test checklist](docs/tablet-test.md) for the first test. To compare the bundled library with the pinned Text Generator revision, run `npm run check:content -- /path/to/textgenerator`.
+
 [Read the app blueprint](docs/reading-app-blueprint.md) · [Browse the passage library](content/)
