@@ -1,0 +1,2013 @@
+{
+  "schemaVersion": 1,
+  "packId": "starter-en",
+  "language": "en",
+  "entries": [
+    {
+      "id": "stories_kite_in_tree_1",
+      "version": 2,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Patient Kite",
+      "body": "Mia’s kite is in a tree. She sees a nest nearby. Grandpa helps her lower the kite. The nest stays safe on its branch.",
+      "syllable_body": "Mi|a’s kite is in a tree. She sees a nest near|by. Grand|pa helps her low|er the kite. The nest stays safe on its branch.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_piscancek_2",
+      "version": 2,
+      "theme": "stories",
+      "level": 2,
+      "title": "The White Egg",
+      "body": "Mia was spending the summer at Grandma's farm. In a warm nest lay a white egg. Grandma said Mia should be patient. And so Mia waited. One morning a quiet knocking came from inside the egg. Slowly the shell cracked, and out peeped a little chick. It was yellow, soft and tiny. Mia laughed out loud for joy.",
+      "syllable_body": "Mi|a was spend|ing the sum|mer at Grand|ma's farm. In a warm nest lay a white egg. Grand|ma said Mi|a should be pa|tient. And so Mi|a wait|ed. One morn|ing a qui|et knock|ing came from in|side the egg. Slow|ly the shell cracked, and out peeped a lit|tle chick. It was yel|low, soft and ti|ny. Mi|a laughed out loud for joy.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_piscancek_3",
+      "version": 5,
+      "theme": "stories",
+      "level": 3,
+      "title": "Waiting Patiently",
+      "body": "Mia was spending the summer at Grandma's farm. What interested Mia most was the white egg lying in a warm nest. Grandma explained that a chick was hiding inside the egg, and that Mia would have to be patient, because growing takes time. Every day Mia peeked into the nest, but the egg lay perfectly still. Then one morning a quiet knocking came from inside. The shell cracked, and a little yellow chick peeped out through it. It was wet and tiny, but full of life. Mia had never been so happy.",
+      "syllable_body": "Mi|a was spend|ing the sum|mer at Grand|ma's farm. What in|ter|est|ed Mi|a most was the white egg ly|ing in a warm nest. Grand|ma ex|plained that a chick was hid|ing in|side the egg, and that Mi|a would have to be pa|tient, be|cause grow|ing takes time. Ev|ery day Mi|a peeked in|to the nest, but the egg lay per|fect|ly still. Then one morn|ing a qui|et knock|ing came from in|side. The shell cracked, and a lit|tle yel|low chick peeped out through it. It was wet and ti|ny, but full of life. Mi|a had nev|er been so hap|py.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_piscancek_4",
+      "version": 4,
+      "theme": "stories",
+      "level": 4,
+      "title": "A Crack in the Barn",
+      "body": "Mia was spending the summer at Grandma's farm, where every day was full of new adventures. But what Mia loved most was a little white egg, lying in a warm nest in the corner of the barn.\n\nGrandma explained that a chick was hiding inside the egg and that it would hatch when it was ready. \"Patience,\" she said with a smile. \"Such things cannot be hurried.\" Every morning Mia ran into the barn and peeked into the nest, but the egg lay stubbornly still.\n\nOne morning it was different. A quiet knocking came from the egg, and then the shell cracked. A little beak poked through, and soon out peeped a small, yellow chick. It was wet and helpless, but full of life. Mia bent down and promised to take good care of it.",
+      "syllable_body": "Mi|a was spend|ing the sum|mer at Grand|ma's farm, where ev|ery day was full of new ad|ven|tures. But what Mi|a loved most was a lit|tle white egg, ly|ing in a warm nest in the cor|ner of the barn.\n\nGrand|ma ex|plained that a chick was hid|ing in|side the egg and that it would hatch when it was read|y. \"Pa|tience,\" she said with a smile. \"Such things can|not be hur|ried.\" Ev|ery morn|ing Mi|a ran in|to the barn and peeked in|to the nest, but the egg lay stub|born|ly still.\n\nOne morn|ing it was dif|fer|ent. A qui|et knock|ing came from the egg, and then the shell cracked. A lit|tle beak poked through, and soon out peeped a small, yel|low chick. It was wet and help|less, but full of life. Mi|a bent down and prom|ised to take good care of it.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_svetilnik_5",
+      "version": 3,
+      "theme": "stories",
+      "level": 5,
+      "title": "The Light in the Storm",
+      "body": "On a rocky cape by the sea stood an old lighthouse. In it lived a keeper named Jakob, who lit the great lamp every evening. Its light reached far out over the waves and showed the ships the way past the dangerous rocks.\n\nOne wild night a storm broke out like nothing Jakob had ever known. The wind howled, the rain beat against the windows, and the waves crashed against the rocks. In the middle of the darkness, Jakob suddenly saw a small fishing boat struggling with the waves. The people on board could not find the way to the harbour.\n\nJakob knew what he had to do. All night he stood by the light and made sure it did not go out. Whenever the flame flickered, he built it up again. He was tired and chilled to the bone, but he did not give up.\n\nToward morning the storm died down. The fishing boat sailed safely into the harbour. The people on board said that, without the lighthouse, they would have been lost in the dark night. Tired but smiling, Jakob went off to rest. His light had once again guided someone home.",
+      "syllable_body": "On a rock|y cape by the sea stood an old light|house. In it lived a keep|er named Ja|kob, who lit the great lamp ev|ery eve|ning. Its light reached far out o|ver the waves and showed the ships the way past the dan|ger|ous rocks.\n\nOne wild night a storm broke out like noth|ing Ja|kob had ev|er known. The wind howled, the rain beat a|gainst the win|dows, and the waves crashed a|gainst the rocks. In the mid|dle of the dark|ness, Ja|kob sud|den|ly saw a small fish|ing boat strug|gling with the waves. The peo|ple on board could not find the way to the har|bour.\n\nJa|kob knew what he had to do. All night he stood by the light and made sure it did not go out. When|ev|er the flame flick|ered, he built it up a|gain. He was tired and chilled to the bone, but he did not give up.\n\nTo|ward morn|ing the storm died down. The fish|ing boat sailed safe|ly in|to the har|bour. The peo|ple on board said that, with|out the light|house, they would have been lost in the dark night. Tired but smil|ing, Ja|kob went off to rest. His light had once a|gain guid|ed some|one home.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_weaverbird_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "A Woven Nest",
+      "body": "A bird carries a strip of grass in its beak. It loops the strip around a twig. More grass makes a nest. The bird works one piece at a time.",
+      "syllable_body": "A bird car|ries a strip of grass in its beak. It loops the strip a|round a twig. More grass makes a nest. The bird works one piece at a time.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_gecko_2",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "A Gecko’s Grip",
+      "body": "A gecko walks up a wall. Its toes grip the smooth surface. It lifts one foot, then the next. Its toes are covered in millions of tiny hairs that cling to the wall. They are not sticky like glue. The gecko can release its toes and place them again as it climbs towards a safe resting place.",
+      "syllable_body": "A geck|o walks up a wall. Its toes grip the smooth sur|face. It lifts one foot, then the next. Its toes are cov|ered in mil|lions of ti|ny hairs that cling to the wall. They are not stick|y like glue. The geck|o can re|lease its toes and place them a|gain as it climbs to|wards a safe rest|ing place.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_lisica_3",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "The Cunning Fox",
+      "body": "The fox is a clever animal with a reddish-brown coat and a bushy tail. It lives in woods and meadows, and sometimes it even creeps close to houses. It is very resourceful, which is why we say it is cunning. The fox hunts mostly mice and other small animals, but it will not say no to berries and fruit either. During the day it usually rests in a den that it digs under the ground, and at night it sets off to hunt. In winter its long, thick tail serves as a warm blanket.",
+      "syllable_body": "The fox is a clev|er an|i|mal with a red|dish-brown coat and a bush|y tail. It lives in woods and mead|ows, and some|times it e|ven creeps close to hous|es. It is ver|y re|source|ful, which is why we say it is cun|ning. The fox hunts most|ly mice and oth|er small an|i|mals, but it will not say no to ber|ries and fruit ei|ther. Dur|ing the day it u|su|al|ly rests in a den that it digs un|der the ground, and at night it sets off to hunt. In win|ter its long, thick tail serves as a warm blan|ket.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_pingvin_4",
+      "version": 3,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "The Bird That Swims",
+      "body": "A penguin is a bird that cannot fly. Its wings have turned into strong flippers, so it is a true master of swimming. Under the water it moves so fast and so smoothly that it looks as if it is flying — only it flies through the sea.\n\nMost penguins live in the cold south, where there is ice and snow everywhere. A thick layer of fat and dense, smooth feathers keep them warm. When it is really cold, penguins press together into a big huddle and warm one another.\n\nOn land they walk slowly and waddle from side to side. On the ice they often throw themselves onto their tummies and slide, which looks very funny. Parents care for their chicks together and keep them warm under their tummies.",
+      "syllable_body": "A pen|guin is a bird that can|not fly. Its wings have turned in|to strong flip|pers, so it is a true mas|ter of swim|ming. Un|der the wa|ter it moves so fast and so smooth|ly that it looks as if it is fly|ing — on|ly it flies through the sea.\n\nMost pen|guins live in the cold south, where there is ice and snow ev|ery|where. A thick lay|er of fat and dense, smooth feath|ers keep them warm. When it is real|ly cold, pen|guins press to|geth|er in|to a big hud|dle and warm one an|oth|er.\n\nOn land they walk slow|ly and wad|dle from side to side. On the ice they of|ten throw them|selves on|to their tum|mies and slide, which looks ver|y fun|ny. Par|ents care for their chicks to|geth|er and keep them warm un|der their tum|mies.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_narwhal_5",
+      "version": 3,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "The Narwhal’s Tusk",
+      "body": "A narwhal is a whale that lives in Arctic seas. The long tusk seen on many males is actually an enlarged tooth. It grows in a spiral and contains nerves that may sense changes in the water. Narwhals use clicks to explore dark water and locate prey beneath sea ice. They travel in groups and must find openings where they can rise to breathe. The tusk looks like a horn, but its origin is quite different: it is a tooth extending through the upper lip. A few females grow one too. A narwhal’s tusk can grow up to three metres long, taller than a grown-up. Narwhals dive more than a kilometre deep to catch fish and squid. A newborn narwhal is grey. As it grows older, its skin becomes spotted, and very old narwhals are almost white. Narwhals can live for fifty years or more. Long ago, traders in Europe sold narwhal tusks as unicorn horns, and people paid more for them than for gold. That is why some people still call the narwhal the unicorn of the sea.",
+      "syllable_body": "A nar|whal is a whale that lives in Arc|tic seas. The long tusk seen on man|y males is ac|tu|al|ly an en|larged tooth. It grows in a spi|ral and con|tains nerves that may sense chang|es in the wa|ter. Nar|whals use clicks to ex|plore dark wa|ter and lo|cate prey be|neath sea ice. They trav|el in groups and must find o|pen|ings where they can rise to breathe. The tusk looks like a horn, but its or|i|gin is quite dif|fer|ent: it is a tooth ex|tend|ing through the up|per lip. A few fe|males grow one too. A nar|whal’s tusk can grow up to three me|tres long, tall|er than a grown-up. Nar|whals dive more than a kil|o|me|tre deep to catch fish and squid. A new|born nar|whal is grey. As it grows old|er, its skin be|comes spot|ted, and ver|y old nar|whals are al|most white. Nar|whals can live for fif|ty years or more. Long a|go, trad|ers in Eu|rope sold nar|whal tusks as u|ni|corn horns, and peo|ple paid more for them than for gold. That is why some peo|ple still call the nar|whal the u|ni|corn of the sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_cappadocia_1",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 1,
+      "title": "Chimneys of Stone",
+      "body": "Tall rocks rise from the ground in Türkiye. Some look like towers with hats. Wind and water slowly shaped them. People have made rooms inside some rocks.",
+      "syllable_body": "Tall rocks rise from the ground in Tür|ki|ye. Some look like tow|ers with hats. Wind and wa|ter slow|ly shaped them. Peo|ple have made rooms in|side some rocks.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_cappadocia_2",
+      "version": 3,
+      "theme": "around_the_world",
+      "level": 2,
+      "title": "Chimneys of Stone",
+      "body": "Tall rocks rise from the ground in Türkiye. Some look like towers with hats. Wind and water slowly shaped them. People have made rooms inside some rocks. The region is called Cappadocia. Parts of its volcanic rock are soft enough to carve. Harder layers wear away more slowly and protect the soft rock below, like a hat.",
+      "syllable_body": "Tall rocks rise from the ground in Tür|ki|ye. Some look like tow|ers with hats. Wind and wa|ter slow|ly shaped them. Peo|ple have made rooms in|side some rocks. The re|gion is called Cap|pa|do|cia. Parts of its vol|ca|nic rock are soft e|nough to carve. Hard|er lay|ers wear a|way more slow|ly and pro|tect the soft rock be|low, like a hat.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_kitajski_zid_3",
+      "version": 3,
+      "theme": "around_the_world",
+      "level": 3,
+      "title": "A Wall as Long as a Journey",
+      "body": "The Great Wall of China is one of the longest structures that people have ever built. It winds across China, a country far away in Asia, and stretches over hills, valleys and mountains. If you walked along it, you would need several months to get from one end to the other. The wall was built over hundreds of years, out of stone, brick and earth. Long ago it protected the land from attackers who came from the north. Today millions of visitors come to see it every year.",
+      "syllable_body": "The Great Wall of Chi|na is one of the long|est struc|tures that peo|ple have ev|er built. It winds a|cross Chi|na, a coun|try far a|way in A|sia, and stretch|es o|ver hills, val|leys and moun|tains. If you walked a|long it, you would need sev|er|al months to get from one end to the oth|er. The wall was built o|ver hun|dreds of years, out of stone, brick and earth. Long a|go it pro|tect|ed the land from at|tack|ers who came from the north. To|day mil|lions of vis|i|tors come to see it ev|ery year.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_serengeti_4",
+      "version": 3,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "Across the Serengeti",
+      "body": "The Serengeti is a region of grasslands and woodlands in East Africa. Large herds of wildebeest and zebra move in search of fresh grass and water. Their journey follows seasonal rains rather than a road. Lions, cheetahs, vultures, insects, and countless smaller creatures share the wide ecosystem. Protected areas in Tanzania and Kenya help conserve this movement and the habitats it depends on. More than a million wildebeest take part. On the way they must cross wide rivers, where crocodiles wait in the water. The calves are born in the rainy season, and within minutes they can stand and run with the herd. The journey never really ends: it goes round and round, year after year.",
+      "syllable_body": "The Se|ren|ge|ti is a re|gion of grass|lands and wood|lands in East Af|ri|ca. Large herds of wil|de|beest and ze|bra move in search of fresh grass and wa|ter. Their jour|ney fol|lows sea|son|al rains rath|er than a road. Li|ons, chee|tahs, vul|tures, in|sects, and count|less small|er crea|tures share the wide e|co|sys|tem. Pro|tect|ed ar|e|as in Tan|za|nia and Ken|ya help con|serve this move|ment and the hab|i|tats it de|pends on. More than a mil|lion wil|de|beest take part. On the way they must cross wide riv|ers, where croc|o|diles wait in the wa|ter. The calves are born in the rain|y sea|son, and with|in min|utes they can stand and run with the herd. The jour|ney nev|er real|ly ends: it goes round and round, year af|ter year.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_machu_picchu_5",
+      "version": 4,
+      "theme": "around_the_world",
+      "level": 5,
+      "title": "The Hidden City in the Clouds",
+      "body": "High in the mountains of South America, among clouds and steep peaks, hides the ancient stone city of Machu Picchu. It lies in the country of Peru, on top of a steep mountain ledge, hundreds of metres above the valley below.\n\nThe city was built more than five hundred years ago by the Inca, a people who once ruled a great part of South America. Out of large stones they built houses, stairways and terraces. They cut and fitted the stones so precisely that even today you cannot slide a sheet of paper between them — and all without any mortar to hold them together.\n\nThen something strange happened. The people left the city, and for long centuries Machu Picchu lay hidden from the world, overgrown with forest and wrapped in mist. Only a little more than a hundred years ago did the outside world learn about it, although local farmers had always known it was there. The world was amazed at its beauty.\n\nToday thousands of visitors climb the steep path up to Machu Picchu every year. When they step among the old walls, high above the clouds, they feel just how skilled and wise the builders of this mysterious city must have been.",
+      "syllable_body": "High in the moun|tains of South A|mer|i|ca, a|mong clouds and steep peaks, hides the an|cient stone cit|y of Ma|chu Pic|chu. It lies in the coun|try of Pe|ru, on top of a steep moun|tain ledge, hun|dreds of me|tres a|bove the val|ley be|low.\n\nThe cit|y was built more than five hun|dred years a|go by the In|ca, a peo|ple who once ruled a great part of South A|mer|i|ca. Out of large stones they built hous|es, stair|ways and ter|rac|es. They cut and fit|ted the stones so pre|cise|ly that e|ven to|day you can|not slide a sheet of pa|per be|tween them — and all with|out an|y mor|tar to hold them to|geth|er.\n\nThen some|thing strange hap|pened. The peo|ple left the cit|y, and for long cen|tu|ries Ma|chu Pic|chu lay hid|den from the world, o|ver|grown with for|est and wrapped in mist. On|ly a lit|tle more than a hun|dred years a|go did the out|side world learn a|bout it, al|though lo|cal farm|ers had al|ways known it was there. The world was a|mazed at its beau|ty.\n\nTo|day thou|sands of vis|i|tors climb the steep path up to Ma|chu Pic|chu ev|ery year. When they step a|mong the old walls, high a|bove the clouds, they feel just how skilled and wise the build|ers of this mys|te|ri|ous cit|y must have been.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_zvok_1",
+      "version": 3,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "How We Hear",
+      "body": "Everything around us makes sounds. A sound is made when something shakes very fast. The shaking spreads through the air. It reaches our ears. The ear senses the sound. So we hear voices and music.",
+      "syllable_body": "Ev|ery|thing a|round us makes sounds. A sound is made when some|thing shakes ver|y fast. The shak|ing spreads through the air. It reach|es our ears. The ear sens|es the sound. So we hear voic|es and mu|sic.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_yeast_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "The Dough Balloon",
+      "body": "Bread dough sits in a bowl. Tiny living yeast cells help it grow. They make bubbles of gas inside. The dough slowly rises towards the rim. A baker covers the bowl and leaves it in a gently warm place. The bubbles stay caught in the dough. Later, an adult bakes the bread.",
+      "syllable_body": "Bread dough sits in a bowl. Ti|ny liv|ing yeast cells help it grow. They make bub|bles of gas in|side. The dough slow|ly ris|es to|wards the rim. A ba|ker cov|ers the bowl and leaves it in a gent|ly warm place. The bub|bles stay caught in the dough. La|ter, an a|dult bakes the bread.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_ognjenik_3",
+      "version": 3,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "The Mountain That Spews Fire",
+      "body": "A volcano is a mountain that seems to spew out fire. Deep under the ground it is so hot that the rock melts into a thick, glowing liquid. This melted rock is called magma. When enough pressure builds up, the magma breaks through to the surface. Then we say that the volcano erupts. Once it flows out into the open, the magma is called lava. It is so hot that it glows red and orange. Slowly it cools and hardens into black stone. That is why the slopes of many volcanoes are made of hardened lava.",
+      "syllable_body": "A vol|ca|no is a moun|tain that seems to spew out fire. Deep un|der the ground it is so hot that the rock melts in|to a thick, glow|ing liq|uid. This melt|ed rock is called mag|ma. When e|nough pres|sure builds up, the mag|ma breaks through to the sur|face. Then we say that the vol|ca|no e|rupts. Once it flows out in|to the o|pen, the mag|ma is called la|va. It is so hot that it glows red and or|ange. Slow|ly it cools and hard|ens in|to black stone. That is why the slopes of man|y vol|ca|noes are made of hard|ened la|va.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_taste_smell_4",
+      "version": 3,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "Why Food Has Flavour",
+      "body": "The tongue detects basic tastes such as sweet, salty, sour, bitter, and savoury. Much of flavour also comes from smell. While we chew, scent molecules travel from the mouth toward smell receptors in the nose. A blocked nose prevents many of those signals from arriving, so food may seem less interesting. Texture, temperature, colour, and past experiences also help the brain build the complete flavour we notice. Odour molecules can reach the nose from food in the mouth as well as from food held near it. A crunchy apple and smooth apple sauce can therefore feel quite different even when they share many ingredients. Try it: hold your nose and eat a piece of apple, then let go. The taste suddenly gets stronger. That is why food tastes of so little when you have a cold.",
+      "syllable_body": "The tongue de|tects ba|sic tastes such as sweet, salt|y, sour, bit|ter, and sa|vour|y. Much of fla|vour al|so comes from smell. While we chew, scent mol|e|cules trav|el from the mouth to|ward smell re|cep|tors in the nose. A blocked nose pre|vents man|y of those sig|nals from ar|riv|ing, so food may seem less in|ter|est|ing. Tex|ture, tem|per|a|ture, col|our, and past ex|pe|ri|enc|es al|so help the brain build the com|plete fla|vour we no|tice. O|dour mol|e|cules can reach the nose from food in the mouth as well as from food held near it. A crunch|y ap|ple and smooth ap|ple sauce can there|fore feel quite dif|fer|ent e|ven when they share man|y in|gre|di|ents. Try it: hold your nose and eat a piece of ap|ple, then let go. The taste sud|den|ly gets strong|er. That is why food tastes of so lit|tle when you have a cold.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_water_cycle_5",
+      "version": 3,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "The Travelling Drop",
+      "body": "Water continually moves between land, oceans, and air. Sunlight warms liquid water and some becomes invisible water vapour. Higher in the air, cooling vapour forms tiny droplets that gather into clouds. Rain or snow returns water to the surface, where it may soak into soil or flow toward rivers. This water cycle reuses the same water while moving it through many places and forms. A drying puddle has not lost its water into nothing. Molecules have escaped into the air as water vapour. That vapour is invisible, unlike the tiny droplets or ice crystals that make up clouds. After rain falls, its path is not always a quick trip into a river. Some soaks into the ground, some is taken up by plants, and some remains in lakes or freezes. Water can spend very different lengths of time in these places. Water has been going round this cycle for billions of years. So the water in your glass may once have fallen as rain on a dinosaur.",
+      "syllable_body": "Wa|ter con|tin|u|al|ly moves be|tween land, o|ceans, and air. Sun|light warms liq|uid wa|ter and some be|comes in|vis|i|ble wa|ter va|pour. High|er in the air, cool|ing va|pour forms ti|ny drop|lets that gath|er in|to clouds. Rain or snow re|turns wa|ter to the sur|face, where it may soak in|to soil or flow to|ward riv|ers. This wa|ter cy|cle re|us|es the same wa|ter while mov|ing it through man|y plac|es and forms. A dry|ing pud|dle has not lost its wa|ter in|to noth|ing. Mol|e|cules have es|caped in|to the air as wa|ter va|pour. That va|pour is in|vis|i|ble, un|like the ti|ny drop|lets or ice crys|tals that make up clouds. Af|ter rain falls, its path is not al|ways a quick trip in|to a riv|er. Some soaks in|to the ground, some is tak|en up by plants, and some re|mains in lakes or freez|es. Wa|ter can spend ver|y dif|fer|ent lengths of time in these plac|es. Wa|ter has been go|ing round this cy|cle for bil|lions of years. So the wa|ter in your glass may once have fall|en as rain on a di|no|saur.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_fireflies_1",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 1,
+      "title": "Summer Lanterns",
+      "body": "Small lights blink above the grass. They belong to insects called fireflies. The insects make the light inside their bodies. Their flashes can help them find one another.",
+      "syllable_body": "Small lights blink a|bove the grass. They be|long to in|sects called fire|flies. The in|sects make the light in|side their bod|ies. Their flash|es can help them find one an|oth|er.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_snezinka_2",
+      "version": 3,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "The Wonder of a Snowflake",
+      "body": "In winter, snowflakes fall from the sky. Each snowflake is made of frozen water. When it is cold enough outside, the tiny droplets in a cloud turn into ice. Snowflakes have six arms, and every single one is different. When many of them fall together, everything turns white.",
+      "syllable_body": "In win|ter, snow|flakes fall from the sky. Each snow|flake is made of fro|zen wa|ter. When it is cold e|nough out|side, the ti|ny drop|lets in a cloud turn in|to ice. Snow|flakes have six arms, and ev|ery sin|gle one is dif|fer|ent. When man|y of them fall to|geth|er, ev|ery|thing turns white.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_fireflies_3",
+      "version": 3,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Summer Lanterns",
+      "body": "Fireflies are beetles that produce light inside their bodies. A chemical reaction releases light with very little heat. Many adults flash in patterns that help members of the same species find one another. Different species use different rhythms, colours, or timings. Dark, damp habitats help many fireflies, while bright outdoor lights can make their signals harder to see. Despite their name, they are not flies at all. Unlike an old light bulb, their light stays cool.",
+      "syllable_body": "Fire|flies are bee|tles that pro|duce light in|side their bod|ies. A chem|i|cal re|ac|tion re|leas|es light with ver|y lit|tle heat. Man|y a|dults flash in pat|terns that help mem|bers of the same spe|cies find one an|oth|er. Dif|fer|ent spe|cies use dif|fer|ent rhythms, col|ours, or tim|ings. Dark, damp hab|i|tats help man|y fire|flies, while bright out|door lights can make their sig|nals hard|er to see. De|spite their name, they are not flies at all. Un|like an old light bulb, their light stays cool.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_fireflies_4",
+      "version": 4,
+      "theme": "nature_seasons",
+      "level": 4,
+      "title": "Summer Lanterns",
+      "body": "Fireflies are beetles that produce light inside their bodies. A chemical reaction releases light with very little heat. Many adults flash in patterns that help members of the same species find one another. Different species use different rhythms, colours, or timings. Dark, damp habitats help many fireflies, while bright outdoor lights can make their signals harder to see. Despite their name, they are not flies at all. Unlike an old light bulb, their light stays cool. For many species, flashing is part of finding a mate, and the timing of a signal matters. In some places, thousands of fireflies flash at the same moment, like a string of lights. On a warm summer evening, a meadow can sparkle with hundreds of them.",
+      "syllable_body": "Fire|flies are bee|tles that pro|duce light in|side their bod|ies. A chem|i|cal re|ac|tion re|leas|es light with ver|y lit|tle heat. Man|y a|dults flash in pat|terns that help mem|bers of the same spe|cies find one an|oth|er. Dif|fer|ent spe|cies use dif|fer|ent rhythms, col|ours, or tim|ings. Dark, damp hab|i|tats help man|y fire|flies, while bright out|door lights can make their sig|nals hard|er to see. De|spite their name, they are not flies at all. Un|like an old light bulb, their light stays cool. For man|y spe|cies, flash|ing is part of find|ing a mate, and the tim|ing of a sig|nal mat|ters. In some plac|es, thou|sands of fire|flies flash at the same mo|ment, like a string of lights. On a warm sum|mer eve|ning, a mead|ow can spar|kle with hun|dreds of them.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_maple_seeds_5",
+      "version": 3,
+      "theme": "nature_seasons",
+      "level": 5,
+      "title": "Spinning Seeds",
+      "body": "Maple seeds have thin wings. When a seed falls, it spins like a tiny helicopter. The spinning slows its fall and gives the wind more time to carry it away. A seed that lands beyond the parent tree may find open light, water, and soil. In spring, a successful seed can sprout roots and begin growing a maple of its own. Try it yourself: drop a maple seed and a small pebble from the same height and watch which one lands first. On a windy day, a spinning seed can fly far from its tree. Where it lands matters too: a seed on a pavement will not grow, but one in damp, soft soil may sprout roots in spring. A maple tree makes thousands of seeds every year, but only a few of them ever grow into new trees. That is why it makes so many. Ash and elm trees have winged seeds as well. You can find them on the ground under the trees in autumn.",
+      "syllable_body": "Ma|ple seeds have thin wings. When a seed falls, it spins like a ti|ny hel|i|cop|ter. The spin|ning slows its fall and gives the wind more time to car|ry it a|way. A seed that lands be|yond the par|ent tree may find o|pen light, wa|ter, and soil. In spring, a suc|cess|ful seed can sprout roots and be|gin grow|ing a ma|ple of its own. Try it your|self: drop a ma|ple seed and a small peb|ble from the same height and watch which one lands first. On a wind|y day, a spin|ning seed can fly far from its tree. Where it lands mat|ters too: a seed on a pave|ment will not grow, but one in damp, soft soil may sprout roots in spring. A ma|ple tree makes thou|sands of seeds ev|ery year, but on|ly a few of them ev|er grow in|to new trees. That is why it makes so man|y. Ash and elm trees have winged seeds as well. You can find them on the ground un|der the trees in au|tumn.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "stories_wet_kitten_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Wet Kitten",
+      "body": "Rain falls on the park. A small kitten sits under a bench. It is wet and cold. Mia picks it up. At home it gets warm milk and a soft blanket. Now it purrs.",
+      "syllable_body": "Rain falls on the park. A small kit|ten sits un|der a bench. It is wet and cold. Mi|a picks it up. At home it gets warm milk and a soft blan|ket. Now it purrs.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_leaf_boat_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Leaf Boat",
+      "body": "After the rain there is a puddle by the bench. Tom puts a green leaf on the water. A blue button is the sailor. The leaf floats away. A ladybird watches from the grass.",
+      "syllable_body": "Af|ter the rain there is a pud|dle by the bench. Tom puts a green leaf on the wa|ter. A blue but|ton is the sail|or. The leaf floats a|way. A la|dy|bird watch|es from the grass.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_blue_kite_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Kite in the Oak Tree",
+      "body": "Mia has a new blue kite. It flies high above the meadow. Then the wind stops, and the kite drops into an old oak tree. Mia stands on tiptoe and reaches up. The ribbon is too high. So Mia waits. A gust of wind shakes the branch, and the kite slides down. Mia catches it.",
+      "syllable_body": "Mi|a has a new blue kite. It flies high a|bove the mead|ow. Then the wind stops, and the kite drops in|to an old oak tree. Mi|a stands on tip|toe and reach|es up. The rib|bon is too high. So Mi|a waits. A gust of wind shakes the branch, and the kite slides down. Mi|a catch|es it.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_red_mitten_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Red Mitten",
+      "body": "It is a cold autumn morning. Tom walks to school. On a bench he sees a red mitten with a white snowflake. Tom picks it up and looks around. A girl in a pink hat runs back along the path. She is wearing only one red mitten. Tom holds up the other one, and the girl waves. Now her hands will be warm again.",
+      "syllable_body": "It is a cold au|tumn morn|ing. Tom walks to school. On a bench he sees a red mit|ten with a white snow|flake. Tom picks it up and looks a|round. A girl in a pink hat runs back a|long the path. She is wear|ing on|ly one red mit|ten. Tom holds up the oth|er one, and the girl waves. Now her hands will be warm a|gain.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_snail_race_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "The Slowest Runner",
+      "body": "One evening the forest animals held a race. The hare laughed when he saw Sam the snail at the starting line. “You will never get there,” he said. The race began, and the hare shot off like an arrow. Sam just crawled. The hare was so far ahead that he lay down under a tree for a nap. The squirrel stopped to eat some nuts. Sam did not stop. The sun went down. Still Sam crawled on. At the finish line the deer, the badger and the hedgehog cheered. The slowest runner had won.",
+      "syllable_body": "One eve|ning the for|est an|i|mals held a race. The hare laughed when he saw Sam the snail at the start|ing line. “You will nev|er get there,” he said. The race be|gan, and the hare shot off like an ar|row. Sam just crawled. The hare was so far a|head that he lay down un|der a tree for a nap. The squir|rel stopped to eat some nuts. Sam did not stop. The sun went down. Still Sam crawled on. At the fin|ish line the deer, the badg|er and the hedge|hog cheered. The slow|est run|ner had won.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_garden_gate_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Behind the Green Gate",
+      "body": "Behind the green gate is Grandpa's garden. Mia goes there every Saturday. She opens the gate, and the smell of lavender and mint greets her. In spring Grandpa gave her a small pot with a tiny plant. “This one is yours,” he said. Mia waters it every week with the old grey watering can. She pulls out the weeds and turns the pot towards the sun. Slowly the plant grows taller. One day Mia finds a small green tomato hidden under a leaf. Her plant has given her a gift.",
+      "syllable_body": "Be|hind the green gate is Grand|pa's gar|den. Mi|a goes there ev|ery Sat|ur|day. She o|pens the gate, and the smell of lav|en|der and mint greets her. In spring Grand|pa gave her a small pot with a ti|ny plant. “This one is yours,” he said. Mi|a wa|ters it ev|ery week with the old grey wa|ter|ing can. She pulls out the weeds and turns the pot to|wards the sun. Slow|ly the plant grows tall|er. One day Mi|a finds a small green to|ma|to hid|den un|der a leaf. Her plant has giv|en her a gift.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_treehouse_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Treehouse",
+      "body": "All summer the old oak tree at the end of the garden had been waiting for something. Then Dad brought home a pile of wooden boards, and Leo, Ella and their cousin Ben knew exactly what to do.\n\nLeo climbed up first with the hammer. Ella passed the boards up to him one by one, and Ben carried the longest planks from the pile. Their dog Biscuit did not carry anything, but he watched every nail with great interest. Building was harder than it looked. One board was too short, another was crooked, and a bag of nails fell into the grass.\n\nBy evening the little house had four walls, a window and a ladder. The three builders sat inside, and they listened to the leaves whisper around them. It was the best room in the world.",
+      "syllable_body": "All sum|mer the old oak tree at the end of the gar|den had been wait|ing for some|thing. Then Dad brought home a pile of wood|en boards, and Le|o, El|la and their cous|in Ben knew ex|act|ly what to do.\n\nLe|o climbed up first with the ham|mer. El|la passed the boards up to him one by one, and Ben car|ried the long|est planks from the pile. Their dog Bis|cuit did not car|ry an|y|thing, but he watched ev|ery nail with great in|ter|est. Build|ing was hard|er than it looked. One board was too short, an|oth|er was crook|ed, and a bag of nails fell in|to the grass.\n\nBy eve|ning the lit|tle house had four walls, a win|dow and a lad|der. The three build|ers sat in|side, and they lis|tened to the leaves whis|per a|round them. It was the best room in the world.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_silver_key_4",
+      "version": 2,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Little Silver Key",
+      "body": "While Noah was digging in Grandma's herb garden, his spade hit something hard. He brushed away the soil and found a little silver key, dark with age. It was far too small for any door in the house.\n\nGrandma turned it over in her hand and smiled. “I know this key,” she said. “I lost it when I was about your age.” She fetched a wooden chest from the shed and set it on the garden table. The key turned with a click, and the lid creaked open.\n\nInside lay postcards from the mountains and the seaside, a bundle of letters, and an old photo of a little girl. “That was me,” Grandma laughed. They spent the whole afternoon reading the postcards one by one, while the cat watched from the herb pots. Noah had wanted to find treasure. He had found Grandma's stories instead.",
+      "syllable_body": "While No|ah was dig|ging in Grand|ma's herb gar|den, his spade hit some|thing hard. He brushed a|way the soil and found a lit|tle sil|ver key, dark with age. It was far too small for an|y door in the house.\n\nGrand|ma turned it o|ver in her hand and smiled. “I know this key,” she said. “I lost it when I was a|bout your age.” She fetched a wood|en chest from the shed and set it on the gar|den ta|ble. The key turned with a click, and the lid creaked o|pen.\n\nIn|side lay post|cards from the moun|tains and the sea|side, a bun|dle of let|ters, and an old pho|to of a lit|tle girl. “That was me,” Grand|ma laughed. They spent the whole af|ter|noon read|ing the post|cards one by one, while the cat watched from the herb pots. No|ah had want|ed to find trea|sure. He had found Grand|ma's sto|ries in|stead.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_kitten_home_5",
+      "version": 2,
+      "theme": "stories",
+      "level": 5,
+      "title": "A Home for the Kitten",
+      "body": "The rain had not stopped all day. Mia was sitting by the window, watching the drops run down the glass, when a thin sound came from the garden. It was not the rain. It was a tiny, frightened meow.\n\nUnder the hedge, Mia found a small grey kitten, so wet that its fur stuck to its body. It was shivering. Mia lifted it carefully and carried it inside under a jumper, out of the rain.\n\nIn the warm room Mia poured some milk into a bowl. At first the kitten only sniffed at it. Then it drank and drank, until the bowl was empty and its whiskers were white. Mia made a bed out of a basket and a soft blue blanket. The kitten climbed in, turned around twice and curled up into a ball.\n\nMum said a kitten needs a name. Mia thought for a long time and chose Raindrop, because of the day they had met. Outside the rain went on falling, but Raindrop was warm, full and fast asleep. From that evening on, the small grey kitten had a home.",
+      "syllable_body": "The rain had not stopped all day. Mi|a was sit|ting by the win|dow, watch|ing the drops run down the glass, when a thin sound came from the gar|den. It was not the rain. It was a ti|ny, fright|ened me|ow.\n\nUn|der the hedge, Mi|a found a small grey kit|ten, so wet that its fur stuck to its bod|y. It was shiv|er|ing. Mi|a lift|ed it care|ful|ly and car|ried it in|side un|der a jump|er, out of the rain.\n\nIn the warm room Mi|a poured some milk in|to a bowl. At first the kit|ten on|ly sniffed at it. Then it drank and drank, un|til the bowl was emp|ty and its whis|kers were white. Mi|a made a bed out of a bas|ket and a soft blue blan|ket. The kit|ten climbed in, turned a|round twice and curled up in|to a ball.\n\nMum said a kit|ten needs a name. Mi|a thought for a long time and chose Rain|drop, be|cause of the day they had met. Out|side the rain went on fall|ing, but Rain|drop was warm, full and fast a|sleep. From that eve|ning on, the small grey kit|ten had a home.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_old_chest_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "The Chest in the Cellar",
+      "body": "Ella did not like the cellar. The air smelled of stone and dust, and the only light came from an old lantern. But Grandpa had asked her to fetch a jar of plum jam, so down she went.\n\nBehind the jars, in the darkest corner, stood a wooden chest with iron corners and a big rusty lock. Ella had never noticed it before. A small key hung from a nail beside it. She tried it. The lock gave a tired click, and the heavy lid swung open.\n\nThere was no gold inside. There were old books with cracked leather covers, bundles of letters tied with string, and old brown photographs. One photo showed a man and a little girl in a white dress. On the back someone had written a date from long ago.\n\nElla forgot the jam. She sat down on the cold floor with the lantern beside her and read until Grandpa came looking for her. “Ah,” he said softly when he saw the photo. “That little girl is your great-grandmother.” Then he sat down beside her, and together they turned the pages.",
+      "syllable_body": "El|la did not like the cel|lar. The air smelled of stone and dust, and the on|ly light came from an old lan|tern. But Grand|pa had asked her to fetch a jar of plum jam, so down she went.\n\nBe|hind the jars, in the dark|est cor|ner, stood a wood|en chest with i|ron cor|ners and a big rust|y lock. El|la had nev|er no|ticed it be|fore. A small key hung from a nail be|side it. She tried it. The lock gave a tired click, and the heav|y lid swung o|pen.\n\nThere was no gold in|side. There were old books with cracked leath|er cov|ers, bun|dles of let|ters tied with string, and old brown pho|to|graphs. One pho|to showed a man and a lit|tle girl in a white dress. On the back some|one had writ|ten a date from long a|go.\n\nEl|la for|got the jam. She sat down on the cold floor with the lan|tern be|side her and read un|til Grand|pa came look|ing for her. “Ah,” he said soft|ly when he saw the pho|to. “That lit|tle girl is your great-grand|moth|er.” Then he sat down be|side her, and to|geth|er they turned the pag|es.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_owl_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "The Owl at Night",
+      "body": "An owl hunts at night. Its big eyes see in the dark. Its soft feathers make no sound. The mouse does not hear it. By day the owl sleeps in a hole in a tree.",
+      "syllable_body": "An owl hunts at night. Its big eyes see in the dark. Its soft feath|ers make no sound. The mouse does not hear it. By day the owl sleeps in a hole in a tree.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_tortoise_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "A House on Its Back",
+      "body": "A tortoise has a hard shell. The shell is its house. In danger it pulls its head and legs inside. A tortoise lives on land. Its cousin the sea turtle swims in the sea.",
+      "syllable_body": "A tor|toise has a hard shell. The shell is its house. In dan|ger it pulls its head and legs in|side. A tor|toise lives on land. Its cous|in the sea tur|tle swims in the sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_bee_2",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "Busy Bees",
+      "body": "A bee flies from flower to flower. It drinks sweet nectar and collects pollen on its back legs. Then it flies home to the hive. Inside, thousands of bees work together. They turn the nectar into honey and store it in little wax rooms. Bees help the apple trees too. The flowers they visit turn into apples.",
+      "syllable_body": "A bee flies from flow|er to flow|er. It drinks sweet nec|tar and col|lects pol|len on its back legs. Then it flies home to the hive. In|side, thou|sands of bees work to|geth|er. They turn the nec|tar in|to hon|ey and store it in lit|tle wax rooms. Bees help the ap|ple trees too. The flow|ers they vis|it turn in|to ap|ples.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_giraffe_2",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "The Tallest Animal",
+      "body": "The giraffe is the tallest animal on land. It can be as tall as a house with two floors. With its long neck it reaches leaves that no other animal can get. Its tongue is dark and almost half a metre long. Sharp thorns do not hurt it. Every giraffe has its own pattern of spots, just as we all have different fingerprints.",
+      "syllable_body": "The gi|raffe is the tall|est an|i|mal on land. It can be as tall as a house with two floors. With its long neck it reach|es leaves that no oth|er an|i|mal can get. Its tongue is dark and al|most half a me|tre long. Sharp thorns do not hurt it. Ev|ery gi|raffe has its own pat|tern of spots, just as we all have dif|fer|ent fin|ger|prints.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_dolphin_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "The Dolphin’s Whistle",
+      "body": "Dolphins look like fish, but they are not. They are mammals, like us. A dolphin breathes air through a hole on top of its head, so it must come up to the surface every few minutes. Dolphins live in groups called pods. They leap out of the water and chase each other. They talk with clicks and whistles. Every dolphin has its own special whistle, which works like a name. When a mother calls, her calf knows the whistle and swims to her. Even when it sleeps, a dolphin keeps one half of its brain awake.",
+      "syllable_body": "Dol|phins look like fish, but they are not. They are mam|mals, like us. A dol|phin breathes air through a hole on top of its head, so it must come up to the sur|face ev|ery few min|utes. Dol|phins live in groups called pods. They leap out of the wa|ter and chase each oth|er. They talk with clicks and whis|tles. Ev|ery dol|phin has its own spe|cial whis|tle, which works like a name. When a moth|er calls, her calf knows the whis|tle and swims to her. E|ven when it sleeps, a dol|phin keeps one half of its brain a|wake.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_octopus_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "The Octopus and the Jar",
+      "body": "An octopus has eight arms, and each arm is covered with suckers. It has no bones at all, so it can squeeze through a very small gap. It has three hearts, and its blood is blue. But the most surprising thing about an octopus is how clever it is. In aquariums, people have watched an octopus unscrew the lid of a jar to reach the food inside. It can also change the colour of its skin in a moment to hide among the rocks. It may be the cleverest animal in the sea.",
+      "syllable_body": "An oc|to|pus has eight arms, and each arm is cov|ered with suck|ers. It has no bones at all, so it can squeeze through a ver|y small gap. It has three hearts, and its blood is blue. But the most sur|pris|ing thing a|bout an oc|to|pus is how clev|er it is. In a|quar|i|ums, peo|ple have watched an oc|to|pus un|screw the lid of a jar to reach the food in|side. It can al|so change the col|our of its skin in a mo|ment to hide a|mong the rocks. It may be the clev|er|est an|i|mal in the sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_bat_4",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "Hunting in the Dark",
+      "body": "Bats are the only mammals that can truly fly. Their wings are not made of feathers but of thin skin, stretched between very long fingers. By day, bats sleep hanging upside down in caves or hollow trees. When the sun goes down, they wake up and set off to hunt.\n\nIt is dark, but a bat does not need much light. As it flies, it sends out short, high calls. The sounds are so high that our ears cannot hear them. When a call hits a moth or a mosquito, an echo bounces back. From the echo the bat knows exactly where the insect is, how big it is and which way it is moving. Then it snaps it up in the air.\n\nA small bat can catch hundreds of insects in a single night. Every mosquito it catches is one fewer to bite you.",
+      "syllable_body": "Bats are the on|ly mam|mals that can tru|ly fly. Their wings are not made of feath|ers but of thin skin, stretched be|tween ver|y long fin|gers. By day, bats sleep hang|ing up|side down in caves or hol|low trees. When the sun goes down, they wake up and set off to hunt.\n\nIt is dark, but a bat does not need much light. As it flies, it sends out short, high calls. The sounds are so high that our ears can|not hear them. When a call hits a moth or a mos|qui|to, an ech|o bounc|es back. From the ech|o the bat knows ex|act|ly where the in|sect is, how big it is and which way it is mov|ing. Then it snaps it up in the air.\n\nA small bat can catch hun|dreds of in|sects in a sin|gle night. Ev|ery mos|qui|to it catch|es is one few|er to bite you.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_axolotl_4",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "The Smiling Axolotl",
+      "body": "The axolotl is a salamander that lives in only one place in the wild: lakes and canals near Mexico City. Its wide mouth looks like a smile, and on each side of its head it wears a crown of feathery gills.\n\nMost salamanders change as they grow up. They lose their gills, leave the water and live on land. The axolotl never does. It keeps its gills and its tail all its life and stays in the water, like a tadpole that never becomes a frog.\n\nIt has another amazing talent. If an axolotl loses a leg, it simply grows a new one. It can even repair parts of its heart and brain. In the wild axolotls are dark brown and very rare today. The pink ones, like the one in the picture, are bred by people and kept in aquariums.",
+      "syllable_body": "The ax|o|lotl is a sal|a|man|der that lives in on|ly one place in the wild: lakes and ca|nals near Mex|i|co Cit|y. Its wide mouth looks like a smile, and on each side of its head it wears a crown of feath|er|y gills.\n\nMost sal|a|man|ders change as they grow up. They lose their gills, leave the wa|ter and live on land. The ax|o|lotl nev|er does. It keeps its gills and its tail all its life and stays in the wa|ter, like a tad|pole that nev|er be|comes a frog.\n\nIt has an|oth|er a|maz|ing tal|ent. If an ax|o|lotl los|es a leg, it sim|ply grows a new one. It can e|ven re|pair parts of its heart and brain. In the wild ax|o|lotls are dark brown and ver|y rare to|day. The pink ones, like the one in the pic|ture, are bred by peo|ple and kept in a|quar|i|ums.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_dolphin_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "Seeing with Sound",
+      "body": "Deep water is often dark and cloudy, and eyes are not much help there. Yet dolphins find fish with ease, even at night. Their secret is sound.\n\nA dolphin sends out fast clicks from the front of its head. The clicks travel through the water, hit whatever lies ahead and bounce back as echoes. From these echoes the dolphin builds a picture of its surroundings: a rock, a sunken ship, a shoal of fish. It can tell how far away a fish is, how big it is and in which direction it is swimming. It is a little like seeing with your ears.\n\nDolphins also hunt as a team. A pod will circle a shoal of fish and drive it together into a tight ball, so that every dolphin can dart in and grab a meal.\n\nBecause a dolphin is a mammal, it breathes air. It comes up, blows out a puff of spray through the hole on top of its head, takes a quick breath and dives again. A dolphin can stay under for around ten minutes, but usually it comes up far sooner.",
+      "syllable_body": "Deep wa|ter is of|ten dark and cloud|y, and eyes are not much help there. Yet dol|phins find fish with ease, e|ven at night. Their se|cret is sound.\n\nA dol|phin sends out fast clicks from the front of its head. The clicks trav|el through the wa|ter, hit what|ev|er lies a|head and bounce back as ech|oes. From these ech|oes the dol|phin builds a pic|ture of its sur|round|ings: a rock, a sunk|en ship, a shoal of fish. It can tell how far a|way a fish is, how big it is and in which di|rec|tion it is swim|ming. It is a lit|tle like see|ing with your ears.\n\nDol|phins al|so hunt as a team. A pod will cir|cle a shoal of fish and drive it to|geth|er in|to a tight ball, so that ev|ery dol|phin can dart in and grab a meal.\n\nBe|cause a dol|phin is a mam|mal, it breathes air. It comes up, blows out a puff of spray through the hole on top of its head, takes a quick breath and dives a|gain. A dol|phin can stay un|der for a|round ten min|utes, but u|su|al|ly it comes up far soon|er.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_blue_whale_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "The Largest Animal of All",
+      "body": "The blue whale is the largest animal that has ever lived, heavier than any dinosaur. A grown blue whale can be thirty metres long, longer than two buses in a row. Its heart is the size of a small car, and its tongue alone weighs as much as an elephant.\n\nYou might think such a giant eats giant food. In fact it eats some of the smallest creatures in the sea: krill, tiny shrimp-like animals no longer than your finger. The whale swims into a swarm of krill with its mouth wide open, takes in a huge gulp of water and pushes it out again through the comb-like plates in its mouth. The krill stay behind and are swallowed. In one day a blue whale can eat around four tonnes of them.\n\nWhen it comes up to breathe, the whale blows a cloud of spray high into the air, as high as a house with three floors. People on whale-watching boats often see this spout long before they see the whale itself.\n\nBlue whales sing too. Their deep, slow songs travel hundreds of kilometres through the ocean.",
+      "syllable_body": "The blue whale is the larg|est an|i|mal that has ev|er lived, heav|i|er than an|y di|no|saur. A grown blue whale can be thir|ty me|tres long, long|er than two bus|es in a row. Its heart is the size of a small car, and its tongue a|lone weighs as much as an el|e|phant.\n\nYou might think such a gi|ant eats gi|ant food. In fact it eats some of the small|est crea|tures in the sea: krill, ti|ny shrimp-like an|i|mals no long|er than your fin|ger. The whale swims in|to a swarm of krill with its mouth wide o|pen, takes in a huge gulp of wa|ter and push|es it out a|gain through the comb-like plates in its mouth. The krill stay be|hind and are swal|lowed. In one day a blue whale can eat a|round four tonnes of them.\n\nWhen it comes up to breathe, the whale blows a cloud of spray high in|to the air, as high as a house with three floors. Peo|ple on whale-watch|ing boats of|ten see this spout long be|fore they see the whale it|self.\n\nBlue whales sing too. Their deep, slow songs trav|el hun|dreds of kil|o|me|tres through the o|cean.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_pyramids_1",
+      "version": 2,
+      "theme": "around_the_world",
+      "level": 1,
+      "title": "The Pyramids of Egypt",
+      "body": "In Egypt three huge pyramids stand in the desert. People built them more than four thousand years ago. Many stones are heavier than a car. Camels walk past in the hot sand.",
+      "syllable_body": "In E|gypt three huge pyr|a|mids stand in the des|ert. Peo|ple built them more than four thou|sand years a|go. Man|y stones are heav|i|er than a car. Cam|els walk past in the hot sand.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_windmills_1",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 1,
+      "title": "Windmills and Tulips",
+      "body": "This is the Netherlands. The land is flat and low. Windmills help to keep the fields dry. Cows eat the grass there. In spring the fields are full of red, yellow and pink tulips.",
+      "syllable_body": "This is the Neth|er|lands. The land is flat and low. Wind|mills help to keep the fields dry. Cows eat the grass there. In spring the fields are full of red, yel|low and pink tu|lips.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_venice_2",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 2,
+      "title": "A City on the Water",
+      "body": "Venice is a city in Italy. It is built on many small islands. Instead of streets it has canals, and instead of cars it has boats. A gondola is a long, thin boat. The gondolier stands at the back and pushes it along with one long oar. Hundreds of bridges join the islands. People cross them on foot, because no car can drive in Venice.",
+      "syllable_body": "Ven|ice is a cit|y in It|a|ly. It is built on man|y small is|lands. In|stead of streets it has ca|nals, and in|stead of cars it has boats. A gon|do|la is a long, thin boat. The gon|do|lier stands at the back and push|es it a|long with one long oar. Hun|dreds of bridg|es join the is|lands. Peo|ple cross them on foot, be|cause no car can drive in Ven|ice.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_castle_2",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 2,
+      "title": "A Castle on the Hill",
+      "body": "Long ago, kings and knights lived in castles. This castle stands on a hill above a river. From the towers guards could see far across the valley. Thick stone walls kept enemies out. A heavy gate closed the only way in. Inside there were stables, a kitchen, a well and a great hall. Today many castles are museums, and children can climb the towers.",
+      "syllable_body": "Long a|go, kings and knights lived in cas|tles. This cas|tle stands on a hill a|bove a riv|er. From the tow|ers guards could see far a|cross the val|ley. Thick stone walls kept en|e|mies out. A heav|y gate closed the on|ly way in. In|side there were sta|bles, a kitch|en, a well and a great hall. To|day man|y cas|tles are mu|se|ums, and chil|dren can climb the tow|ers.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_aqueduct_3",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 3,
+      "title": "The Bridge That Carries Water",
+      "body": "Two thousand years ago the Romans ruled a huge empire. Their cities needed fresh water for fountains, baths and drinking. So Roman builders made aqueducts: long stone channels that carried water from springs in the hills down into the towns. Where the channel met a valley, they built a bridge for it, with rows of arches stacked one above the other. The water flowed gently downhill the whole way, without any pump. Some aqueducts are still standing today. The one in the picture, in the south of France, is almost fifty metres high.",
+      "syllable_body": "Two thou|sand years a|go the Ro|mans ruled a huge em|pire. Their cit|ies need|ed fresh wa|ter for foun|tains, baths and drink|ing. So Ro|man build|ers made aq|ue|ducts: long stone chan|nels that car|ried wa|ter from springs in the hills down in|to the towns. Where the chan|nel met a val|ley, they built a bridge for it, with rows of arch|es stacked one a|bove the oth|er. The wa|ter flowed gen|tly down|hill the whole way, with|out an|y pump. Some aq|ue|ducts are still stand|ing to|day. The one in the pic|ture, in the south of France, is al|most fif|ty me|tres high.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_sahara_3",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 3,
+      "title": "Life in the Sahara",
+      "body": "The Sahara is the largest hot desert in the world. It stretches across the north of Africa and is almost as big as the whole of Europe. By day the sun burns down and the sand gets too hot to touch. At night the heat escapes quickly, and it can become bitterly cold. Rain hardly ever falls. Life finds a way. A fennec fox has huge ears that give off heat. Lizards hide under rocks. Small flowers bloom after a rare shower. People cross the desert with camels, which can walk for days without drinking.",
+      "syllable_body": "The Sa|ha|ra is the larg|est hot des|ert in the world. It stretch|es a|cross the north of Af|ri|ca and is al|most as big as the whole of Eu|rope. By day the sun burns down and the sand gets too hot to touch. At night the heat es|capes quick|ly, and it can be|come bit|ter|ly cold. Rain hard|ly ev|er falls. Life finds a way. A fen|nec fox has huge ears that give off heat. Liz|ards hide un|der rocks. Small flow|ers bloom af|ter a rare show|er. Peo|ple cross the des|ert with cam|els, which can walk for days with|out drink|ing.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_rapa_nui_4",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "The Stone Faces of Rapa Nui",
+      "body": "Far out in the Pacific Ocean, far from any other land, lies a small island called Rapa Nui. Most people know it as Easter Island. Along its green coast stand hundreds of huge stone figures with long faces and heavy brows. They are called moai.\n\nThe people of Rapa Nui carved them from volcanic rock many centuries ago, using only stone tools. Some moai are taller than a house and weigh more than ten elephants. How were they moved across the island? Nobody knows for certain. Many islanders say the statues “walked”. Scientists have shown that people with ropes can rock a standing statue forward step by step, so perhaps the old stories are true.\n\nToday the moai stand quietly with their backs to the sea, looking over the island as they have done for hundreds of years.",
+      "syllable_body": "Far out in the Pa|cif|ic O|cean, far from an|y oth|er land, lies a small is|land called Ra|pa Nu|i. Most peo|ple know it as Eas|ter Is|land. A|long its green coast stand hun|dreds of huge stone fig|ures with long fac|es and heav|y brows. They are called mo|ai.\n\nThe peo|ple of Ra|pa Nu|i carved them from vol|can|ic rock man|y cen|tu|ries a|go, us|ing on|ly stone tools. Some mo|ai are tall|er than a house and weigh more than ten el|e|phants. How were they moved a|cross the is|land? No|bod|y knows for cer|tain. Man|y is|land|ers say the stat|ues “walked”. Sci|en|tists have shown that peo|ple with ropes can rock a stand|ing stat|ue for|ward step by step, so per|haps the old sto|ries are true.\n\nTo|day the mo|ai stand qui|et|ly with their backs to the sea, look|ing o|ver the is|land as they have done for hun|dreds of years.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_uluru_4",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "The Red Rock in the Desert",
+      "body": "In the middle of Australia, a giant red rock rises out of the flat desert. Its name is Uluru. It is more than three kilometres long and higher than the Eiffel Tower, and most of it is still hidden under the ground, like an iceberg in the sea.\n\nUluru changes colour with the light. At sunrise and sunset it glows deep orange and red; in the rain it turns silver-grey, and waterfalls pour down its sides. Around its base grow desert oaks and grasses, and there are waterholes where birds and kangaroos come to drink.\n\nFor the Anangu, the Aboriginal people who have lived here for tens of thousands of years, Uluru is a sacred place. Visitors are no longer allowed to climb it; they walk around the rock instead and listen to the stories of the people who know it best.",
+      "syllable_body": "In the mid|dle of Aus|tra|lia, a gi|ant red rock ris|es out of the flat des|ert. Its name is U|lu|ru. It is more than three kil|o|me|tres long and high|er than the Eif|fel Tow|er, and most of it is still hid|den un|der the ground, like an ice|berg in the sea.\n\nU|lu|ru chang|es col|our with the light. At sun|rise and sun|set it glows deep or|ange and red; in the rain it turns sil|ver-grey, and wa|ter|falls pour down its sides. A|round its base grow des|ert oaks and grass|es, and there are wa|ter|holes where birds and kan|ga|roos come to drink.\n\nFor the A|nan|gu, the Ab|o|rig|i|nal peo|ple who have lived here for tens of thou|sands of years, U|lu|ru is a sa|cred place. Vis|i|tors are no long|er al|lowed to climb it; they walk a|round the rock in|stead and lis|ten to the sto|ries of the peo|ple who know it best.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_venice_5",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 5,
+      "title": "A City Standing on a Forest",
+      "body": "Imagine a city where the streets are made of water. That city is Venice, in the north of Italy. It is built on more than a hundred islands in a shallow lagoon, and about four hundred bridges tie the islands together.\n\nHow can heavy stone houses stand on soft, muddy islands? Long ago the Venetians drove millions of wooden poles into the mud, close together like the bristles of a brush, and built on top of them. The mud kept the air away from the wood, so it never rotted. Over the centuries it became almost as hard as stone. Venice is standing on a forest turned upside down.\n\nThere are no cars in Venice. People walk, or they take a boat. The water buses are called vaporetti; ambulances and fire engines are boats, and even the rubbish is collected by boat. The famous black gondolas are mostly for visitors today.\n\nVenice has one big worry: the sea. Several times a year high tides flood the lowest squares, and the city is slowly sinking. Huge gates at the entrance to the lagoon now close when a flood is coming.",
+      "syllable_body": "I|mag|ine a cit|y where the streets are made of wa|ter. That cit|y is Ven|ice, in the north of It|a|ly. It is built on more than a hun|dred is|lands in a shal|low la|goon, and a|bout four hun|dred bridg|es tie the is|lands to|geth|er.\n\nHow can heav|y stone hous|es stand on soft, mud|dy is|lands? Long a|go the Ve|ne|tians drove mil|lions of wood|en poles in|to the mud, close to|geth|er like the bris|tles of a brush, and built on top of them. The mud kept the air a|way from the wood, so it nev|er rot|ted. O|ver the cen|tu|ries it be|came al|most as hard as stone. Ven|ice is stand|ing on a for|est turned up|side down.\n\nThere are no cars in Ven|ice. Peo|ple walk, or they take a boat. The wa|ter bus|es are called va|po|ret|ti; am|bu|lanc|es and fire en|gines are boats, and e|ven the rub|bish is col|lect|ed by boat. The fa|mous black gon|do|las are most|ly for vis|i|tors to|day.\n\nVen|ice has one big wor|ry: the sea. Sev|er|al times a year high tides flood the low|est squares, and the cit|y is slow|ly sink|ing. Huge gates at the en|trance to the la|goon now close when a flood is com|ing.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_amazon_5",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 5,
+      "title": "The Amazon Rainforest",
+      "body": "The Amazon rainforest is the largest forest on Earth. It covers a huge part of South America, across nine countries, and through it winds the Amazon River, which carries more water than any other river in the world.\n\nIt is warm and wet here all year round. Rain falls almost every day. The tallest trees rise sixty metres above the ground and form a green roof called the canopy. Most of the forest’s animals live up there rather than on the dark forest floor.\n\nNowhere else on Earth are there so many kinds of living things. Monkeys swing through the branches, toucans crack fruit with their enormous beaks, and scarlet macaws fly screeching over the treetops. Bright blue butterflies as large as a hand drift between the trunks, tiny tree frogs cling to the leaves, and the jaguar, the biggest cat in the Americas, hunts silently below.\n\nThe forest matters to the whole world. Its billions of trees take in carbon dioxide and give out oxygen, and they help to make rain that falls far away. That is why so many people are working to protect it.",
+      "syllable_body": "The Am|a|zon rain|for|est is the larg|est for|est on Earth. It cov|ers a huge part of South A|mer|i|ca, a|cross nine coun|tries, and through it winds the Am|a|zon Riv|er, which car|ries more wa|ter than an|y oth|er riv|er in the world.\n\nIt is warm and wet here all year round. Rain falls al|most ev|ery day. The tall|est trees rise six|ty me|tres a|bove the ground and form a green roof called the can|o|py. Most of the for|est’s an|i|mals live up there rath|er than on the dark for|est floor.\n\nNo|where else on Earth are there so man|y kinds of liv|ing things. Mon|keys swing through the branch|es, tou|cans crack fruit with their e|nor|mous beaks, and scar|let ma|caws fly screech|ing o|ver the tree|tops. Bright blue but|ter|flies as large as a hand drift be|tween the trunks, ti|ny tree frogs cling to the leaves, and the jag|uar, the big|gest cat in the A|mer|i|cas, hunts si|lent|ly be|low.\n\nThe for|est mat|ters to the whole world. Its bil|lions of trees take in car|bon di|ox|ide and give out ox|y|gen, and they help to make rain that falls far a|way. That is why so man|y peo|ple are work|ing to pro|tect it.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_rainbow_1",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "After the Rain",
+      "body": "The rain stops. The sun comes out. A rainbow shines in the sky. Red is on the outside. Violet is on the inside. Stand with your back to the sun to see it.",
+      "syllable_body": "The rain stops. The sun comes out. A rain|bow shines in the sky. Red is on the out|side. Vi|o|let is on the in|side. Stand with your back to the sun to see it.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_echo_1",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "The Echo",
+      "body": "Tom shouts at the big rock. A moment later he hears his own voice again. That is an echo. The sound flies to the rock, bounces off and comes back to his ears.",
+      "syllable_body": "Tom shouts at the big rock. A mo|ment la|ter he hears his own voice a|gain. That is an ech|o. The sound flies to the rock, bounc|es off and comes back to his ears.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_gravity_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "Why Everything Falls Down",
+      "body": "Tom throws a ball into the air. It comes back down. An apple falls from the tree. Raindrops fall from the cloud. Why does everything fall down? The Earth pulls everything towards its middle. This pull is called gravity. It holds us on the ground. That is why people on the other side of the world do not fall off.",
+      "syllable_body": "Tom throws a ball in|to the air. It comes back down. An ap|ple falls from the tree. Rain|drops fall from the cloud. Why does ev|ery|thing fall down? The Earth pulls ev|ery|thing to|wards its mid|dle. This pull is called grav|i|ty. It holds us on the ground. That is why peo|ple on the oth|er side of the world do not fall off.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_first_ice_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "The First Ice",
+      "body": "Last night was cold. Now the puddle has a lid of ice. Water turns into ice when it gets colder than zero degrees. Ice takes up more room than water, so it floats. Tom presses the ice with his boot. It cracks with a snap. A puddle is a safe place to test ice. Never step onto the ice of a pond or river alone.",
+      "syllable_body": "Last night was cold. Now the pud|dle has a lid of ice. Wa|ter turns in|to ice when it gets cold|er than ze|ro de|grees. Ice takes up more room than wa|ter, so it floats. Tom press|es the ice with his boot. It cracks with a snap. A pud|dle is a safe place to test ice. Nev|er step on|to the ice of a pond or riv|er a|lone.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_rainbow_3",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "How a Rainbow Is Made",
+      "body": "Sunlight looks white, but it is really a mixture of all the colours. When a ray of sunlight enters a raindrop, it bends a little. It bounces off the back of the drop and bends again on its way out. Each colour bends by a slightly different amount, so the colours spread out into a band: red, orange, yellow, green, blue, indigo and violet. A rainbow always appears on the side of the sky opposite the sun. It is really a full circle, but the ground hides the lower half.",
+      "syllable_body": "Sun|light looks white, but it is real|ly a mix|ture of all the col|ours. When a ray of sun|light en|ters a rain|drop, it bends a lit|tle. It bounc|es off the back of the drop and bends a|gain on its way out. Each col|our bends by a slight|ly dif|fer|ent a|mount, so the col|ours spread out in|to a band: red, or|ange, yel|low, green, blue, in|di|go and vi|o|let. A rain|bow al|ways ap|pears on the side of the sky op|po|site the sun. It is real|ly a full cir|cle, but the ground hides the low|er half.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_sundial_3",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "A Clock Made of Shadow",
+      "body": "Long before there were clocks, people told the time by the sun. A sundial is the simplest clock of all: a stick standing in the ground. As the sun moves across the sky, the shadow of the stick moves too. In the morning the shadow is long and points west. At midday it is at its shortest. Stones around the edge mark the hours. The Egyptians used shadow clocks more than three thousand years ago. A sundial has one weakness, though: it cannot tell you the time at night or on a cloudy day.",
+      "syllable_body": "Long be|fore there were clocks, peo|ple told the time by the sun. A sun|di|al is the sim|plest clock of all: a stick stand|ing in the ground. As the sun moves a|cross the sky, the shad|ow of the stick moves too. In the morn|ing the shad|ow is long and points west. At mid|day it is at its short|est. Stones a|round the edge mark the hours. The E|gyp|tians used shad|ow clocks more than three thou|sand years a|go. A sun|di|al has one weak|ness, though: it can|not tell you the time at night or on a cloud|y day.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_tide_pool_4",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "Life Between the Tides",
+      "body": "Twice a day the sea rises up the shore, and twice a day it slides back again. These movements are called tides. They are caused mainly by the Moon, whose gravity pulls the water of the oceans towards it as the Earth turns.\n\nWhen the tide goes out, some water stays behind in hollows between the rocks. These are tide pools, full of life. A sea anemone looks like a flower, but it is an animal; its soft arms catch tiny creatures that drift too close. Crabs hide under stones, snails scrape green weed off the rocks, and small fish dart between them.\n\nLife in a tide pool is not easy. For hours the water grows warm in the sun, then the waves crash back. The anemone pulls in its arms, the mussels close their shells tight, and everyone waits until the sea returns.",
+      "syllable_body": "Twice a day the sea ris|es up the shore, and twice a day it slides back a|gain. These move|ments are called tides. They are caused main|ly by the Moon, whose grav|i|ty pulls the wa|ter of the o|ceans to|wards it as the Earth turns.\n\nWhen the tide goes out, some wa|ter stays be|hind in hol|lows be|tween the rocks. These are tide pools, full of life. A sea a|nem|o|ne looks like a flow|er, but it is an an|i|mal; its soft arms catch ti|ny crea|tures that drift too close. Crabs hide un|der stones, snails scrape green weed off the rocks, and small fish dart be|tween them.\n\nLife in a tide pool is not eas|y. For hours the wa|ter grows warm in the sun, then the waves crash back. The a|nem|o|ne pulls in its arms, the mus|sels close their shells tight, and ev|ery|one waits un|til the sea re|turns.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_pyramid_ramps_4",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "Moving a Mountain of Stone",
+      "body": "The Great Pyramid of Egypt is made of more than two million blocks of stone. Many of them weigh as much as two cars. The builders had no cranes and no machines. How did they do it?\n\nThe blocks were cut in a quarry and laid on wooden sledges. Teams of workers pulled the sledges with thick ropes. A worker in front poured water on the sand. Wet sand is firm and smooth, so the sledge slid along much more easily. To lift the blocks higher as the pyramid grew, the builders made long ramps of earth for the sledges. With wooden levers they nudged each block into its final place.\n\nA ramp, a lever and a sledge are simple machines: they make heavy work easier. The Egyptians used them so well that their pyramid has stood for four and a half thousand years.",
+      "syllable_body": "The Great Pyr|a|mid of E|gypt is made of more than two mil|lion blocks of stone. Man|y of them weigh as much as two cars. The build|ers had no cranes and no ma|chines. How did they do it?\n\nThe blocks were cut in a quar|ry and laid on wood|en sledg|es. Teams of work|ers pulled the sledg|es with thick ropes. A work|er in front poured wa|ter on the sand. Wet sand is firm and smooth, so the sledge slid a|long much more eas|i|ly. To lift the blocks high|er as the pyr|a|mid grew, the build|ers made long ramps of earth for the sledg|es. With wood|en le|vers they nudged each block in|to its fi|nal place.\n\nA ramp, a le|ver and a sledge are sim|ple ma|chines: they make heav|y work eas|i|er. The E|gyp|tians used them so well that their pyr|a|mid has stood for four and a half thou|sand years.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_river_5",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "The Journey of a River",
+      "body": "High in the mountains, where the snow melts, a river is born. At first it is only a trickle between the rocks. Other trickles join it, and soon a young stream is racing downhill, leaping down as a waterfall and carrying stones, sand and mud.\n\nAll this rushing water is hard at work. Year after year it grinds away at the rock and cuts a valley deeper and deeper. The stones it carries are rolled and knocked together into smooth, round pebbles.\n\nIn the flat lowlands the river slows down and begins to wander in curves. Here it drops much of the sand and mud it has carried, and the land beside it becomes rich soil for fields. People build villages and bridges along its banks, and herons wait in the shallows for fish.\n\nAt last the river reaches the sea. Fresh water mixes with salt water, and the last of the sand settles into a beach. The sun lifts water from the sea as vapour, the wind carries it back to the mountains as clouds, and there it falls as rain and snow. The journey begins again.",
+      "syllable_body": "High in the moun|tains, where the snow melts, a riv|er is born. At first it is on|ly a trick|le be|tween the rocks. Oth|er trick|les join it, and soon a young stream is rac|ing down|hill, leap|ing down as a wa|ter|fall and car|ry|ing stones, sand and mud.\n\nAll this rush|ing wa|ter is hard at work. Year af|ter year it grinds a|way at the rock and cuts a val|ley deep|er and deep|er. The stones it car|ries are rolled and knocked to|geth|er in|to smooth, round peb|bles.\n\nIn the flat low|lands the riv|er slows down and be|gins to wan|der in curves. Here it drops much of the sand and mud it has car|ried, and the land be|side it be|comes rich soil for fields. Peo|ple build vil|lag|es and bridg|es a|long its banks, and her|ons wait in the shal|lows for fish.\n\nAt last the riv|er reach|es the sea. Fresh wa|ter mix|es with salt wa|ter, and the last of the sand set|tles in|to a beach. The sun lifts wa|ter from the sea as va|pour, the wind car|ries it back to the moun|tains as clouds, and there it falls as rain and snow. The jour|ney be|gins a|gain.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_frozen_river_5",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "Why Ice Floats",
+      "body": "When winter comes, the pond freezes first, then the lake, and last of all the river. Moving water is hard to freeze. It freezes at the edges, where it flows slowly, and the ice creeps out from the banks a little further each cold night. Where the current is strong, the river stays open, and sheets of ice break off and float away downstream.\n\nWhy do they float? Ice is lighter than water. Almost everything gets smaller and denser when it turns solid, but water is different: as it freezes, its tiny particles line up in an open pattern, so ice takes up more room and floats on top. The ice on a river forms a lid that keeps the water underneath from freezing, and fish and frogs survive the winter below it.\n\nTom and his dog watch the ice drift past. River ice is never safe to walk on. It may look thick, but water moves under it and wears it thin in places. In spring the sun warms it, the ice cracks with loud bangs, and the river carries the broken pieces away to the sea.",
+      "syllable_body": "When win|ter comes, the pond freez|es first, then the lake, and last of all the riv|er. Mov|ing wa|ter is hard to freeze. It freez|es at the edg|es, where it flows slow|ly, and the ice creeps out from the banks a lit|tle fur|ther each cold night. Where the cur|rent is strong, the riv|er stays o|pen, and sheets of ice break off and float a|way down|stream.\n\nWhy do they float? Ice is light|er than wa|ter. Al|most ev|ery|thing gets small|er and dens|er when it turns sol|id, but wa|ter is dif|fer|ent: as it freez|es, its ti|ny par|ti|cles line up in an o|pen pat|tern, so ice takes up more room and floats on top. The ice on a riv|er forms a lid that keeps the wa|ter un|der|neath from freez|ing, and fish and frogs sur|vive the win|ter be|low it.\n\nTom and his dog watch the ice drift past. Riv|er ice is nev|er safe to walk on. It may look thick, but wa|ter moves un|der it and wears it thin in plac|es. In spring the sun warms it, the ice cracks with loud bangs, and the riv|er car|ries the bro|ken piec|es a|way to the sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_seed_1",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 1,
+      "title": "From Seed to Sunflower",
+      "body": "A seed lies in the dark soil. Water wakes it up. A root grows down. A stem grows up. Leaves open to the light. In summer a big sunflower turns its face to the sun.",
+      "syllable_body": "A seed lies in the dark soil. Wa|ter wakes it up. A root grows down. A stem grows up. Leaves o|pen to the light. In sum|mer a big sun|flow|er turns its face to the sun.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_wind_1",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 1,
+      "title": "The Wind",
+      "body": "We cannot see the wind. But we can see what it does. It pushes the clouds across the sky. It turns the big white wind turbines on the hill. They make electricity for the village.",
+      "syllable_body": "We can|not see the wind. But we can see what it does. It push|es the clouds a|cross the sky. It turns the big white wind tur|bines on the hill. They make e|lec|tric|i|ty for the vil|lage.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_squirrel_2",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "The Squirrel’s Winter Store",
+      "body": "In autumn the red squirrel is very busy. It collects acorns, nuts and seeds and buries them in the ground. It hides them in many different places. In winter there is little to eat, so the squirrel digs up its stores. It does not remember every hiding place. Some acorns stay in the ground. In spring they grow into new oak trees.",
+      "syllable_body": "In au|tumn the red squir|rel is ver|y bus|y. It col|lects a|corns, nuts and seeds and bur|ies them in the ground. It hides them in man|y dif|fer|ent plac|es. In win|ter there is lit|tle to eat, so the squir|rel digs up its stores. It does not re|mem|ber ev|ery hid|ing place. Some a|corns stay in the ground. In spring they grow in|to new oak trees.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_arctic_fox_2",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "White in Winter",
+      "body": "The arctic fox lives in the far north. Its fur is thick and warm. In summer the fur is brown or grey. In winter it turns white, so the fox is hard to see in the snow. When it is very cold, the fox wraps its bushy tail around its body like a scarf. Above it, the northern lights glow in the sky.",
+      "syllable_body": "The arc|tic fox lives in the far north. Its fur is thick and warm. In sum|mer the fur is brown or grey. In win|ter it turns white, so the fox is hard to see in the snow. When it is ver|y cold, the fox wraps its bush|y tail a|round its bod|y like a scarf. A|bove it, the north|ern lights glow in the sky.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_rain_3",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Where Rain Comes From",
+      "body": "Where does rain come from? When the sun warms a lake or the sea, some of the water turns into vapour and rises into the air. High up it is cold, and the vapour turns back into tiny drops of water. Millions of drops make a cloud. Inside the cloud they bump into each other and join up. When a drop has grown big and heavy enough, the air can no longer hold it, and it falls as rain. The rain soaks into the soil, where the plants are waiting for it.",
+      "syllable_body": "Where does rain come from? When the sun warms a lake or the sea, some of the wa|ter turns in|to va|pour and ris|es in|to the air. High up it is cold, and the va|pour turns back in|to ti|ny drops of wa|ter. Mil|lions of drops make a cloud. In|side the cloud they bump in|to each oth|er and join up. When a drop has grown big and heav|y e|nough, the air can no long|er hold it, and it falls as rain. The rain soaks in|to the soil, where the plants are wait|ing for it.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_geese_3",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Flying South",
+      "body": "Every autumn, when the days grow shorter and the first frost comes, the wild geese leave. They fly in a long line shaped like the letter V. The bird at the front works hardest, because it cuts through the air for the others. When it gets tired, it drops back and another goose takes the lead. They travel thousands of kilometres to warmer lands, where they can find food all winter. In spring, when the snow melts at home, they fly all the way back to the same lakes and fields.",
+      "syllable_body": "Ev|ery au|tumn, when the days grow short|er and the first frost comes, the wild geese leave. They fly in a long line shaped like the let|ter V. The bird at the front works hard|est, be|cause it cuts through the air for the oth|ers. When it gets tired, it drops back and an|oth|er goose takes the lead. They trav|el thou|sands of kil|o|me|tres to warm|er lands, where they can find food all win|ter. In spring, when the snow melts at home, they fly all the way back to the same lakes and fields.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_hedgehog_4",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 4,
+      "title": "The Hedgehog’s Long Sleep",
+      "body": "When the sun goes down, the hedgehog wakes up. All night it snuffles through the garden looking for beetles, worms, snails and slugs. A gardener is glad to have one, because it eats the slugs that eat the lettuce.\n\nA hedgehog has about five thousand spines on its back. They are stiff, and when a fox comes too close, the hedgehog rolls itself into a tight ball. Only the spines point outwards. Most foxes give up.\n\nIn late autumn the hedgehog eats as much as it can and grows fat. Then it builds a nest of dry leaves under a hedge or a pile of wood and falls into a deep winter sleep. Its heart slows down from nearly two hundred beats a minute to about twenty, and its body grows cold. It sleeps like this until spring, living only on its fat.",
+      "syllable_body": "When the sun goes down, the hedge|hog wakes up. All night it snuf|fles through the gar|den look|ing for bee|tles, worms, snails and slugs. A gar|den|er is glad to have one, be|cause it eats the slugs that eat the let|tuce.\n\nA hedge|hog has a|bout five thou|sand spines on its back. They are stiff, and when a fox comes too close, the hedge|hog rolls it|self in|to a tight ball. On|ly the spines point out|wards. Most fox|es give up.\n\nIn late au|tumn the hedge|hog eats as much as it can and grows fat. Then it builds a nest of dry leaves un|der a hedge or a pile of wood and falls in|to a deep win|ter sleep. Its heart slows down from near|ly two hun|dred beats a min|ute to a|bout twen|ty, and its bod|y grows cold. It sleeps like this un|til spring, liv|ing on|ly on its fat.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_autumn_4",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 4,
+      "title": "Why Leaves Change Colour",
+      "body": "In autumn the days grow shorter and the nights turn cold. All summer the leaves have been green, because they are full of a green colouring called chlorophyll, which uses sunlight to make food for the tree. Now the tree stops making it. As the green fades, the yellow and orange that were hiding in the leaf all along come out, and some trees make a fiery red as well.\n\nAutumn is also harvest time. The apples are ripe, red and sweet. Mia and Tom carry a full basket home across the old wooden bridge, while a squirrel on the railing stuffs its cheeks with acorns for the winter.\n\nSoon the leaves will let go and drift down onto the stream. The tree does not need them any more. It will rest through the winter and grow new ones when spring returns.",
+      "syllable_body": "In au|tumn the days grow short|er and the nights turn cold. All sum|mer the leaves have been green, be|cause they are full of a green col|our|ing called chlo|ro|phyll, which us|es sun|light to make food for the tree. Now the tree stops mak|ing it. As the green fades, the yel|low and or|ange that were hid|ing in the leaf all a|long come out, and some trees make a fi|er|y red as well.\n\nAu|tumn is al|so har|vest time. The ap|ples are ripe, red and sweet. Mi|a and Tom car|ry a full bas|ket home a|cross the old wood|en bridge, while a squir|rel on the rail|ing stuffs its cheeks with a|corns for the win|ter.\n\nSoon the leaves will let go and drift down on|to the stream. The tree does not need them an|y more. It will rest through the win|ter and grow new ones when spring re|turns.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_fungi_5",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 5,
+      "title": "The Web Beneath the Forest",
+      "body": "After a few days of autumn rain, mushrooms appear in the forest as if by magic: brown ones with fat stems, and the famous red one with white spots. But a mushroom is only the tip of something much bigger.\n\nUnder the leaves and soil, the real fungus spreads out as a web of fine white threads. The mushroom is just its fruit, pushed up above the ground to scatter tiny spores on the wind.\n\nThe threads do a job the forest could not manage without. They wrap around the roots of the trees and trade with them: the fungus passes the tree water and minerals from the soil, and the tree pays with sugar it has made in its leaves. Many trees in a forest are linked to each other through the same fungus, so scientists sometimes call it the wood wide web. Fungi also break down dead leaves and fallen trunks, turning them back into soil.\n\nSome mushrooms are delicious and some are deadly. The red one in the picture is poisonous. Never pick or eat a wild mushroom yourself: always ask an adult who knows mushrooms well.",
+      "syllable_body": "Af|ter a few days of au|tumn rain, mush|rooms ap|pear in the for|est as if by mag|ic: brown ones with fat stems, and the fa|mous red one with white spots. But a mush|room is on|ly the tip of some|thing much big|ger.\n\nUn|der the leaves and soil, the real fun|gus spreads out as a web of fine white threads. The mush|room is just its fruit, pushed up a|bove the ground to scat|ter ti|ny spores on the wind.\n\nThe threads do a job the for|est could not man|age with|out. They wrap a|round the roots of the trees and trade with them: the fun|gus pass|es the tree wa|ter and min|er|als from the soil, and the tree pays with sug|ar it has made in its leaves. Man|y trees in a for|est are linked to each oth|er through the same fun|gus, so sci|en|tists some|times call it the wood wide web. Fun|gi al|so break down dead leaves and fall|en trunks, turn|ing them back in|to soil.\n\nSome mush|rooms are de|li|cious and some are dead|ly. The red one in the pic|ture is poi|son|ous. Nev|er pick or eat a wild mush|room your|self: al|ways ask an a|dult who knows mush|rooms well.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_why_seasons_5",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 5,
+      "title": "Why We Have Seasons",
+      "body": "Spring, summer, autumn, winter, and then spring again. But why do we have seasons at all?\n\nThe Earth travels around the Sun once a year. As it goes, it spins like a top, but the top is tilted a little to one side. So for part of the year, the northern half of the Earth leans towards the Sun. The Sun then climbs high in the sky, the days are long, and its rays hit the ground almost straight on, so they warm it strongly. That is our summer. Half a year later the same half leans away from the Sun. The Sun stays low, the days are short, and its rays arrive at a slant and spread their warmth thinly. That is winter.\n\nBecause the two halves of the Earth lean in opposite directions, the seasons are swapped: when children in Europe build snowmen, children in Australia are at the beach. Near the equator, in the middle, the tilt makes little difference, and it is warm all year round. Spring and autumn are the in-between times, when neither half leans much towards the Sun.",
+      "syllable_body": "Spring, sum|mer, au|tumn, win|ter, and then spring a|gain. But why do we have sea|sons at all?\n\nThe Earth trav|els a|round the Sun once a year. As it goes, it spins like a top, but the top is tilt|ed a lit|tle to one side. So for part of the year, the north|ern half of the Earth leans to|wards the Sun. The Sun then climbs high in the sky, the days are long, and its rays hit the ground al|most straight on, so they warm it strong|ly. That is our sum|mer. Half a year la|ter the same half leans a|way from the Sun. The Sun stays low, the days are short, and its rays ar|rive at a slant and spread their warmth thin|ly. That is win|ter.\n\nBe|cause the two halves of the Earth lean in op|po|site di|rec|tions, the sea|sons are swapped: when chil|dren in Eu|rope build snow|men, chil|dren in Aus|tra|lia are at the beach. Near the e|qua|tor, in the mid|dle, the tilt makes lit|tle dif|fer|ence, and it is warm all year round. Spring and au|tumn are the in-be|tween times, when nei|ther half leans much to|wards the Sun.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_storm_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Storm",
+      "body": "Thunder rolls over the hills. Mia sits in the big chair with her dog. They are warm under the blanket. Lightning flashes. Mia counts to three. Then the thunder comes. She is not afraid.",
+      "syllable_body": "Thun|der rolls o|ver the hills. Mi|a sits in the big chair with her dog. They are warm un|der the blan|ket. Light|ning flash|es. Mi|a counts to three. Then the thun|der comes. She is not a|fraid.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_blanket_fort_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Blanket Fort",
+      "body": "Mia and Tom build a fort in the living room. Two chairs, a broom and Grandma’s big quilt are all they need. Inside it is dark and cosy. Tom switches on the torch. Mia opens the big book about the castle. Paper stars hang from the roof. The cat sleeps at the door. Nobody wants to come out, not even for supper.",
+      "syllable_body": "Mi|a and Tom build a fort in the liv|ing room. Two chairs, a broom and Grand|ma’s big quilt are all they need. In|side it is dark and co|sy. Tom switch|es on the torch. Mi|a o|pens the big book a|bout the cas|tle. Pa|per stars hang from the roof. The cat sleeps at the door. No|bod|y wants to come out, not e|ven for sup|per.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_library_map_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "The Map in the Old Book",
+      "body": "Deep in the old library, Mia found a book that was bigger than any other. When she opened it, a folded sheet of paper slid out. It was a map! Mountains, a river, a palm tree and a red cross were drawn on it. Tom fetched the globe and the old compass from the desk. They compared the map with the globe. Then Mia laughed. The river was the stream behind the school, and the red cross was in the middle of the playground. Tomorrow they would go and look.",
+      "syllable_body": "Deep in the old li|brar|y, Mi|a found a book that was big|ger than an|y oth|er. When she o|pened it, a fold|ed sheet of pa|per slid out. It was a map! Moun|tains, a riv|er, a palm tree and a red cross were drawn on it. Tom fetched the globe and the old com|pass from the desk. They com|pared the map with the globe. Then Mi|a laughed. The riv|er was the stream be|hind the school, and the red cross was in the mid|dle of the play|ground. To|mor|row they would go and look.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_pottery_wheel_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Crooked Bowl",
+      "body": "Grandpa’s workshop smelled of wet clay. On the shelves stood rows of bowls and jugs, all painted with the same blue flowers. Mia had watched him work a hundred times. Today, he said, it was her turn.\n\nHe pressed a lump of grey clay onto the middle of the wheel and set it spinning with his foot. “Wet your hands,” he said. “Now press gently, and don’t let go.” The clay wobbled under Mia’s fingers and leaned to one side. Grandpa laid his big hands over hers, and slowly the lump grew into a small round bowl. Then he took his hands away. The bowl kept its shape.\n\nA week later the bowl came out of the kiln, hard and pale. Mia painted a ring of blue flowers around it, just like Grandpa’s. It was a little crooked. It was also the best bowl in the whole workshop.",
+      "syllable_body": "Grand|pa’s work|shop smelled of wet clay. On the shelves stood rows of bowls and jugs, all paint|ed with the same blue flow|ers. Mi|a had watched him work a hun|dred times. To|day, he said, it was her turn.\n\nHe pressed a lump of grey clay on|to the mid|dle of the wheel and set it spin|ning with his foot. “Wet your hands,” he said. “Now press gen|tly, and don’t let go.” The clay wob|bled un|der Mi|a’s fin|gers and leaned to one side. Grand|pa laid his big hands o|ver hers, and slow|ly the lump grew in|to a small round bowl. Then he took his hands a|way. The bowl kept its shape.\n\nA week la|ter the bowl came out of the kiln, hard and pale. Mi|a paint|ed a ring of blue flow|ers a|round it, just like Grand|pa’s. It was a lit|tle crook|ed. It was al|so the best bowl in the whole work|shop.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_sunrise_camp_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "First One Up",
+      "body": "Something woke Tom before the birds. It was not a sound but a light: the wall of the tent was glowing orange. He unzipped the door and crawled out into the cold, wet grass. The campfire from last night was only a circle of grey ash.\n\nThe world was still asleep. Mist lay on the lake like a blanket, and behind the mountains the sky was turning from grey to pink to gold. Then the very tip of the sun appeared between two peaks, and a path of fire ran across the water straight towards him.\n\n“Mum! Dad! Mia!” Tom whispered as loudly as he dared. One by one the sleepy heads came out of the tents. Nobody said anything. They stood in a row in their pyjamas and jumpers and watched the light spill down the mountainsides into the valley, waking one tree after another.\n\nLater Dad lit the fire again and the smell of hot chocolate drifted across the camp. “We could have slept through that,” Mia said. Tom grinned. He had a feeling he would be the first one up tomorrow as well.",
+      "syllable_body": "Some|thing woke Tom be|fore the birds. It was not a sound but a light: the wall of the tent was glow|ing or|ange. He un|zipped the door and crawled out in|to the cold, wet grass. The camp|fire from last night was on|ly a cir|cle of grey ash.\n\nThe world was still a|sleep. Mist lay on the lake like a blan|ket, and be|hind the moun|tains the sky was turn|ing from grey to pink to gold. Then the ver|y tip of the sun ap|peared be|tween two peaks, and a path of fire ran a|cross the wa|ter straight to|wards him.\n\n“Mum! Dad! Mi|a!” Tom whis|pered as loud|ly as he dared. One by one the sleep|y heads came out of the tents. No|bod|y said an|y|thing. They stood in a row in their py|ja|mas and jump|ers and watched the light spill down the moun|tain|sides in|to the val|ley, wak|ing one tree af|ter an|oth|er.\n\nLa|ter Dad lit the fire a|gain and the smell of hot choc|o|late drift|ed a|cross the camp. “We could have slept through that,” Mi|a said. Tom grinned. He had a feel|ing he would be the first one up to|mor|row as well.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_hummingbird_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "The Humming Bird",
+      "body": "A hummingbird is a tiny bird. Its wings beat so fast that they hum. It can hover like a helicopter. It can even fly backwards. With its long beak it drinks sweet nectar from flowers.",
+      "syllable_body": "A hum|ming|bird is a ti|ny bird. Its wings beat so fast that they hum. It can hov|er like a hel|i|cop|ter. It can e|ven fly back|wards. With its long beak it drinks sweet nec|tar from flow|ers.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_red_panda_2",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "The Red Panda",
+      "body": "The red panda lives high in the mountains of Asia, in forests full of bamboo. It is about as big as a cat. Its long tail has rings. Bamboo leaves are its favourite food. When it sleeps in a tree, it wraps the fluffy tail around itself to keep warm. Despite its name, it is not a close relative of the giant panda.",
+      "syllable_body": "The red pan|da lives high in the moun|tains of A|sia, in for|ests full of bam|boo. It is a|bout as big as a cat. Its long tail has rings. Bam|boo leaves are its fa|vour|ite food. When it sleeps in a tree, it wraps the fluff|y tail a|round it|self to keep warm. De|spite its name, it is not a close rel|a|tive of the gi|ant pan|da.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_sea_turtle_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "The Turtle’s Car Wash",
+      "body": "A sea turtle spends almost its whole life in the sea, but it cannot clean itself. Algae and tiny creatures settle on its shell and skin, and it has no hands to scrub them off. So the turtle swims to a reef where small fish are waiting. The fish nibble the shell clean. The turtle gets a wash, and the fish get a meal. Both sides win, so the turtle comes back again and again. Some sea turtles live for seventy years or more.",
+      "syllable_body": "A sea tur|tle spends al|most its whole life in the sea, but it can|not clean it|self. Al|gae and ti|ny crea|tures set|tle on its shell and skin, and it has no hands to scrub them off. So the tur|tle swims to a reef where small fish are wait|ing. The fish nib|ble the shell clean. The tur|tle gets a wash, and the fish get a meal. Both sides win, so the tur|tle comes back a|gain and a|gain. Some sea tur|tles live for sev|en|ty years or more.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_orangutan_4",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "Person of the Forest",
+      "body": "In the rainforests of Borneo and Sumatra lives a red-haired ape called the orangutan. Its name comes from the Malay words for “person of the forest”: an orangutan spends almost its whole life in the trees.\n\nIt is the biggest animal that lives in the treetops. Its arms are longer than its legs and can stretch wider than a door, so it swings from branch to branch, picking fruit as it goes. Every evening it bends leafy branches together to make a fresh bed for the night, and when it rains it holds a large leaf over its head like an umbrella.\n\nA young orangutan stays with its mother for about seven years, longer than almost any other animal, learning where to find food. Today the forests are being cut down, and orangutans have become rare. Protecting their trees is the only way to protect them.",
+      "syllable_body": "In the rain|for|ests of Bor|ne|o and Su|ma|tra lives a red-haired ape called the o|rang|u|tan. Its name comes from the Ma|lay words for “per|son of the for|est”: an o|rang|u|tan spends al|most its whole life in the trees.\n\nIt is the big|gest an|i|mal that lives in the tree|tops. Its arms are long|er than its legs and can stretch wid|er than a door, so it swings from branch to branch, pick|ing fruit as it goes. Ev|ery eve|ning it bends leaf|y branch|es to|geth|er to make a fresh bed for the night, and when it rains it holds a large leaf o|ver its head like an um|brel|la.\n\nA young o|rang|u|tan stays with its moth|er for a|bout sev|en years, long|er than al|most an|y oth|er an|i|mal, learn|ing where to find food. To|day the for|ests are be|ing cut down, and o|rang|u|tans have be|come rare. Pro|tect|ing their trees is the on|ly way to pro|tect them.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_humpback_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "The Longest Journey",
+      "body": "Every year, the humpback whales make one of the longest journeys of any mammal on Earth. In summer they feed in the cold seas near the poles, full of krill and small fish. When autumn comes, they set off towards the warm seas near the equator, thousands of kilometres away.\n\nThat is where the calves are born. A newborn humpback is already as long as a car, and it grows fast: it drinks hundreds of litres of its mother’s rich milk every day. The mother herself eats nothing for months. She lives on the fat she stored in the summer and spends all her strength keeping her calf safe and close.\n\nIn spring, mother and calf swim north together. The calf stays beside her, often touching her with its long white flipper. It learns the way as it goes, and years later it will make the same journey on its own.\n\nHumpbacks are famous for two more things. They leap almost completely out of the water and crash back in a mountain of spray. And the males sing: long, strange songs that travel for many kilometres through the sea.",
+      "syllable_body": "Ev|ery year, the hump|back whales make one of the long|est jour|neys of an|y mam|mal on Earth. In sum|mer they feed in the cold seas near the poles, full of krill and small fish. When au|tumn comes, they set off to|wards the warm seas near the e|qua|tor, thou|sands of kil|o|me|tres a|way.\n\nThat is where the calves are born. A new|born hump|back is al|read|y as long as a car, and it grows fast: it drinks hun|dreds of li|tres of its moth|er’s rich milk ev|ery day. The moth|er her|self eats noth|ing for months. She lives on the fat she stored in the sum|mer and spends all her strength keep|ing her calf safe and close.\n\nIn spring, moth|er and calf swim north to|geth|er. The calf stays be|side her, of|ten touch|ing her with its long white flip|per. It learns the way as it goes, and years la|ter it will make the same jour|ney on its own.\n\nHump|backs are fa|mous for two more things. They leap al|most com|plete|ly out of the wa|ter and crash back in a moun|tain of spray. And the males sing: long, strange songs that trav|el for man|y kil|o|me|tres through the sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_solar_oven_1",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "An Oven Made of Sunshine",
+      "body": "Mia has made an oven from a box. Inside it is shiny foil. The foil catches the sunlight. Under the lid it gets hotter and hotter. Soon the biscuits are ready. The sun has baked them.",
+      "syllable_body": "Mi|a has made an ov|en from a box. In|side it is shi|ny foil. The foil catch|es the sun|light. Un|der the lid it gets hot|ter and hot|ter. Soon the bis|cuits are read|y. The sun has baked them.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_circuit_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "The Light Goes On",
+      "body": "Mia and Tom have a battery, wires, a switch and a bulb. They join the wires from the battery to the bulb. The wires make a path for the electricity. It is called a circuit. When Tom presses the switch, the circuit is closed and the bulb lights up. When he lets go, the light goes out. Electricity only flows in a closed circuit.",
+      "syllable_body": "Mi|a and Tom have a bat|ter|y, wires, a switch and a bulb. They join the wires from the bat|ter|y to the bulb. The wires make a path for the e|lec|tric|i|ty. It is called a cir|cuit. When Tom press|es the switch, the cir|cuit is closed and the bulb lights up. When he lets go, the light goes out. E|lec|tric|i|ty on|ly flows in a closed cir|cuit.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_fossil_3",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "A Sea Shell on the Mountain",
+      "body": "On a dry, rocky slope, Mia and Tom are brushing dust from a stone. A spiral as big as a bicycle wheel appears. It is an ammonite, the shell of a sea creature from the time of the dinosaurs. But how did it get up here, so far from the sea? Long ago, this land lay under the water. When the animal died, it sank into the mud, which slowly turned to stone. Over millions of years the land rose. Wind and rain wore the rock away, and the shell came to light.",
+      "syllable_body": "On a dry, rock|y slope, Mi|a and Tom are brush|ing dust from a stone. A spi|ral as big as a bi|cy|cle wheel ap|pears. It is an am|mo|nite, the shell of a sea crea|ture from the time of the di|no|saurs. But how did it get up here, so far from the sea? Long a|go, this land lay un|der the wa|ter. When the an|i|mal died, it sank in|to the mud, which slow|ly turned to stone. O|ver mil|lions of years the land rose. Wind and rain wore the rock a|way, and the shell came to light.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_saturn_4",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "The Star That Does Not Twinkle",
+      "body": "On a clear night, far from the city lights, Mia and Tom set up a telescope in the garden. Above them the sky is thick with stars, and a pale band runs right across it: the Milky Way, the galaxy our Sun belongs to.\n\nTom points the telescope at a bright yellow “star” that does not twinkle. It is Saturn, a planet with rings around it, so far away that its light takes more than an hour to reach the Earth. The rings are made of countless pieces of ice and rock, from grains of sand to blocks as big as a house.\n\nHow can you tell a planet from a star? Stars twinkle, because the air bends their light. Planets shine with a steadier light. The ancient Greeks noticed this and called them “wanderers”. That is what the word planet means.",
+      "syllable_body": "On a clear night, far from the cit|y lights, Mi|a and Tom set up a tel|e|scope in the gar|den. A|bove them the sky is thick with stars, and a pale band runs right a|cross it: the Milk|y Way, the gal|ax|y our Sun be|longs to.\n\nTom points the tel|e|scope at a bright yel|low “star” that does not twin|kle. It is Sat|urn, a plan|et with rings a|round it, so far a|way that its light takes more than an hour to reach the Earth. The rings are made of count|less piec|es of ice and rock, from grains of sand to blocks as big as a house.\n\nHow can you tell a plan|et from a star? Stars twin|kle, be|cause the air bends their light. Plan|ets shine with a stead|i|er light. The an|cient Greeks no|ticed this and called them “wan|der|ers”. That is what the word plan|et means.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_mars_rover_5",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "A Robot on Mars",
+      "body": "Across a cold, red desert, a small six-wheeled car rolls slowly forward. Nobody is driving it: this desert is on Mars, more than fifty million kilometres from the nearest human being.\n\nThe car is a rover, a robot sent to explore where people cannot yet go. It has cameras for eyes, a long arm with tools, and a drill that can bore a hole into a rock and scoop up the dust. The rover works on its own for most of the day, because a message from Earth takes up to twenty minutes to arrive.\n\nWhy all this trouble for a few stones? Because the rocks remember. The layers in the cliff behind the rover were laid down by water, long ago when Mars had rivers and lakes. If anything ever lived in those lakes, its traces might still be in the stone. Rovers have already found riverbeds and minerals that only form in water.\n\nMars today is dry and cold. But every picture the rover sends home brings closer the day when people will stand where it stands and look up at a tiny blue star: the Earth.",
+      "syllable_body": "A|cross a cold, red des|ert, a small six-wheeled car rolls slow|ly for|ward. No|bod|y is driv|ing it: this des|ert is on Mars, more than fif|ty mil|lion kil|o|me|tres from the near|est hu|man be|ing.\n\nThe car is a ro|ver, a ro|bot sent to ex|plore where peo|ple can|not yet go. It has cam|er|as for eyes, a long arm with tools, and a drill that can bore a hole in|to a rock and scoop up the dust. The ro|ver works on its own for most of the day, be|cause a mes|sage from Earth takes up to twen|ty min|utes to ar|rive.\n\nWhy all this trou|ble for a few stones? Be|cause the rocks re|mem|ber. The lay|ers in the cliff be|hind the ro|ver were laid down by wa|ter, long a|go when Mars had riv|ers and lakes. If an|y|thing ev|er lived in those lakes, its trac|es might still be in the stone. Ro|vers have al|read|y found riv|er|beds and min|er|als that on|ly form in wa|ter.\n\nMars to|day is dry and cold. But ev|ery pic|ture the ro|ver sends home brings clos|er the day when peo|ple will stand where it stands and look up at a ti|ny blue star: the Earth.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_sunflower_2",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "Planting a Sunflower",
+      "body": "It is spring. Mia makes a row of little holes in the soft soil. Into each one she drops a sunflower seed and covers it up. Then she waters the row. Now she has to be patient. After a week the first green tips push through the soil. By the end of summer the plants will be taller than Mia, with big yellow flowers.",
+      "syllable_body": "It is spring. Mi|a makes a row of lit|tle holes in the soft soil. In|to each one she drops a sun|flow|er seed and cov|ers it up. Then she wa|ters the row. Now she has to be pa|tient. Af|ter a week the first green tips push through the soil. By the end of sum|mer the plants will be tall|er than Mi|a, with big yel|low flow|ers.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_tree_frog_3",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Where There Is No Winter",
+      "body": "In the rainforests near the equator it is warm all year round. Instead of four seasons there are often two: a wet season and a dry one. In the wet season it rains almost every afternoon. Water drips from every leaf and the streams roar. This tree frog has just come out after a shower. Its sticky toes grip the wet leaf, and it drinks through its skin. In the dry season the rain stops. The frogs hide in damp places, and the whole forest waits for the rain to come back.",
+      "syllable_body": "In the rain|for|ests near the e|qua|tor it is warm all year round. In|stead of four sea|sons there are of|ten two: a wet sea|son and a dry one. In the wet sea|son it rains al|most ev|ery af|ter|noon. Wa|ter drips from ev|ery leaf and the streams roar. This tree frog has just come out af|ter a show|er. Its stick|y toes grip the wet leaf, and it drinks through its skin. In the dry sea|son the rain stops. The frogs hide in damp plac|es, and the whole for|est waits for the rain to come back.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_mosaic_4",
+      "version": 2,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "The Mosaic Maker",
+      "body": "Two thousand years ago, in a sunny courtyard in the Roman Empire, a girl kneels on the floor. Beside her, bowls are filled with tiny cubes of coloured stone and glass. A craftsman shows her where the next one goes.\n\nThey are making a mosaic. A picture is drawn on the fresh mortar; then thousands of little cubes, each no bigger than a fingernail, are pressed into it one by one, until the drawing turns into a dolphin leaping through blue waves.\n\nThe Romans loved mosaics. They laid them in houses, baths and temples all over their empire, from Britain to North Africa. Some houses even had a mosaic dog by the front door with the words “Beware of the dog”. Stone does not fade, so many of these floors are still bright today. Walk across one, and you step where a Roman family walked two thousand years ago.",
+      "syllable_body": "Two thou|sand years a|go, in a sun|ny court|yard in the Ro|man Em|pire, a girl kneels on the floor. Be|side her, bowls are filled with ti|ny cubes of col|oured stone and glass. A crafts|man shows her where the next one goes.\n\nThey are mak|ing a mo|sa|ic. A pic|ture is drawn on the fresh mor|tar; then thou|sands of lit|tle cubes, each no big|ger than a fin|ger|nail, are pressed in|to it one by one, un|til the draw|ing turns in|to a dol|phin leap|ing through blue waves.\n\nThe Ro|mans loved mo|sa|ics. They laid them in hous|es, baths and tem|ples all o|ver their em|pire, from Brit|ain to North Af|ri|ca. Some hous|es e|ven had a mo|sa|ic dog by the front door with the words “Be|ware of the dog”. Stone does not fade, so man|y of these floors are still bright to|day. Walk a|cross one, and you step where a Ro|man fam|i|ly walked two thou|sand years a|go.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_soup_night_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Soup Night",
+      "body": "It is cold and dark outside. Mum makes vegetable soup. Mia washes the carrots. Tom takes the peas out of their pods. The kitchen smells good. Soon the soup is ready.",
+      "syllable_body": "It is cold and dark out|side. Mum makes veg|e|ta|ble soup. Mi|a wash|es the car|rots. Tom takes the peas out of their pods. The kitch|en smells good. Soon the soup is rea|dy.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_snow_parcel_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "A Parcel in the Snow",
+      "body": "Snow lies on the roofs and on the fence. Mia waits at the garden gate. Then she sees the postman coming up the lane with his heavy bag. His cheeks are red from the cold. He smiles and hands her a parcel with a red bow. It is from Granny! A little robin watches from the snowy post box.",
+      "syllable_body": "Snow lies on the roofs and on the fence. Mi|a waits at the gar|den gate. Then she sees the post|man com|ing up the lane with his heav|y bag. His cheeks are red from the cold. He smiles and hands her a par|cel with a red bow. It is from Gran|ny! A lit|tle rob|in watch|es from the snow|y post box.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_music_room_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Listen to Each Other",
+      "body": "Every Saturday, Grandma’s music room turns into a band room. Mia plays the violin, Leo plays the flute and Ella holds the big cello between her knees. Ben sits at the back with his drum. Grandma stands in front of them and lifts her hands. When she nods, they all begin together. At first the drum is much too loud, because Ben loves it so much. “Listen to each other,” says Grandma. They try again, softer this time, and suddenly the music sounds like one song. Grandma smiles.",
+      "syllable_body": "Ev|er|y Sat|ur|day, Grand|ma’s mu|sic room turns in|to a band room. Mi|a plays the vi|o|lin, Le|o plays the flute and El|la holds the big cel|lo be|tween her knees. Ben sits at the back with his drum. Grand|ma stands in front of them and lifts her hands. When she nods, they all be|gin to|geth|er. At first the drum is much too loud, be|cause Ben loves it so much. “Lis|ten to each oth|er,” says Grand|ma. They try a|gain, soft|er this time, and sud|den|ly the mu|sic sounds like one song. Grand|ma smiles.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_keepers_lantern_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Keeper’s Lantern",
+      "body": "Old Mr Penrose had looked after the lighthouse on the cliffs for forty years. Every evening he lit the great lamp, so that ships would know where the rocks were.\n\nOne stormy evening, as the sun went down in orange and purple, he saw a small fishing boat drifting towards the rocks. Its engine had stopped. He called the rescue station in the harbour, then took his old lantern, hurried down to the shore and waved it high above his head.\n\nSoon a red rescue boat came racing through the waves. Two people in yellow jackets threw a rope to the fishing boat and pulled it away from the rocks just in time. On the way back, they waved to the old man on the shore, and above him the lighthouse beam swept across the darkening sea.",
+      "syllable_body": "Old Mr Pen|rose had looked af|ter the light|house on the cliffs for for|ty years. Ev|er|y eve|ning he lit the great lamp, so that ships would know where the rocks were.\n\nOne storm|y eve|ning, as the sun went down in or|ange and pur|ple, he saw a small fish|ing boat drift|ing to|wards the rocks. Its en|gine had stopped. He called the res|cue sta|tion in the har|bour, then took his old lan|tern, hur|ried down to the shore and waved it high a|bove his head.\n\nSoon a red res|cue boat came rac|ing through the waves. Two peo|ple in yel|low jack|ets threw a rope to the fish|ing boat and pulled it a|way from the rocks just in time. On the way back, they waved to the old man on the shore, and a|bove him the light|house beam swept a|cross the dark|en|ing sea.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_fire_station_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "At the Fire Station",
+      "body": "On Friday morning, Mia’s class walked to the fire station at the end of her street. The big doors of the garage stood open, and inside was the huge red fire engine, so shiny that the children could see their faces in it. A yellow and black tape and a row of orange cones kept them at a safe distance.\n\nA firefighter called Sam knelt on the ground next to a long yellow hose. “A hose has to be rolled up tightly,” he explained, “so that we can unroll it in a few seconds when there is a fire.” He showed them how, turn by turn, until the hose lay like a flat round wheel. Behind him, another firefighter checked the ladders on the engine.\n\nTom asked why the helmets on the bench were so heavy. Sam laughed and let him lift one. It was much heavier than it looked! “It protects our heads when something falls,” said Sam.\n\nBefore they left, Sam told the children the most important rule of all: if there is ever a fire, get out first, stay out and call for help.",
+      "syllable_body": "On Fri|day morn|ing, Mi|a’s class walked to the fire sta|tion at the end of her street. The big doors of the gar|age stood o|pen, and in|side was the huge red fire en|gine, so shin|y that the chil|dren could see their fac|es in it. A yel|low and black tape and a row of or|ange cones kept them at a safe dis|tance.\n\nA fire|fight|er called Sam knelt on the ground next to a long yel|low hose. “A hose has to be rolled up tight|ly,” he ex|plained, “so that we can un|roll it in a few sec|onds when there is a fire.” He showed them how, turn by turn, un|til the hose lay like a flat round wheel. Be|hind him, an|oth|er fire|fight|er checked the lad|ders on the en|gine.\n\nTom asked why the hel|mets on the bench were so heav|y. Sam laughed and let him lift one. It was much heav|i|er than it looked! “It pro|tects our heads when some|thing falls,” said Sam.\n\nBe|fore they left, Sam told the chil|dren the most im|por|tant rule of all: if there is ev|er a fire, get out first, stay out and call for help.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_puddle_jump_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Splash!",
+      "body": "The rain has stopped. Mia puts on her red boots and her yellow raincoat. In the park she sees a big puddle. Splash! Mia jumps right in. Her little brown dog gets wet too.",
+      "syllable_body": "The rain has stopped. Mi|a puts on her red boots and her yel|low rain|coat. In the park she sees a big pud|dle. Splash! Mi|a jumps right in. Her lit|tle brown dog gets wet too.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_snowman_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Snowman",
+      "body": "It snowed all night. Mia and Tom run into the garden. They roll three big snowballs and put them on top of each other. Tom brings a carrot for the nose. Mia finds two black stones for the eyes. Tom gives the snowman his red scarf, and an old green bucket is its hat. A little bird lands on the bucket at once.",
+      "syllable_body": "It snowed all night. Mi|a and Tom run in|to the gar|den. They roll three big snow|balls and put them on top of each oth|er. Tom brings a car|rot for the nose. Mi|a finds two black stones for the eyes. Tom gives the snow|man his red scarf, and an old green buck|et is its hat. A lit|tle bird lands on the buck|et at once.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_sandcastle_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "The Castle and the Sea",
+      "body": "On the last day of the holiday, Mia and Tom built a sandcastle on the beach. Tom filled the red bucket with wet sand, and Mia patted the walls smooth with the blue spade. Soon the castle had four towers. On top of the tallest one, Mia put a white feather as a flag. “The sea is coming!” shouted Tom. Quickly they dug a deep ditch all around the castle. A wave rolled in and filled the ditch with water. Now the castle had a real moat, and it stood safe in the middle.",
+      "syllable_body": "On the last day of the hol|i|day, Mi|a and Tom built a sand|cas|tle on the beach. Tom filled the red buck|et with wet sand, and Mi|a pat|ted the walls smooth with the blue spade. Soon the cas|tle had four tow|ers. On top of the tall|est one, Mi|a put a white feath|er as a flag. “The sea is com|ing!” shout|ed Tom. Quick|ly they dug a deep ditch all a|round the cas|tle. A wave rolled in and filled the ditch with wa|ter. Now the cas|tle had a real moat, and it stood safe in the mid|dle.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_bird_feeder_4",
+      "version": 2,
+      "theme": "stories",
+      "level": 4,
+      "title": "A Restaurant for Birds",
+      "body": "It had snowed for three days, and the garden was white and quiet. “The birds are hungry,” said Mia. “Let’s build them a little restaurant.”\n\nIn the shed, Dad helped them saw the boards, and Tom hammered in the nails. Mia painted the roof red. Then they carried the bird feeder out to the old tree. Mia hung it on a strong branch, while her little brother held the bag of sunflower seeds and poured them in.\n\nMia had hardly let go of it when a great tit with a yellow chest and a black head landed on the feeder. “The restaurant is open!” Tom laughed. Dad had told them one important rule: once you start feeding birds in winter, you must keep going until spring. So from that day on, Tom filled the feeder every morning.",
+      "syllable_body": "It had snowed for three days, and the gar|den was white and qui|et. “The birds are hun|gry,” said Mi|a. “Let’s build them a lit|tle res|tau|rant.”\n\nIn the shed, Dad helped them saw the boards, and Tom ham|mered in the nails. Mi|a paint|ed the roof red. Then they car|ried the bird feed|er out to the old tree. Mi|a hung it on a strong branch, while her lit|tle broth|er held the bag of sun|flow|er seeds and poured them in.\n\nMi|a had hard|ly let go of it when a great tit with a yel|low chest and a black head land|ed on the feed|er. “The res|tau|rant is o|pen!” Tom laughed. Dad had told them one im|por|tant rule: once you start feed|ing birds in win|ter, you must keep go|ing un|til spring. So from that day on, Tom filled the feed|er ev|ery morn|ing.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_dinosaur_museum_5",
+      "version": 2,
+      "theme": "stories",
+      "level": 5,
+      "title": "The Giant in the Museum",
+      "body": "On Monday, Tom’s class visited the natural history museum. In the biggest hall they stopped and stared. In front of them stood the skeleton of a dinosaur with a long neck and an even longer tail. Its small head was up near the ceiling, and the children only reached up to its knees.\n\n“This is a diplodocus,” said the guide, a man with a grey beard. “It lived about one hundred and fifty million years ago and was as long as two buses. But don’t worry: it only ate plants.” Everyone laughed.\n\nHe explained that over millions of years the bones had slowly turned to stone. Scientists had dug them out of the rock piece by piece and put them together like a giant puzzle.\n\nTom sat down on the floor with his notebook and began to draw. He drew the long neck, the tiny head and every single rib. When the guide saw his drawing, he smiled. “Maybe one day,” he said, “you will dig up a dinosaur of your own.”",
+      "syllable_body": "On Mon|day, Tom’s class vis|it|ed the nat|u|ral his|to|ry mu|se|um. In the big|gest hall they stopped and stared. In front of them stood the skel|e|ton of a di|no|saur with a long neck and an e|ven long|er tail. Its small head was up near the ceil|ing, and the chil|dren on|ly reached up to its knees.\n\n“This is a di|plod|o|cus,” said the guide, a man with a grey beard. “It lived a|bout one hun|dred and fif|ty mil|lion years a|go and was as long as two bus|es. But don’t wor|ry: it on|ly ate plants.” Ev|ery|one laughed.\n\nHe ex|plained that o|ver mil|lions of years the bones had slow|ly turned to stone. Sci|en|tists had dug them out of the rock piece by piece and put them to|geth|er like a gi|ant puz|zle.\n\nTom sat down on the floor with his note|book and be|gan to draw. He drew the long neck, the ti|ny head and ev|ery sin|gle rib. When the guide saw his draw|ing, he smiled. “May|be one day,” he said, “you will dig up a di|no|saur of your own.”",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_ladybird_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "The Ladybird",
+      "body": "A ladybird sits on a green leaf. It is red with black spots. It has six legs. It eats tiny green insects on the leaf. Then it opens its wings and flies away.",
+      "syllable_body": "A la|dy|bird sits on a green leaf. It is red with black spots. It has six legs. It eats ti|ny green in|sects on the leaf. Then it o|pens its wings and flies a|way.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_kangaroo_2",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "A Baby in a Pouch",
+      "body": "The kangaroo lives in Australia. It hops fast on its strong back legs, and its long tail helps it keep its balance. A baby kangaroo is called a joey. At birth it is as small as a bean. It grows in a warm pouch on its mother’s tummy. When it is bigger, it peeks out to look at the world.",
+      "syllable_body": "The kan|ga|roo lives in Aus|tra|lia. It hops fast on its strong back legs, and its long tail helps it keep its bal|ance. A ba|by kan|ga|roo is called a jo|ey. At birth it is as small as a bean. It grows in a warm pouch on its moth|er’s tum|my. When it is big|ger, it peeks out to look at the world.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_stork_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "The Stork Comes Back",
+      "body": "Every spring, the white stork flies back from Africa. It often returns to the same nest on the same roof, year after year. The nest is made of sticks, and an old one can be two metres wide. The stork has long red legs and a long red beak. It walks slowly through wet meadows and catches frogs, mice and insects. Storks do not sing. Instead, they clatter their beaks loudly. In spring, a few chicks hatch in the nest, and both parents bring them food. In late summer, the storks fly south again.",
+      "syllable_body": "Ev|ery spring, the white stork flies back from Af|ri|ca. It of|ten re|turns to the same nest on the same roof, year af|ter year. The nest is made of sticks, and an old one can be two me|tres wide. The stork has long red legs and a long red beak. It walks slow|ly through wet mead|ows and catch|es frogs, mice and in|sects. Storks do not sing. In|stead, they clat|ter their beaks loud|ly. In spring, a few chicks hatch in the nest, and both par|ents bring them food. In late sum|mer, the storks fly south a|gain.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_brown_bear_4",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "The Brown Bear and Her Cubs",
+      "body": "The brown bear is one of the largest animals in the forests of Europe. Even so, it eats mostly plants: grass, roots, nuts and sweet berries. It also digs for ants and beetles, and sometimes it eats meat. Its best tool is its nose, which can smell food from far away.\n\nIn autumn the bear eats as much as it can. Then it crawls into a den under rocks or roots and sleeps through most of the winter. There the mother gives birth to her cubs. They are tiny and blind at first. In spring she leads them out into the forest and shows them where the best blueberries grow.\n\nThe cubs stay with her for about two years. If you ever see a bear, never go close. Stay calm and walk slowly away.",
+      "syllable_body": "The brown bear is one of the larg|est an|i|mals in the for|ests of Eu|rope. E|ven so, it eats most|ly plants: grass, roots, nuts and sweet ber|ries. It al|so digs for ants and bee|tles, and some|times it eats meat. Its best tool is its nose, which can smell food from far a|way.\n\nIn au|tumn the bear eats as much as it can. Then it crawls in|to a den un|der rocks or roots and sleeps through most of the win|ter. There the moth|er gives birth to her cubs. They are ti|ny and blind at first. In spring she leads them out in|to the for|est and shows them where the best blue|ber|ries grow.\n\nThe cubs stay with her for a|bout two years. If you ev|er see a bear, nev|er go close. Stay calm and walk slow|ly a|way.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_elephant_family_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "The Elephant Family",
+      "body": "The African elephant is the largest animal on land. A grown male can weigh as much as six cars, and even a newborn calf weighs about a hundred kilograms.\n\nAn elephant’s trunk is its nose and upper lip joined together. It has no bones, but it has thousands of muscles, so it can lift a heavy log or pick up a single nut. The elephant uses its trunk to smell, to greet its family and to drink: it sucks up water and squirts it into its mouth. On hot days it sprays water or dust over its back. Its huge ears help too. When it flaps them, the blood inside them cools down.\n\nElephants live in families of mothers, sisters, aunts and calves. The leader is the oldest female. She remembers where to find water, even in the driest months, and the family follows her from waterhole to waterhole. Everyone looks after the calves. Young males leave when they grow up, but the females stay together all their lives.",
+      "syllable_body": "The Af|ri|can el|e|phant is the larg|est an|i|mal on land. A grown male can weigh as much as six cars, and e|ven a new|born calf weighs a|bout a hun|dred kil|o|grams.\n\nAn el|e|phant’s trunk is its nose and up|per lip joined to|geth|er. It has no bones, but it has thou|sands of mus|cles, so it can lift a heav|y log or pick up a sin|gle nut. The el|e|phant us|es its trunk to smell, to greet its fam|i|ly and to drink: it sucks up wa|ter and squirts it in|to its mouth. On hot days it sprays wa|ter or dust o|ver its back. Its huge ears help too. When it flaps them, the blood in|side them cools down.\n\nEl|e|phants live in fam|i|lies of moth|ers, sis|ters, aunts and calves. The lead|er is the old|est fe|male. She re|mem|bers where to find wa|ter, e|ven in the dri|est months, and the fam|i|ly fol|lows her from wa|ter|hole to wa|ter|hole. Ev|ery|one looks af|ter the calves. Young males leave when they grow up, but the fe|males stay to|geth|er all their lives.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_painted_bird_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Painted Bird",
+      "body": "Mia paints a blue bird. Then the bird opens its eyes. It flaps its wings and flies off the paper! It sings in the sunny room. Mia laughs. The cat keeps on sleeping.",
+      "syllable_body": "Mi|a paints a blue bird. Then the bird o|pens its eyes. It flaps its wings and flies off the pa|per! It sings in the sun|ny room. Mi|a laughs. The cat keeps on sleep|ing.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_cloud_sheep_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "The Cloud Sheep",
+      "body": "Tom sees a cloud that looks like a sheep. The cloud sheep comes down and smiles. Tom climbs on its soft back. Up they fly, over the river and the little village.",
+      "syllable_body": "Tom sees a cloud that looks like a sheep. The cloud sheep comes down and smiles. Tom climbs on its soft back. Up they fly, o|ver the riv|er and the lit|tle vil|lage.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_tiny_door_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Tiny Door",
+      "body": "Mia lies in the grass by the big old tree. Between the roots she sees a tiny wooden door with a round window. A little lantern hangs next to it. Then the door opens. Out comes a mouse in a red coat, with a teapot in its paws. “Would you like some tea?” asks the mouse. Mia smiles. She is much too big to go in!",
+      "syllable_body": "Mi|a lies in the grass by the big old tree. Be|tween the roots she sees a ti|ny wood|en door with a round win|dow. A lit|tle lan|tern hangs next to it. Then the door o|pens. Out comes a mouse in a red coat, with a tea|pot in its paws. “Would you like some tea?” asks the mouse. Mi|a smiles. She is much too big to go in!",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_giant_sock_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "The Giant’s Sock",
+      "body": "In the meadow Tom finds something strange: a huge red and white sock! It is as big as a tent. Tom climbs inside and laughs. The sheep stare at him. Then the ground begins to shake. Far away behind the hills stands a giant with one bare foot. “There is my sock!” he calls happily.",
+      "syllable_body": "In the mead|ow Tom finds some|thing strange: a huge red and white sock! It is as big as a tent. Tom climbs in|side and laughs. The sheep stare at him. Then the ground be|gins to shake. Far a|way be|hind the hills stands a gi|ant with one bare foot. “There is my sock!” he calls hap|pi|ly.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_unicorn_garden_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "The Unicorn in the Garden",
+      "body": "Early one morning, Mia went out to the vegetable garden to pick carrots. Between the lettuces stood a small white unicorn with a silver horn and a long golden mane. It was holding up one front leg. Mia knelt down slowly. “Are you hurt?” she whispered. A little stone was stuck in its hoof. Carefully, Mia pulled it out. The unicorn gently touched her hair with its nose. Then colourful flowers began to grow out of the soil, all around its hooves. Mia had never seen anything so beautiful.",
+      "syllable_body": "Ear|ly one morn|ing, Mi|a went out to the veg|e|ta|ble gar|den to pick car|rots. Be|tween the let|tu|ces stood a small white u|ni|corn with a sil|ver horn and a long gold|en mane. It was hold|ing up one front leg. Mi|a knelt down slow|ly. “Are you hurt?” she whis|pered. A lit|tle stone was stuck in its hoof. Care|ful|ly, Mi|a pulled it out. The u|ni|corn gen|tly touched her hair with its nose. Then col|our|ful flow|ers be|gan to grow out of the soil, all a|round its hooves. Mi|a had nev|er seen an|y|thing so beau|ti|ful.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_wizard_hat_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "The Wizard’s Hat",
+      "body": "One sunny afternoon, Tom was playing in the attic. In an old wooden chest he found a big blue hat with golden stars and moons. It was far too big for him, but he put it on anyway. At once the grey cat on the armchair lifted a paw and said, “At last! I have been waiting for someone to wear that hat.” Tom’s mouth fell open. “You can talk?” “All cats can talk,” said the cat. “But only wizards can hear us.” Tom looked at the cat, then at the hat, and grinned.",
+      "syllable_body": "One sun|ny af|ter|noon, Tom was play|ing in the at|tic. In an old wood|en chest he found a big blue hat with gold|en stars and moons. It was far too big for him, but he put it on an|y|way. At once the grey cat on the arm|chair lift|ed a paw and said, “At last! I have been wait|ing for some|one to wear that hat.” Tom’s mouth fell o|pen. “You can talk?” “All cats can talk,” said the cat. “But on|ly wiz|ards can hear us.” Tom looked at the cat, then at the hat, and grinned.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_dragon_lantern_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Dragon Who Was Afraid of the Dark",
+      "body": "On the hill above the village lived a big purple dragon. It had sharp horns and huge wings, and everyone in the village thought it was terribly brave. But the dragon had a secret: it was afraid of the dark.\n\nOne night Mia climbed the hill with her lantern. She found the dragon curled up and trembling. “What’s wrong?” she asked. “It’s so dark,” the dragon whispered. “I can’t see anything at all.”\n\nMia held up her lantern, and its warm light shone on the dragon’s face. “Look,” she said. “The dark isn’t empty. There are the moon and the stars, and the fireflies are dancing in the grass. And down there are the lights of our village.”\n\nThe dragon looked, and slowly it began to smile.",
+      "syllable_body": "On the hill a|bove the vil|lage lived a big pur|ple drag|on. It had sharp horns and huge wings, and ev|ery|one in the vil|lage thought it was ter|ri|bly brave. But the drag|on had a se|cret: it was a|fraid of the dark.\n\nOne night Mi|a climbed the hill with her lan|tern. She found the drag|on curled up and trem|bling. “What’s wrong?” she asked. “It’s so dark,” the drag|on whis|pered. “I can’t see an|y|thing at all.”\n\nMi|a held up her lan|tern, and its warm light shone on the drag|on’s face. “Look,” she said. “The dark isn’t emp|ty. There are the moon and the stars, and the fire|flies are danc|ing in the grass. And down there are the lights of our vil|lage.”\n\nThe drag|on looked, and slow|ly it be|gan to smile.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_mermaid_shell_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "The Mermaid’s Shell",
+      "body": "Tom loved exploring the rocks by the sea. One evening, as the sun was setting, he found a big pink shell in a rock pool. When he held it to his ear, he heard someone singing.\n\nSuddenly a girl’s head came up out of the water. She had long brown hair with little starfish in it, and behind her a green tail sparkled in the waves. A mermaid!\n\n“You found my shell,” she said. “It holds my grandmother’s song. I lost it when the tide went out.” Tom knelt on the flat rock and held out the shell, and the mermaid took it with a happy smile.\n\n“Thank you,” she said. “Whenever you come to these rocks, listen to the waves. I will be singing for you.”",
+      "syllable_body": "Tom loved ex|plor|ing the rocks by the sea. One eve|ning, as the sun was set|ting, he found a big pink shell in a rock pool. When he held it to his ear, he heard some|one sing|ing.\n\nSud|den|ly a girl’s head came up out of the wa|ter. She had long brown hair with lit|tle star|fish in it, and be|hind her a green tail spar|kled in the waves. A mer|maid!\n\n“You found my shell,” she said. “It holds my grand|moth|er’s song. I lost it when the tide went out.” Tom knelt on the flat rock and held out the shell, and the mer|maid took it with a hap|py smile.\n\n“Thank you,” she said. “When|ev|er you come to these rocks, lis|ten to the waves. I will be sing|ing for you.”",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_rainbow_castle_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "The Castle on the Clouds",
+      "body": "One morning a rainbow appeared over the valley. It was so bright that it looked solid, and one end came down right next to Mia and Tom’s garden. “Do you think we could walk on it?” asked Tom. Mia put one foot on the red stripe. It was firm and warm, like sand in the sun. They packed their backpacks, took each other’s hand and started to climb.\n\nSoon the village lay far below them: the river, the stone bridge and the little church. Then a brown owl flew up beside them. “Follow me,” it hooted. “The Cloud Queen is expecting you.” At the top of the rainbow, a white castle with blue towers stood on the clouds, and golden light poured out of its gate. The Cloud Queen told them that she sends the rain to make the fields green, and that the rainbow is her way of thanking the sun.\n\nBefore sunset, the owl showed them the way home. That night, far away on the clouds, a few towers were still glowing.",
+      "syllable_body": "One morn|ing a rain|bow ap|peared o|ver the val|ley. It was so bright that it looked sol|id, and one end came down right next to Mi|a and Tom’s gar|den. “Do you think we could walk on it?” asked Tom. Mi|a put one foot on the red stripe. It was firm and warm, like sand in the sun. They packed their back|packs, took each oth|er’s hand and start|ed to climb.\n\nSoon the vil|lage lay far be|low them: the riv|er, the stone bridge and the lit|tle church. Then a brown owl flew up be|side them. “Fol|low me,” it hoot|ed. “The Cloud Queen is ex|pect|ing you.” At the top of the rain|bow, a white cas|tle with blue tow|ers stood on the clouds, and gold|en light poured out of its gate. The Cloud Queen told them that she sends the rain to make the fields green, and that the rain|bow is her way of thank|ing the sun.\n\nBe|fore sun|set, the owl showed them the way home. That night, far a|way on the clouds, a few tow|ers were still glow|ing.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_garden_gnomes_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "The Night the Gnomes Woke Up",
+      "body": "The storm had broken the old garden fence, and Dad said he would mend it on Saturday. But that night the full moon was so bright that Tom couldn’t sleep, and he went to the window. What he saw made him rub his eyes. The five garden gnomes, which always stood still among the flowers, were walking across the lawn in their red pointed hats!\n\nThey had brought a ladder, a hammer and a wooden box of nails. One gnome climbed the ladder and began to hammer. Two others carried a new plank between them, puffing and laughing. The fourth held the fence straight, and the fifth handed out nails from the box. A little lantern glowed in the grass. Tom watched until the fence was whole again. Then the gnomes walked back to their places and stood still.\n\nIn the morning, Dad went out with his toolbox and stopped in surprise. “Who mended the fence?” he asked. Tom just smiled.",
+      "syllable_body": "The storm had bro|ken the old gar|den fence, and Dad said he would mend it on Sat|ur|day. But that night the full moon was so bright that Tom couldn’t sleep, and he went to the win|dow. What he saw made him rub his eyes. The five gar|den gnomes, which al|ways stood still a|mong the flow|ers, were walk|ing a|cross the lawn in their red point|ed hats!\n\nThey had brought a lad|der, a ham|mer and a wood|en box of nails. One gnome climbed the lad|der and be|gan to ham|mer. Two oth|ers car|ried a new plank be|tween them, puff|ing and laugh|ing. The fourth held the fence straight, and the fifth hand|ed out nails from the box. A lit|tle lan|tern glowed in the grass. Tom watched un|til the fence was whole a|gain. Then the gnomes walked back to their plac|es and stood still.\n\nIn the morn|ing, Dad went out with his tool|box and stopped in sur|prise. “Who mend|ed the fence?” he asked. Tom just smiled.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original English text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    }
+  ]
+}

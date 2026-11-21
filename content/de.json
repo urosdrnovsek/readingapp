@@ -1,0 +1,1282 @@
+{
+  "schemaVersion": 1,
+  "packId": "starter-de",
+  "language": "de",
+  "entries": [
+    {
+      "id": "stories_wollmuetze_1",
+      "version": 2,
+      "theme": "stories",
+      "level": 1,
+      "title": "Der rote Handschuh",
+      "body": "Leon findet einen roten Handschuh im Park. Er legt ihn gut sichtbar auf die Bank. Ein Mädchen sucht danach. Leon zeigt auf die Bank. Das Mädchen freut sich.",
+      "syllable_body": "Le|on fin|det ei|nen ro|ten Hand|schuh im Park. Er legt ihn gut sicht|bar auf die Bank. Ein Mäd|chen sucht da|nach. Le|on zeigt auf die Bank. Das Mäd|chen freut sich.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_leuchtturmfenster_2",
+      "version": 3,
+      "theme": "stories",
+      "level": 2,
+      "title": "Das Licht im alten Haus",
+      "body": "Nora sieht ein Licht im alten Haus. Ihr Vater geht mit ihr hin. Durch das Fenster sehen sie ein Glas auf dem Tisch. Die Sonne scheint darauf, und das Glas wirft das Licht wie ein kleiner Spiegel zurück. Das Licht kommt also nicht von einer Lampe, sondern von der Sonne. Nora lacht: Das Geheimnis ist gelöst.",
+      "syllable_body": "No|ra sieht ein Licht im al|ten Haus. Ihr Va|ter geht mit ihr hin. Durch das Fens|ter se|hen sie ein Glas auf dem Tisch. Die Son|ne scheint dar|auf, und das Glas wirft das Licht wie ein klei|ner Spie|gel zu|rück. Das Licht kommt al|so nicht von ei|ner Lam|pe, son|dern von der Son|ne. No|ra lacht: Das Ge|heim|nis ist ge|löst.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_wollmuetze_3",
+      "version": 3,
+      "theme": "stories",
+      "level": 3,
+      "title": "Der rote Handschuh",
+      "body": "Ein roter Handschuh liegt auf einer Parkbank. Leon hebt ihn auf und legt ihn gut sichtbar auf die Lehne. Vom Weg aus ist der rote Stoff gut zu erkennen, und Leon hofft, dass jemand bald danach sucht. Ein Windstoß lässt den Handschuh von der Lehne rutschen, doch Leon hält ihn fest, bevor er fortfliegt. Leon wartet mit dem Handschuh im Park, bis ein Mädchen mit kalten Händen freudig auf ihn zuläuft. Zur Sicherheit näht ihre Mutter ein Schild mit Namen und Telefonnummer in den Handschuh.",
+      "syllable_body": "Ein ro|ter Hand|schuh liegt auf ei|ner Park|bank. Le|on hebt ihn auf und legt ihn gut sicht|bar auf die Leh|ne. Vom Weg aus ist der ro|te Stoff gut zu er|ken|nen, und Le|on hofft, dass je|mand bald da|nach sucht. Ein Wind|stoß lässt den Hand|schuh von der Leh|ne rut|schen, doch Le|on hält ihn fest, be|vor er fort|fliegt. Le|on war|tet mit dem Hand|schuh im Park, bis ein Mäd|chen mit kal|ten Hän|den freu|dig auf ihn zu|läuft. Zur Si|cher|heit näht ih|re Mut|ter ein Schild mit Na|men und Te|le|fon|num|mer in den Hand|schuh.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_leuchtturmfenster_4",
+      "version": 3,
+      "theme": "stories",
+      "level": 4,
+      "title": "Das Licht im alten Haus",
+      "body": "Nora sieht jeden Abend ein kleines Licht im verlassenen Bahnwärterhaus. Mit ihrem Vater möchte sie am nächsten Abend herausfinden, woher dieser geheimnisvolle helle Fleck kommt. Der Vater kennt Frau Berger, die sich um das alte Haus kümmert. Sie schließt ihnen auf, denn in ein leeres Haus geht man nie allein. Drinnen entdecken sie ein Glas nahe am Fenster. Die Sonne fällt so darauf, dass ein heller Fleck auf einer anderen Fläche entsteht. Nora hatte ihn von draußen für eine kleine Lampe gehalten. Das Glas wirft das Licht der tief stehenden Sonne zurück wie ein Spiegel. Sie verändern den Winkel und lassen den hellen Fleck über die Zimmerwand wandern. Aus einem vermeintlichen Geheimnis wird ein einfaches Experiment mit Licht.",
+      "syllable_body": "No|ra sieht je|den A|bend ein klei|nes Licht im ver|las|se|nen Bahn|wär|ter|haus. Mit ih|rem Va|ter möch|te sie am nächs|ten A|bend her|aus|fin|den, wo|her die|ser ge|heim|nis|vol|le hel|le Fleck kommt. Der Va|ter kennt Frau Ber|ger, die sich um das al|te Haus küm|mert. Sie schließt ih|nen auf, denn in ein lee|res Haus geht man nie al|lein. Drin|nen ent|de|cken sie ein Glas na|he am Fens|ter. Die Son|ne fällt so dar|auf, dass ein hel|ler Fleck auf ei|ner an|de|ren Flä|che ent|steht. No|ra hat|te ihn von drau|ßen für ei|ne klei|ne Lam|pe ge|hal|ten. Das Glas wirft das Licht der tief ste|hen|den Son|ne zu|rück wie ein Spie|gel. Sie ver|än|dern den Win|kel und las|sen den hel|len Fleck ü|ber die Zim|mer|wand wan|dern. Aus ei|nem ver|meint|li|chen Ge|heim|nis wird ein ein|fa|ches Ex|pe|ri|ment mit Licht.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_turmuhr_5",
+      "version": 3,
+      "theme": "stories",
+      "level": 5,
+      "title": "Das Geheimnis der Turmuhr",
+      "body": "Jonas wohnt am Marktplatz, gegenüber der alten Kirche. Jede Stunde schlägt die Turmuhr, und jedes Mal hört Jonas etwas Seltsames: Nach jedem lauten Schlag kommt ein leiser zweiter. Eines Tages fragt er den Uhrmacher: „Hängt da oben noch eine zweite, kleine Glocke?“ „Nein, nur eine“, sagt der Uhrmacher. „Komm, wir hören gemeinsam zu.“\n\nKurz vor zwölf stellen sie sich mitten auf den Platz. Die Glocke schlägt, und wieder folgt jedem Schlag ein leiser Klang. „Der zweite Klang kommt von dort“, sagt der Uhrmacher und zeigt auf die hohe Mauer gegenüber vom Turm. „Der Schall fliegt vom Turm zur Mauer, prallt ab und kommt zu uns zurück. Das ist ein Echo.“\n\nDann gehen sie in eine schmale Gasse, in der keine Mauer gegenüberliegt. Bei den nächsten Schlägen hört Jonas nur noch einen einzigen Klang. Auf dem Heimweg bleibt er auf dem Platz stehen und zählt leise zwischen Schlag und Echo. Jetzt weiß Jonas, dass auch der Schall eine kleine Reise macht.",
+      "syllable_body": "Jo|nas wohnt am Markt|platz, ge|gen|ü|ber der al|ten Kir|che. Je|de Stun|de schlägt die Turm|uhr, und je|des Mal hört Jo|nas et|was Selt|sa|mes: Nach je|dem lau|ten Schlag kommt ein lei|ser zwei|ter. Ei|nes Ta|ges fragt er den Uhr|ma|cher: „Hängt da o|ben noch ei|ne zwei|te, klei|ne Glo|cke?“ „Nein, nur ei|ne“, sagt der Uhr|ma|cher. „Komm, wir hö|ren ge|mein|sam zu.“\n\nKurz vor zwölf stel|len sie sich mit|ten auf den Platz. Die Glo|cke schlägt, und wie|der folgt je|dem Schlag ein lei|ser Klang. „Der zwei|te Klang kommt von dort“, sagt der Uhr|ma|cher und zeigt auf die ho|he Mau|er ge|gen|ü|ber vom Turm. „Der Schall fliegt vom Turm zur Mau|er, prallt ab und kommt zu uns zu|rück. Das ist ein E|cho.“\n\nDann ge|hen sie in ei|ne schma|le Gas|se, in der kei|ne Mau|er ge|gen|ü|ber|liegt. Bei den nächs|ten Schlä|gen hört Jo|nas nur noch ei|nen ein|zi|gen Klang. Auf dem Heim|weg bleibt er auf dem Platz ste|hen und zählt lei|se zwi|schen Schlag und E|cho. Jetzt weiß Jo|nas, dass auch der Schall ei|ne klei|ne Rei|se macht.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_okapi_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "Das gestreifte Okapi",
+      "body": "Das Okapi lebt im Wald. Seine Beine haben helle Streifen. Mit der langen Zunge greift es Blätter. Es ist mit der Giraffe verwandt, nicht mit dem Zebra.",
+      "syllable_body": "Das O|ka|pi lebt im Wald. Sei|ne Bei|ne ha|ben hel|le Strei|fen. Mit der lan|gen Zun|ge greift es Blät|ter. Es ist mit der Gi|raf|fe ver|wandt, nicht mit dem Ze|bra.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_seepferdchen_2",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "Das Seepferdchen",
+      "body": "Ein Seepferdchen schwimmt aufrecht im Meer. Sein Schwanz hält eine Pflanze fest. Es ist ein Fisch. Kleine Flossen bewegen es langsam durch das Wasser. Sein Kopf sieht aus wie der Kopf eines Pferdes. Beim Männchen wachsen die Jungen in einer besonderen Tasche heran, nachdem es die Eier aufgenommen hat.",
+      "syllable_body": "Ein See|pferd|chen schwimmt auf|recht im Meer. Sein Schwanz hält ei|ne Pflan|ze fest. Es ist ein Fisch. Klei|ne Flos|sen be|we|gen es lang|sam durch das Was|ser. Sein Kopf sieht aus wie der Kopf ei|nes Pfer|des. Beim Männ|chen wach|sen die Jun|gen in ei|ner be|son|de|ren Ta|sche her|an, nach|dem es die Ei|er auf|ge|nom|men hat.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_kugelfisch_3",
+      "version": 3,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "Der runde Kugelfisch",
+      "body": "Ein Kugelfisch kann seinen Körper bei Gefahr stark vergrößern. Dazu schluckt er rasch Wasser und richtet oft kleine Stacheln auf. Die plötzlich runde Form macht es einem Räuber schwerer, den Fisch zu verschlucken. Viele Kugelfische enthalten außerdem starke Giftstoffe und dürfen niemals angefasst oder gegessen werden. Im ruhigen Zustand schwimmen sie mit kleinen Flossen und suchen nach Muscheln, Schnecken oder anderer Nahrung. Nach einer Weile lässt er das Wasser wieder hinaus und wird so schlank wie vorher.",
+      "syllable_body": "Ein Ku|gel|fisch kann sei|nen Kör|per bei Ge|fahr stark ver|grö|ßern. Da|zu schluckt er rasch Was|ser und rich|tet oft klei|ne Sta|cheln auf. Die plötz|lich run|de Form macht es ei|nem Räu|ber schwe|rer, den Fisch zu ver|schlu|cken. Vie|le Ku|gel|fi|sche ent|hal|ten au|ßer|dem star|ke Gift|stof|fe und dür|fen nie|mals an|ge|fasst o|der ge|ges|sen wer|den. Im ru|hi|gen Zu|stand schwim|men sie mit klei|nen Flos|sen und su|chen nach Mu|scheln, Schne|cken o|der an|de|rer Nah|rung. Nach ei|ner Wei|le lässt er das Was|ser wie|der hin|aus und wird so schlank wie vor|her.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_seepferdchen_4",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "Das Seepferdchen",
+      "body": "Seepferdchen sind Fische, obwohl ihre Körper ungewöhnlich aussehen. Sie schwimmen aufrecht und halten sich mit einem Greifschwanz an Pflanzen fest. Winzige Flossen bewegen sich schnell, können das Tier aber nicht gegen starke Strömungen tragen. Beim Seepferdchen nimmt das Männchen die Eier in eine Bruttasche auf. Nach der Entwicklung entlässt es viele vollständig geformte, aber sehr kleine Jungtiere ins Wasser. Seepferdchen haben keinen Magen und müssen fast den ganzen Tag fressen. Mit ihrer röhrenförmigen Schnauze saugen sie winzige Krebse ein wie mit einem Strohhalm. Ihre Augen bewegen sich unabhängig voneinander, so können sie gleichzeitig nach vorn und nach hinten schauen. Viele können ihre Farbe ändern und sich zwischen Pflanzen verstecken. Manche Seepferdchen schaffen in einer Stunde nur eineinhalb Meter.",
+      "syllable_body": "See|pferd|chen sind Fi|sche, ob|wohl ih|re Kör|per un|ge|wöhn|lich aus|se|hen. Sie schwim|men auf|recht und hal|ten sich mit ei|nem Greif|schwanz an Pflan|zen fest. Win|zi|ge Flos|sen be|we|gen sich schnell, kön|nen das Tier a|ber nicht ge|gen star|ke Strö|mun|gen tra|gen. Beim See|pferd|chen nimmt das Männ|chen die Ei|er in ei|ne Brut|ta|sche auf. Nach der Ent|wick|lung ent|lässt es vie|le voll|stän|dig ge|form|te, a|ber sehr klei|ne Jung|tie|re ins Was|ser. See|pferd|chen ha|ben kei|nen Ma|gen und müs|sen fast den gan|zen Tag fres|sen. Mit ih|rer röh|ren|för|mi|gen Schnau|ze sau|gen sie win|zi|ge Kreb|se ein wie mit ei|nem Stroh|halm. Ih|re Au|gen be|we|gen sich un|ab|hän|gig von|ein|an|der, so kön|nen sie gleich|zei|tig nach vorn und nach hin|ten schau|en. Vie|le kön|nen ih|re Far|be än|dern und sich zwi|schen Pflan|zen ver|ste|cken. Man|che See|pferd|chen schaf|fen in ei|ner Stun|de nur ein|ein|halb Me|ter.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "animal_facts_okapi_5",
+      "version": 4,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "Das gestreifte Okapi",
+      "body": "Das Okapi lebt in den Regenwäldern der Demokratischen Republik Kongo. Seine Beine tragen helle Streifen, doch es ist näher mit der Giraffe als mit dem Zebra verwandt. Mit seiner langen dunklen Zunge kann es Blätter greifen und sogar Teile seines Gesichts reinigen. Große bewegliche Ohren helfen ihm, leise Geräusche im dichten Wald wahrzunehmen. Okapis leben meist allein und brauchen ungestörte Waldgebiete mit reichlich Pflanzen. Die Streifen sollen einem Jungtier helfen, seiner Mutter im dunklen Wald zu folgen. Okapis sind so scheu, dass Forscher in Europa erst vor gut hundert Jahren von ihnen erfuhren, obwohl die Menschen im Kongo sie schon lange kannten. Heute ist das Okapi selten, weil sein Wald kleiner wird, und es steht unter Schutz. Man nennt es auch Waldgiraffe.",
+      "syllable_body": "Das O|ka|pi lebt in den Re|gen|wäl|dern der De|mo|kra|ti|schen Re|pu|blik Kon|go. Sei|ne Bei|ne tra|gen hel|le Strei|fen, doch es ist nä|her mit der Gi|raf|fe als mit dem Ze|bra ver|wandt. Mit sei|ner lan|gen dunk|len Zun|ge kann es Blät|ter grei|fen und so|gar Tei|le sei|nes Ge|sichts rei|ni|gen. Gro|ße be|weg|li|che Oh|ren hel|fen ihm, lei|se Ge|räu|sche im dich|ten Wald wahr|zu|neh|men. O|ka|pis le|ben meist al|lein und brau|chen un|ge|stör|te Wald|ge|bie|te mit reich|lich Pflan|zen. Die Strei|fen sol|len ei|nem Jung|tier hel|fen, sei|ner Mut|ter im dunk|len Wald zu fol|gen. O|ka|pis sind so scheu, dass For|scher in Eu|ro|pa erst vor gut hun|dert Jah|ren von ih|nen er|fuh|ren, ob|wohl die Men|schen im Kon|go sie schon lan|ge kann|ten. Heu|te ist das O|ka|pi sel|ten, weil sein Wald klei|ner wird, und es steht un|ter Schutz. Man nennt es auch Wald|gi|raf|fe.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker; syllable breaks re-checked 2026-09-20)",
+        "date": "2026-09-20",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_neuschwanstein_1",
+      "version": 2,
+      "theme": "around_the_world",
+      "level": 1,
+      "title": "Das Schloss über dem Tal",
+      "body": "Schloss Neuschwanstein steht in Bayern. Seine Türme ragen über Bäume hinaus. Berge und Seen liegen in der Nähe. Das Schloss sieht wie eine Burg aus einem Märchen aus.",
+      "syllable_body": "Schloss Neu|schwan|stein steht in Bay|ern. Sei|ne Tür|me ra|gen ü|ber Bäu|me hin|aus. Ber|ge und Seen lie|gen in der Nä|he. Das Schloss sieht wie ei|ne Burg aus ei|nem Mär|chen aus.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_uluru_2",
+      "version": 3,
+      "theme": "around_the_world",
+      "level": 2,
+      "title": "Der rote Felsen",
+      "body": "Ein großer roter Felsen steht in der Mitte Australiens. Er heißt Uluru. Im wechselnden Licht sieht er anders aus. Für die Anangu ist der Ort sehr wichtig. Menschen besuchen den Felsen auf erlaubten Wegen. Manche Stellen sind heilig und brauchen besonderen Respekt. Deshalb bleiben Besucher auf den Wegen, und an manchen Stellen darf man nicht fotografieren.",
+      "syllable_body": "Ein gro|ßer ro|ter Fel|sen steht in der Mit|te Aus|tra|li|ens. Er heißt U|lu|ru. Im wech|seln|den Licht sieht er an|ders aus. Für die An|an|gu ist der Ort sehr wich|tig. Men|schen be|su|chen den Fel|sen auf er|laub|ten We|gen. Man|che Stel|len sind hei|lig und brau|chen be|son|de|ren Re|spekt. Des|halb blei|ben Be|su|cher auf den We|gen, und an man|chen Stel|len darf man nicht fo|to|gra|fie|ren.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_victoriafaelle_3",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 3,
+      "title": "Der Rauch, der donnert",
+      "body": "Die Victoriafälle liegen am Sambesi zwischen Sambia und Simbabwe. Der breite Fluss stürzt dort in eine schmale Schlucht. In der wasserreichen Zeit steigt eine mächtige Gischtwolke hoch über den Rand. Das laute Tosen ist schon aus großer Entfernung zu hören. Einheimische Namen beschreiben den Wasserfall als Rauch, der donnert, und fassen damit Anblick und Klang zusammen. Die Gischt besteht aus vielen kleinen Wassertropfen, nicht aus Rauch eines Feuers. Trotzdem beschreibt das Bild vom donnernden Rauch den Eindruck sehr anschaulich.",
+      "syllable_body": "Die Vic|to|ri|a|fäl|le lie|gen am Sam|be|si zwi|schen Sam|bi|a und Sim|bab|we. Der brei|te Fluss stürzt dort in ei|ne schma|le Schlucht. In der was|ser|rei|chen Zeit steigt ei|ne mäch|ti|ge Gischt|wol|ke hoch ü|ber den Rand. Das lau|te To|sen ist schon aus gro|ßer Ent|fer|nung zu hö|ren. Ein|hei|mi|sche Na|men be|schrei|ben den Was|ser|fall als Rauch, der don|nert, und fas|sen da|mit An|blick und Klang zu|sam|men. Die Gischt be|steht aus vie|len klei|nen Was|ser|trop|fen, nicht aus Rauch ei|nes Feu|ers. Trotz|dem be|schreibt das Bild vom don|nern|den Rauch den Ein|druck sehr an|schau|lich.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_victoriafaelle_4",
+      "version": 2,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "Der Rauch, der donnert",
+      "body": "Die Victoriafälle liegen am Sambesi zwischen Sambia und Simbabwe. Der breite Fluss stürzt dort in eine schmale Schlucht. In der wasserreichen Zeit steigt eine mächtige Gischtwolke hoch über den Rand. Das laute Tosen ist schon aus großer Entfernung zu hören. Einheimische Namen beschreiben den Wasserfall als Rauch, der donnert, und fassen damit Anblick und Klang zusammen. Die Gischt besteht aus vielen kleinen Wassertropfen, nicht aus Rauch eines Feuers. Trotzdem beschreibt das Bild vom donnernden Rauch den Eindruck sehr anschaulich. Die Fälle sind fast zwei Kilometer breit und über hundert Meter hoch. In der Gischt steht an sonnigen Tagen oft ein Regenbogen, manchmal sogar nachts im Mondlicht. Die Einheimischen nennen den Wasserfall Mosi-oa-Tunya.",
+      "syllable_body": "Die Vic|to|ri|a|fäl|le lie|gen am Sam|be|si zwi|schen Sam|bi|a und Sim|bab|we. Der brei|te Fluss stürzt dort in ei|ne schma|le Schlucht. In der was|ser|rei|chen Zeit steigt ei|ne mäch|ti|ge Gischt|wol|ke hoch ü|ber den Rand. Das lau|te To|sen ist schon aus gro|ßer Ent|fer|nung zu hö|ren. Ein|hei|mi|sche Na|men be|schrei|ben den Was|ser|fall als Rauch, der don|nert, und fas|sen da|mit An|blick und Klang zu|sam|men. Die Gischt be|steht aus vie|len klei|nen Was|ser|trop|fen, nicht aus Rauch ei|nes Feu|ers. Trotz|dem be|schreibt das Bild vom don|nern|den Rauch den Ein|druck sehr an|schau|lich. Die Fäl|le sind fast zwei Ki|lo|me|ter breit und ü|ber hun|dert Me|ter hoch. In der Gischt steht an son|ni|gen Ta|gen oft ein Re|gen|bo|gen, manch|mal so|gar nachts im Mond|licht. Die Ein|hei|mi|schen nen|nen den Was|ser|fall Mo|si-o|a-Tu|nya.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "around_the_world_amazonas_5",
+      "version": 5,
+      "theme": "around_the_world",
+      "level": 5,
+      "title": "Der große Amazonas",
+      "body": "Der Amazonas durchquert Südamerika und führt mehr Wasser als jeder andere Fluss der Erde. Zahlreiche Nebenflüsse sammeln Regen aus einem riesigen Gebiet. In der Regenzeit überschwemmt das Wasser weite Teile des Waldes. Fische schwimmen dann zwischen Baumstämmen, und Boote werden für viele Orte zum wichtigsten Verkehrsmittel. Fluss und Regenwald bilden ein eng verbundenes System mit einer außergewöhnlichen Vielfalt an Lebewesen. Im Amazonas leben rosa Flussdelfine, riesige Fische wie der Arapaima und Piranhas mit scharfen Zähnen. Im Wald darüber turnen Affen, und bunte Aras fliegen kreischend über das Wasser. Viele dieser Tiere und Pflanzen gibt es nirgendwo sonst auf der Welt. An manchen Stellen ist der Fluss so breit, dass man das andere Ufer kaum sieht.",
+      "syllable_body": "Der A|ma|zo|nas durch|quert Süd|a|me|ri|ka und führt mehr Was|ser als je|der an|de|re Fluss der Er|de. Zahl|rei|che Ne|ben|flüs|se sam|meln Re|gen aus ei|nem rie|si|gen Ge|biet. In der Re|gen|zeit ü|ber|schwemmt das Was|ser wei|te Tei|le des Wal|des. Fi|sche schwim|men dann zwi|schen Baum|stäm|men, und Boo|te wer|den für vie|le Or|te zum wich|tigs|ten Ver|kehrs|mit|tel. Fluss und Re|gen|wald bil|den ein eng ver|bun|de|nes Sys|tem mit ei|ner au|ßer|ge|wöhn|li|chen Viel|falt an Le|be|we|sen. Im A|ma|zo|nas le|ben ro|sa Fluss|del|fi|ne, rie|si|ge Fi|sche wie der A|ra|pai|ma und Pi|ran|has mit schar|fen Zäh|nen. Im Wald dar|ü|ber tur|nen Af|fen, und bun|te A|ras flie|gen krei|schend ü|ber das Was|ser. Vie|le die|ser Tie|re und Pflan|zen gibt es nir|gend|wo sonst auf der Welt. An man|chen Stel|len ist der Fluss so breit, dass man das an|de|re U|fer kaum sieht.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_schwimmen_sinken_1",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "Schwimmen oder sinken",
+      "body": "Ein Boot schwimmt auf dem Wasser. Ein Stein fällt ins Wasser und sinkt. Das Boot drückt viel Wasser zur Seite. Seine Form hilft ihm beim Schwimmen.",
+      "syllable_body": "Ein Boot schwimmt auf dem Was|ser. Ein Stein fällt ins Was|ser und sinkt. Das Boot drückt viel Was|ser zur Sei|te. Sei|ne Form hilft ihm beim Schwim|men.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_schwimmen_sinken_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "Schwimmen oder sinken",
+      "body": "Ein schweres Schiff schwimmt auf dem Wasser. Ein kleiner Stein sinkt. Das Gewicht allein entscheidet nicht. Die Form und das verdrängte Wasser spielen auch eine Rolle. Ein Schiff enthält viel Luft in großen Räumen. Das Wasser drückt es nach oben. Ein Leck kann das verändern, wenn Wasser in diese Räume gelangt.",
+      "syllable_body": "Ein schwe|res Schiff schwimmt auf dem Was|ser. Ein klei|ner Stein sinkt. Das Ge|wicht al|lein ent|schei|det nicht. Die Form und das ver|dräng|te Was|ser spie|len auch ei|ne Rol|le. Ein Schiff ent|hält viel Luft in gro|ßen Räu|men. Das Was|ser drückt es nach o|ben. Ein Leck kann das ver|än|dern, wenn Was|ser in die|se Räu|me ge|langt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_farbmischung_3",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "Neue Farben aus Licht",
+      "body": "Rotes, grünes und blaues Licht lassen sich zu vielen Farben mischen. Treffen alle drei mit ähnlicher Stärke zusammen, erscheint die Fläche fast weiß. Das unterscheidet sich vom Mischen von Wasserfarben, bei dem Farbstoffe bestimmte Lichtanteile aufnehmen. Bildschirme nutzen winzige rote, grüne und blaue Leuchtpunkte. Aus normaler Entfernung erkennt das Auge nicht jeden Punkt, sondern nimmt ihre gemeinsame Farbe wahr. Probier es aus: Schau mit einer Lupe ganz nah auf einen Bildschirm. Dann siehst du die winzigen roten, grünen und blauen Punkte.",
+      "syllable_body": "Ro|tes, grü|nes und blau|es Licht las|sen sich zu vie|len Far|ben mi|schen. Tref|fen al|le drei mit ähn|li|cher Stär|ke zu|sam|men, er|scheint die Flä|che fast weiß. Das un|ter|schei|det sich vom Mi|schen von Was|ser|far|ben, bei dem Farb|stof|fe be|stimm|te Licht|an|tei|le auf|neh|men. Bild|schir|me nut|zen win|zi|ge ro|te, grü|ne und blau|e Leucht|punk|te. Aus nor|ma|ler Ent|fer|nung er|kennt das Au|ge nicht je|den Punkt, son|dern nimmt ih|re ge|mein|sa|me Far|be wahr. Pro|bier es aus: Schau mit ei|ner Lu|pe ganz nah auf ei|nen Bild|schirm. Dann siehst du die win|zi|gen ro|ten, grü|nen und blau|en Punk|te.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_flaschengeist_4",
+      "version": 3,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "Der Ballon auf der Flasche",
+      "body": "Ein leerer Ballon lässt sich über den Hals einer Flasche ziehen. Steht die Flasche in warmem Wasser, kann sich der Ballon langsam aufrichten. Die Luft wird wärmer, ihre Teilchen bewegen sich schneller und stoßen häufiger gegen die Ballonhülle. Dadurch strömt Luft in den Ballon und dehnt ihn aus. In kaltem Wasser zieht sich die Luft wieder zusammen, sodass der Ballon kleiner wird. Die Luft kommt also nicht von außen: Es ist dieselbe Luft, die nur mehr Platz braucht. Dasselbe kannst du im Alltag beobachten: Ein Luftballon, der im Winter aus der warmen Wohnung nach draußen kommt, wird etwas kleiner. Und ein Fahrradreifen ist an einem heißen Sommertag praller als an einem kalten Morgen. Nimm für den Versuch nur warmes Wasser aus dem Hahn, kein kochendes.",
+      "syllable_body": "Ein lee|rer Bal|lon lässt sich ü|ber den Hals ei|ner Fla|sche zie|hen. Steht die Fla|sche in war|mem Was|ser, kann sich der Bal|lon lang|sam auf|rich|ten. Die Luft wird wär|mer, ih|re Teil|chen be|we|gen sich schnel|ler und sto|ßen häu|fi|ger ge|gen die Bal|lon|hül|le. Da|durch strömt Luft in den Bal|lon und dehnt ihn aus. In kal|tem Was|ser zieht sich die Luft wie|der zu|sam|men, so|dass der Bal|lon klei|ner wird. Die Luft kommt al|so nicht von au|ßen: Es ist die|sel|be Luft, die nur mehr Platz braucht. Das|sel|be kannst du im All|tag be|ob|ach|ten: Ein Luft|bal|lon, der im Win|ter aus der war|men Woh|nung nach drau|ßen kommt, wird et|was klei|ner. Und ein Fahr|rad|rei|fen ist an ei|nem hei|ßen Som|mer|tag pral|ler als an ei|nem kal|ten Mor|gen. Nimm für den Ver|such nur war|mes Was|ser aus dem Hahn, kein ko|chen|des.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "amazing_science_pendel_5",
+      "version": 4,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "Der Takt des Pendels",
+      "body": "Ein Pendel besteht aus einem Gewicht an einer Schnur oder Stange. Zieht man es zur Seite und lässt es los, schwingt es hin und her. Die Schwerkraft zieht das Gewicht nach unten, während seine Bewegung es über den tiefsten Punkt hinausträgt. Bei kleinen Ausschlägen bestimmt vor allem die Länge die Dauer einer Schwingung. Frühe genaue Uhren nutzten dieses regelmäßige Verhalten, um gleichmäßige Zeitabschnitte zu zählen. Reibung und Luftwiderstand nehmen dem System nach und nach Energie, weshalb es nicht ewig gleich weit schwingt. Probier es aus: Binde eine Schraubenmutter an eine Schnur und lass sie schwingen. Zähle, wie oft sie in zehn Sekunden hin- und herschwingt. Dann mach die Schnur kürzer und zähle noch einmal: Das kurze Pendel schwingt schneller. Galileo Galilei soll das entdeckt haben, als er in einer Kirche eine schwingende Lampe beobachtete.",
+      "syllable_body": "Ein Pen|del be|steht aus ei|nem Ge|wicht an ei|ner Schnur o|der Stan|ge. Zieht man es zur Sei|te und lässt es los, schwingt es hin und her. Die Schwer|kraft zieht das Ge|wicht nach un|ten, wäh|rend sei|ne Be|we|gung es ü|ber den tiefs|ten Punkt hin|aus|trägt. Bei klei|nen Aus|schlä|gen be|stimmt vor al|lem die Län|ge die Dau|er ei|ner Schwin|gung. Frü|he ge|nau|e Uh|ren nutz|ten die|ses re|gel|mä|ßi|ge Ver|hal|ten, um gleich|mä|ßi|ge Zeit|ab|schnit|te zu zäh|len. Rei|bung und Luft|wi|der|stand neh|men dem Sys|tem nach und nach E|ner|gie, wes|halb es nicht e|wig gleich weit schwingt. Pro|bier es aus: Bin|de ei|ne Schrau|ben|mut|ter an ei|ne Schnur und lass sie schwin|gen. Zäh|le, wie oft sie in zehn Se|kun|den hin- und her|schwingt. Dann mach die Schnur kür|zer und zäh|le noch ein|mal: Das kur|ze Pen|del schwingt schnel|ler. Ga|li|le|o Ga|li|lei soll das ent|deckt ha|ben, als er in ei|ner Kir|che ei|ne schwin|gen|de Lam|pe be|ob|ach|te|te.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_waldteich_1",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 1,
+      "title": "Leben im Waldteich",
+      "body": "Im Wald liegt ein kleiner Teich. Ein Frosch sitzt am Rand. Unter Wasser leben viele kleine Tiere. Vögel kommen zum Trinken. Der Teich bietet Nahrung und Schutz.",
+      "syllable_body": "Im Wald liegt ein klei|ner Teich. Ein Frosch sitzt am Rand. Un|ter Was|ser le|ben vie|le klei|ne Tie|re. Vö|gel kom|men zum Trin|ken. Der Teich bie|tet Nah|rung und Schutz.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_kranichzug_2",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "Kraniche am Himmel",
+      "body": "Kraniche fliegen hoch am Himmel. Oft fliegen sie in Form eines großen V. Ihre Rufe sind weit zu hören. Auf einer langen Reise brauchen sie auch Plätze zum Rasten und Fressen. Mit ihren Rufen bleiben sie im Flug in Kontakt. Am Boden suchen sie Nahrung und sichere Ruheplätze. Ein guter Rastplatz gehört deshalb genauso zur Reise wie der Weg am Himmel.",
+      "syllable_body": "Kra|ni|che flie|gen hoch am Him|mel. Oft flie|gen sie in Form ei|nes gro|ßen V. Ih|re Ru|fe sind weit zu hö|ren. Auf ei|ner lan|gen Rei|se brau|chen sie auch Plät|ze zum Ras|ten und Fres|sen. Mit ih|ren Ru|fen blei|ben sie im Flug in Kon|takt. Am Bo|den su|chen sie Nah|rung und si|che|re Ru|he|plät|ze. Ein gu|ter Rast|platz ge|hört des|halb ge|nau|so zur Rei|se wie der Weg am Him|mel.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_eiszapfen_3",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Der wachsende Eiszapfen",
+      "body": "Ein Eiszapfen wächst, wenn Schmelzwasser an einer kalten Kante hinabläuft. Ein Teil des Wassers gefriert und verlängert die Spitze. Weiteres Wasser fließt außen entlang und legt neue dünne Eisschichten an. Sonne und Lufttemperatur bestimmen, ob der Zapfen wächst oder wieder schmilzt. Da schwere Eiszapfen plötzlich herabfallen können, betrachtet man sie nur aus sicherer Entfernung. Am schnellsten wachsen Eiszapfen an sonnigen Wintertagen: Die Sonne schmilzt den Schnee auf dem Dach, und an der kalten Kante gefriert das Wasser wieder.",
+      "syllable_body": "Ein Eis|zap|fen wächst, wenn Schmelz|was|ser an ei|ner kal|ten Kan|te hin|ab|läuft. Ein Teil des Was|sers ge|friert und ver|län|gert die Spit|ze. Wei|te|res Was|ser fließt au|ßen ent|lang und legt neu|e dün|ne Eis|schich|ten an. Son|ne und Luft|tem|pe|ra|tur be|stim|men, ob der Zap|fen wächst o|der wie|der schmilzt. Da schwe|re Eis|zap|fen plötz|lich her|ab|fal|len kön|nen, be|trach|tet man sie nur aus si|che|rer Ent|fer|nung. Am schnells|ten wach|sen Eis|zap|fen an son|ni|gen Win|ter|ta|gen: Die Son|ne schmilzt den Schnee auf dem Dach, und an der kal|ten Kan|te ge|friert das Was|ser wie|der.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_eichel_4",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 4,
+      "title": "Die Reise der Eichel",
+      "body": "Eine Eichel enthält den Keim eines neuen Eichenbaums. Eichhörnchen und Eichelhäher tragen viele Früchte vom Mutterbaum fort. Einige Verstecke werden später nicht wiedergefunden. Liegt eine Eichel an einem passenden Ort, kann ihre Wurzel im feuchten Boden wachsen. Nur wenige Keimlinge werden zu großen Bäumen, doch jeder beginnt mit einer kleinen Frucht und günstigen Bedingungen. Ein Eichelhäher versteckt im Herbst Tausende Eicheln, oft weit vom Baum entfernt. So pflanzen die Tiere, ohne es zu wissen, neue Wälder. Aus einer Eichel kann eine Eiche werden, die mehrere hundert Jahre alt wird. Selbst trägt sie erst nach etwa vierzig Jahren Eicheln. Eine große Eiche kann in einem guten Jahr Zehntausende Eicheln tragen. Viele davon fressen Wildschweine, Rehe und Mäuse.",
+      "syllable_body": "Ei|ne Ei|chel ent|hält den Keim ei|nes neu|en Ei|chen|baums. Eich|hörn|chen und Ei|chel|hä|her tra|gen vie|le Früch|te vom Mut|ter|baum fort. Ei|ni|ge Ver|ste|cke wer|den spä|ter nicht wie|der|ge|fun|den. Liegt ei|ne Ei|chel an ei|nem pas|sen|den Ort, kann ih|re Wur|zel im feuch|ten Bo|den wach|sen. Nur we|ni|ge Keim|lin|ge wer|den zu gro|ßen Bäu|men, doch je|der be|ginnt mit ei|ner klei|nen Frucht und güns|ti|gen Be|din|gun|gen. Ein Ei|chel|hä|her ver|steckt im Herbst Tau|sen|de Ei|cheln, oft weit vom Baum ent|fernt. So pflan|zen die Tie|re, oh|ne es zu wis|sen, neu|e Wäl|der. Aus ei|ner Ei|chel kann ei|ne Ei|che wer|den, die meh|re|re hun|dert Jah|re alt wird. Selbst trägt sie erst nach et|wa vier|zig Jah|ren Ei|cheln. Ei|ne gro|ße Ei|che kann in ei|nem gu|ten Jahr Zehn|tau|sen|de Ei|cheln tra|gen. Vie|le da|von fres|sen Wild|schwei|ne, Re|he und Mäu|se.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "nature_seasons_moos_5",
+      "version": 4,
+      "theme": "nature_seasons",
+      "level": 5,
+      "title": "Der kleine Mooswald",
+      "body": "Moose bilden weiche grüne Polster auf Erde, Rinde oder Stein. Sie besitzen keine echten Wurzeln wie viele andere Pflanzen. Wasser nehmen sie über ihre Oberfläche auf, weshalb sie an feuchten Orten besonders gut wachsen. Zwischen den Blättchen leben winzige Tiere, und Regentropfen bleiben eine Weile gespeichert. Bei Trockenheit können manche Moose ruhen und sich nach neuem Wasser erstaunlich schnell erholen. Unter einer Lupe wirkt ein Moospolster wie eine Landschaft aus vielen kleinen Trieben. Moose gehören zu den ältesten Landpflanzen der Erde und wuchsen schon lange vor den Dinosauriern. Ein Moospolster speichert Wasser wie ein Schwamm, oft ein Vielfaches seines eigenen Gewichts. So hält es nach dem Regen das Wasser im Wald fest und gibt es langsam wieder ab. Reiß ein Polster nicht ab, sondern schau es dir mit der Lupe an seinem Platz an.",
+      "syllable_body": "Moo|se bil|den wei|che grü|ne Pols|ter auf Er|de, Rin|de o|der Stein. Sie be|sit|zen kei|ne ech|ten Wur|zeln wie vie|le an|de|re Pflan|zen. Was|ser neh|men sie ü|ber ih|re O|ber|flä|che auf, wes|halb sie an feuch|ten Or|ten be|son|ders gut wach|sen. Zwi|schen den Blätt|chen le|ben win|zi|ge Tie|re, und Re|gen|trop|fen blei|ben ei|ne Wei|le ge|spei|chert. Bei Tro|cken|heit kön|nen man|che Moo|se ru|hen und sich nach neu|em Was|ser er|staun|lich schnell er|ho|len. Un|ter ei|ner Lu|pe wirkt ein Moos|pols|ter wie ei|ne Land|schaft aus vie|len klei|nen Trie|ben. Moo|se ge|hö|ren zu den äl|tes|ten Land|pflan|zen der Er|de und wuch|sen schon lan|ge vor den Di|no|sau|ri|ern. Ein Moos|pols|ter spei|chert Was|ser wie ein Schwamm, oft ein Viel|fa|ches sei|nes ei|ge|nen Ge|wichts. So hält es nach dem Re|gen das Was|ser im Wald fest und gibt es lang|sam wie|der ab. Reiß ein Pols|ter nicht ab, son|dern schau es dir mit der Lu|pe an sei|nem Platz an.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (AI editorial pass, not a native speaker)",
+        "date": "2026-09-19",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "plausible"
+      }
+    },
+    {
+      "id": "stories_nasses_kaetzchen_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Das nasse Kätzchen",
+      "body": "Draußen regnet es. Unter der Bank sitzt ein kleines Kätzchen. Lena nimmt es auf den Arm. Das Kätzchen schnurrt leise. Zu Hause bekommt es warme Milch und eine Decke. Jetzt ist es nicht mehr allein.",
+      "syllable_body": "Drau|ßen reg|net es. Un|ter der Bank sitzt ein klei|nes Kätz|chen. Le|na nimmt es auf den Arm. Das Kätz|chen schnurrt lei|se. Zu Hau|se be|kommt es war|me Milch und ei|ne De|cke. Jetzt ist es nicht mehr al|lein.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_weisses_ei_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "Das weiße Ei",
+      "body": "Lena verbringt den Sommer bei ihrer Oma auf dem Bauernhof. In einem warmen Nest liegt ein weißes Ei. „Du musst geduldig sein“, sagt die Oma. Also wartet Lena. Eines Morgens hört sie ein leises Klopfen aus dem Ei. Langsam bricht die Schale auf, und ein kleines Küken schaut heraus. Es ist gelb, weich und winzig. Lena lacht vor Freude.",
+      "syllable_body": "Le|na ver|bringt den Som|mer bei ih|rer O|ma auf dem Bau|ern|hof. In ei|nem war|men Nest liegt ein wei|ßes Ei. „Du musst ge|dul|dig sein“, sagt die O|ma. Al|so war|tet Le|na. Ei|nes Mor|gens hört sie ein lei|ses Klop|fen aus dem Ei. Lang|sam bricht die Scha|le auf, und ein klei|nes Kü|ken schaut her|aus. Es ist gelb, weich und win|zig. Le|na lacht vor Freu|de.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_schnecke_wettrennen_3",
+      "version": 3,
+      "theme": "stories",
+      "level": 3,
+      "title": "Theo die Schnecke beim Wettrennen",
+      "body": "Im Wald gab es ein großes Wettrennen. Alle lachten über Theo die Schnecke, die langsam an die Startlinie kroch. „Du kommst nie ans Ziel!“, riefen sie. Beim Startschuss schossen alle davon. Theo aber ging seinen eigenen Weg, Zentimeter für Zentimeter. Der Weg war lang, und die anderen waren längst außer Sicht. Der Hase machte unterwegs Pause und schlief ein. Das Eichhörnchen lief los, um Nüsse zu sammeln. Theo kroch weiter und blieb nicht stehen. Er schaute nicht zurück. Als die Sonne unterging, kam ausgerechnet er als Erster ans Ziel. Langsam, aber beharrlich: Das hat gereicht.",
+      "syllable_body": "Im Wald gab es ein gro|ßes Wett|ren|nen. Al|le lach|ten ü|ber The|o die Schne|cke, die lang|sam an die Start|li|nie kroch. „Du kommst nie ans Ziel!“, rie|fen sie. Beim Start|schuss schos|sen al|le da|von. The|o a|ber ging sei|nen ei|ge|nen Weg, Zen|ti|me|ter für Zen|ti|me|ter. Der Weg war lang, und die an|de|ren wa|ren längst au|ßer Sicht. Der Ha|se mach|te un|ter|wegs Pau|se und schlief ein. Das Eich|hörn|chen lief los, um Nüs|se zu sam|meln. The|o kroch wei|ter und blieb nicht ste|hen. Er schau|te nicht zu|rück. Als die Son|ne un|ter|ging, kam aus|ge|rech|net er als Ers|ter ans Ziel. Lang|sam, a|ber be|harr|lich: Das hat ge|reicht.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_klopfen_scheune_4",
+      "version": 2,
+      "theme": "stories",
+      "level": 4,
+      "title": "Ein Klopfen in der Scheune",
+      "body": "Lena verbrachte den Sommer bei ihrer Oma auf dem Bauernhof, wo jeder Tag ein neues Abenteuer brachte. Am meisten aber beschäftigte sie ein kleines weißes Ei, das in einem warmen Nest in der Ecke der Scheune lag.\n\nDie Oma erklärte ihr, dass in dem Ei ein Küken steckte, das schlüpfen würde, wenn es bereit war. „Geduld“, sagte sie und lächelte. „So etwas kann man nicht erzwingen.“ Jeden Morgen rannte Lena in die Scheune und schaute ins Nest, doch das Ei blieb stur liegen.\n\nEines Morgens war alles anders. Aus dem Ei kam ein leises Klopfen, dann bekam die Schale einen Riss. Ein kleiner Schnabel schob sich heraus, und bald schaute ein winziges gelbes Küken in die Welt. Es war nass und hilflos, aber voller Leben. Lena beugte sich hinunter und versprach, gut für das Küken zu sorgen.",
+      "syllable_body": "Le|na ver|brach|te den Som|mer bei ih|rer O|ma auf dem Bau|ern|hof, wo je|der Tag ein neu|es A|ben|teu|er brach|te. Am meis|ten a|ber be|schäf|tig|te sie ein klei|nes wei|ßes Ei, das in ei|nem war|men Nest in der E|cke der Scheu|ne lag.\n\nDie O|ma er|klär|te ihr, dass in dem Ei ein Kü|ken steck|te, das schlüp|fen wür|de, wenn es be|reit war. „Ge|duld“, sag|te sie und lä|chel|te. „So et|was kann man nicht er|zwin|gen.“ Je|den Mor|gen rann|te Le|na in die Scheu|ne und schau|te ins Nest, doch das Ei blieb stur lie|gen.\n\nEi|nes Mor|gens war al|les an|ders. Aus dem Ei kam ein lei|ses Klop|fen, dann be|kam die Scha|le ei|nen Riss. Ein klei|ner Schna|bel schob sich her|aus, und bald schau|te ein win|zi|ges gel|bes Kü|ken in die Welt. Es war nass und hilf|los, a|ber vol|ler Le|ben. Le|na beug|te sich hin|un|ter und ver|sprach, gut für das Kü|ken zu sor|gen.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_kaetzchen_zuhause_5",
+      "version": 2,
+      "theme": "stories",
+      "level": 5,
+      "title": "Das Kätzchen, das ein Zuhause fand",
+      "body": "An einem verregneten Nachmittag geht Lena von der Schule nach Hause. Der Regen prasselt auf die Dächer. Kurz vor ihrem Haus bleibt Lena plötzlich stehen. Ganz in der Nähe miaut etwas.\n\nSie bückt sich und entdeckt unter einer Bank ein kleines graues Kätzchen. Es ist völlig durchnässt, dünn und so verängstigt, dass es zittert. Als Lena sich hinkniet und leise mit ihm spricht, schaut es sie mit großen Augen an, läuft aber nicht weg. Vorsichtig nimmt sie es auf und steckt es unter ihre Jacke, wo es warm und trocken ist.\n\nZu Hause wärmt sie zuerst etwas Milch und gießt sie in ein Schälchen. Das Kätzchen ist so hungrig, dass es alles auftrinkt. Dann kuschelt es sich in die weiche Decke, die Lena in einen Korb gelegt hat, rollt sich zusammen und schnurrt zufrieden.\n\nDraußen regnet es immer noch, doch im warmen Zimmer ist es gemütlich. An diesem Abend schläft das Kätzchen zum ersten Mal seit langem ruhig ein. Von diesem Tag an sind Lena und das kleine graue Kätzchen unzertrennlich.",
+      "syllable_body": "An ei|nem ver|reg|ne|ten Nach|mit|tag geht Le|na von der Schu|le nach Hau|se. Der Re|gen pras|selt auf die Dä|cher. Kurz vor ih|rem Haus bleibt Le|na plötz|lich ste|hen. Ganz in der Nä|he mi|aut et|was.\n\nSie bückt sich und ent|deckt un|ter ei|ner Bank ein klei|nes grau|es Kätz|chen. Es ist völ|lig durch|nässt, dünn und so ver|ängs|tigt, dass es zit|tert. Als Le|na sich hin|kniet und lei|se mit ihm spricht, schaut es sie mit gro|ßen Au|gen an, läuft a|ber nicht weg. Vor|sich|tig nimmt sie es auf und steckt es un|ter ih|re Ja|cke, wo es warm und tro|cken ist.\n\nZu Hau|se wärmt sie zu|erst et|was Milch und gießt sie in ein Schäl|chen. Das Kätz|chen ist so hung|rig, dass es al|les auf|trinkt. Dann ku|schelt es sich in die wei|che De|cke, die Le|na in ei|nen Korb ge|legt hat, rollt sich zu|sam|men und schnurrt zu|frie|den.\n\nDrau|ßen reg|net es im|mer noch, doch im war|men Zim|mer ist es ge|müt|lich. An die|sem A|bend schläft das Kätz|chen zum ers|ten Mal seit lan|gem ru|hig ein. Von die|sem Tag an sind Le|na und das klei|ne grau|e Kätz|chen un|zer|trenn|lich.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_eule_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "Die Eule in der Nacht",
+      "body": "Die Eule ist nachts wach. Sie hat große runde Augen. Ihren Kopf kann sie sehr weit drehen. Sie fliegt ganz leise. So fängt sie im Dunkeln Mäuse. Am Tag schläft die Eule.",
+      "syllable_body": "Die Eu|le ist nachts wach. Sie hat gro|ße run|de Au|gen. Ih|ren Kopf kann sie sehr weit dre|hen. Sie fliegt ganz lei|se. So fängt sie im Dun|keln Mäu|se. Am Tag schläft die Eu|le.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_biene_2",
+      "version": 2,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "Die fleißige Biene",
+      "body": "Die Biene ist ein kleines Tier, das uns Honig schenkt. Sie fliegt von Blüte zu Blüte und sammelt süßen Nektar. Dabei trägt sie Blütenstaub weiter, und so können die Bäume Früchte tragen. Bienen leben zusammen in einem Bienenstock, zu vielen Tausenden. Jede hat ihre Aufgabe, und alle zusammen kümmern sich um ihre Königin. Ohne Bienen hätten wir viel weniger Obst und Blumen.",
+      "syllable_body": "Die Bie|ne ist ein klei|nes Tier, das uns Ho|nig schenkt. Sie fliegt von Blü|te zu Blü|te und sam|melt sü|ßen Nek|tar. Da|bei trägt sie Blü|ten|staub wei|ter, und so kön|nen die Bäu|me Früch|te tra|gen. Bie|nen le|ben zu|sam|men in ei|nem Bie|nen|stock, zu vie|len Tau|sen|den. Je|de hat ih|re Auf|ga|be, und al|le zu|sam|men küm|mern sich um ih|re Kö|ni|gin. Oh|ne Bie|nen hät|ten wir viel we|ni|ger Obst und Blu|men.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_delfin_name_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "Der Delfin hat einen Namen",
+      "body": "Der Delfin ist eines der klügsten Tiere im Meer. Er lebt im Wasser und schwimmt ausgezeichnet, doch er ist kein Fisch, sondern ein Säugetier, genau wie ein Hund oder ein Mensch. Deshalb kann er unter Wasser nicht atmen und muss oft an die Oberfläche kommen, um Luft zu holen. Delfine leben in Gruppen, die man Schulen nennt. Sie verständigen sich mit hohen Pfiffen, und jeder Delfin hat sogar seinen eigenen besonderen Pfiff, eine Art Namen. Bekannt sind sie auch dafür, dass sie einander helfen. Ist einer krank, schieben ihn die anderen an die Oberfläche, damit er atmen kann.",
+      "syllable_body": "Der Del|fin ist ei|nes der klügs|ten Tie|re im Meer. Er lebt im Was|ser und schwimmt aus|ge|zeich|net, doch er ist kein Fisch, son|dern ein Säu|ge|tier, ge|nau wie ein Hund o|der ein Mensch. Des|halb kann er un|ter Was|ser nicht at|men und muss oft an die O|ber|flä|che kom|men, um Luft zu ho|len. Del|fi|ne le|ben in Grup|pen, die man Schu|len nennt. Sie ver|stän|di|gen sich mit ho|hen Pfif|fen, und je|der Del|fin hat so|gar sei|nen ei|ge|nen be|son|de|ren Pfiff, ei|ne Art Na|men. Be|kannt sind sie auch da|für, dass sie ein|an|der hel|fen. Ist ei|ner krank, schie|ben ihn die an|de|ren an die O|ber|flä|che, da|mit er at|men kann.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_fledermaus_4",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "Die Fledermaus jagt im Dunkeln",
+      "body": "Die Fledermaus ist kein Vogel, sondern das einzige Säugetier, das wirklich fliegen kann. Ihre Flügel sind nicht mit Federn bedeckt, sondern mit dünner Haut, die zwischen langen Fingern gespannt ist.\n\nDie meisten Fledermäuse schlafen am Tag und gehen in der Dämmerung auf die Jagd. Sie hängen mit dem Kopf nach unten in Höhlen, auf Dachböden oder in hohlen Bäumen. Wenn es dunkel wird, fliegen sie los und fangen Insekten.\n\nAm erstaunlichsten ist, wie sich die Fledermaus im Dunkeln zurechtfindet. Sie stößt Laute aus, die so hoch sind, dass unser Ohr sie nicht hört. Diese prallen von Hindernissen und Insekten ab und kommen zurück. Aus dem Echo weiß die Fledermaus genau, wo das Futter ist und wohin sie fliegen muss.",
+      "syllable_body": "Die Fle|der|maus ist kein Vo|gel, son|dern das ein|zi|ge Säu|ge|tier, das wirk|lich flie|gen kann. Ih|re Flü|gel sind nicht mit Fe|dern be|deckt, son|dern mit dün|ner Haut, die zwi|schen lan|gen Fin|gern ge|spannt ist.\n\nDie meis|ten Fle|der|mäu|se schla|fen am Tag und ge|hen in der Däm|me|rung auf die Jagd. Sie hän|gen mit dem Kopf nach un|ten in Höh|len, auf Dach|bö|den o|der in hoh|len Bäu|men. Wenn es dun|kel wird, flie|gen sie los und fan|gen In|sek|ten.\n\nAm er|staun|lichs|ten ist, wie sich die Fle|der|maus im Dun|keln zu|recht|fin|det. Sie stößt Lau|te aus, die so hoch sind, dass un|ser Ohr sie nicht hört. Die|se pral|len von Hin|der|nis|sen und In|sek|ten ab und kom|men zu|rück. Aus dem E|cho weiß die Fle|der|maus ge|nau, wo das Fut|ter ist und wo|hin sie flie|gen muss.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_delfine_geheimnisse_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "Die Geheimnisse der Delfine",
+      "body": "Der Delfin gilt als eines der klügsten Tiere der Welt. Obwohl er sein ganzes Leben im Meer verbringt und schneller schwimmt als mancher Fisch, ist er selbst kein Fisch, sondern ein Säugetier. Er holt Luft durch ein Atemloch oben auf dem Kopf und muss alle paar Minuten an die Oberfläche.\n\nDelfine sind gesellige Tiere und leben in Gruppen. In der Gruppe sorgen sie füreinander, jagen und verteidigen sich gemeinsam. Sie verständigen sich mit Pfiffen, Klicklauten und Quieken. Jeder Delfin hat sogar seinen eigenen Pfiff, an dem ihn die anderen erkennen: eine Art Namen, den er sein ganzes Leben behält.\n\nAm erstaunlichsten ist ihre Fähigkeit, mit Schall zu sehen. Der Delfin sendet schnelle Klicklaute aus, die durch das Wasser wandern. Trifft der Schall auf einen Fisch, einen Felsen oder ein Wrack, prallt er ab und kommt zurück. Aus diesem Echo erkennt der Delfin genau, wie weit der Gegenstand entfernt und wie groß er ist, selbst in völliger Dunkelheit. Diese Fähigkeit heißt Echoortung.",
+      "syllable_body": "Der Del|fin gilt als ei|nes der klügs|ten Tie|re der Welt. Ob|wohl er sein gan|zes Le|ben im Meer ver|bringt und schnel|ler schwimmt als man|cher Fisch, ist er selbst kein Fisch, son|dern ein Säu|ge|tier. Er holt Luft durch ein A|tem|loch o|ben auf dem Kopf und muss al|le paar Mi|nu|ten an die O|ber|flä|che.\n\nDel|fi|ne sind ge|sel|li|ge Tie|re und le|ben in Grup|pen. In der Grup|pe sor|gen sie für|ein|an|der, ja|gen und ver|tei|di|gen sich ge|mein|sam. Sie ver|stän|di|gen sich mit Pfif|fen, Klick|lau|ten und Quie|ken. Je|der Del|fin hat so|gar sei|nen ei|ge|nen Pfiff, an dem ihn die an|de|ren er|ken|nen: ei|ne Art Na|men, den er sein gan|zes Le|ben be|hält.\n\nAm er|staun|lichs|ten ist ih|re Fä|hig|keit, mit Schall zu se|hen. Der Del|fin sen|det schnel|le Klick|lau|te aus, die durch das Was|ser wan|dern. Trifft der Schall auf ei|nen Fisch, ei|nen Fel|sen o|der ein Wrack, prallt er ab und kommt zu|rück. Aus die|sem E|cho er|kennt der Del|fin ge|nau, wie weit der Ge|gen|stand ent|fernt und wie groß er ist, selbst in völ|li|ger Dun|kel|heit. Die|se Fä|hig|keit heißt E|cho|or|tung.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_pyramiden_1",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 1,
+      "title": "Die Pyramiden in Ägypten",
+      "body": "In Ägypten stehen große Pyramiden. Sie wurden vor sehr langer Zeit gebaut. Sie bestehen aus schweren Steinen. Die Pyramiden waren die Gräber der Könige. Noch heute stehen sie in der Wüste.",
+      "syllable_body": "In Ä|gyp|ten ste|hen gro|ße Py|ra|mi|den. Sie wur|den vor sehr lan|ger Zeit ge|baut. Sie be|ste|hen aus schwe|ren Stei|nen. Die Py|ra|mi|den wa|ren die Grä|ber der Kö|ni|ge. Noch heu|te ste|hen sie in der Wüs|te.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_pyramiden_2",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 2,
+      "title": "Berge aus Stein",
+      "body": "In Ägypten, dem Land der Wüsten, stehen mächtige Pyramiden. Sie wurden vor mehreren tausend Jahren gebaut. Die Menschen stapelten riesige Blöcke aus schwerem Stein aufeinander, bis eine hohe Pyramide entstand. Darin begrub man die Könige, die man Pharaonen nannte. Die Pyramiden sind so fest, dass sie noch heute stehen. Sie gehören zu den ältesten Bauwerken der Welt.",
+      "syllable_body": "In Ä|gyp|ten, dem Land der Wüs|ten, ste|hen mäch|ti|ge Py|ra|mi|den. Sie wur|den vor meh|re|ren tau|send Jah|ren ge|baut. Die Men|schen sta|pel|ten rie|si|ge Blö|cke aus schwe|rem Stein auf|ein|an|der, bis ei|ne ho|he Py|ra|mi|de ent|stand. Dar|in be|grub man die Kö|ni|ge, die man Pha|ra|o|nen nann|te. Die Py|ra|mi|den sind so fest, dass sie noch heu|te ste|hen. Sie ge|hö|ren zu den äl|tes|ten Bau|wer|ken der Welt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_pyramiden_3",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 3,
+      "title": "Das Geheimnis der Pyramiden",
+      "body": "In Ägypten, dem Land der heißen Wüsten, ragen mächtige Pyramiden in den Himmel. Die berühmtesten stehen bei der Stadt Gizeh. Die Menschen bauten sie vor mehr als viertausend Jahren, und zwar ohne Maschinen, wie wir sie heute kennen. Aus dem Steinbruch zogen sie riesige Steinblöcke, so schwer wie ein Auto, und stapelten sie aufeinander, immer höher und höher. In den Pyramiden begrub man die Pharaonen, die Könige Ägyptens. Man glaubte, der Herrscher werde seine Schätze auch nach dem Tod brauchen, darum begrub man sie mit ihm. Kein Wunder, dass die Pyramiden noch heute die Fantasie anregen.",
+      "syllable_body": "In Ä|gyp|ten, dem Land der hei|ßen Wüs|ten, ra|gen mäch|ti|ge Py|ra|mi|den in den Him|mel. Die be|rühm|tes|ten ste|hen bei der Stadt Gi|zeh. Die Men|schen bau|ten sie vor mehr als vier|tau|send Jah|ren, und zwar oh|ne Ma|schi|nen, wie wir sie heu|te ken|nen. Aus dem Stein|bruch zo|gen sie rie|si|ge Stein|blö|cke, so schwer wie ein Au|to, und sta|pel|ten sie auf|ein|an|der, im|mer hö|her und hö|her. In den Py|ra|mi|den be|grub man die Pha|ra|o|nen, die Kö|ni|ge Ä|gyp|tens. Man glaub|te, der Herr|scher wer|de sei|ne Schät|ze auch nach dem Tod brau|chen, dar|um be|grub man sie mit ihm. Kein Wun|der, dass die Py|ra|mi|den noch heu|te die Fan|ta|sie an|re|gen.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_pyramiden_4",
+      "version": 2,
+      "theme": "around_the_world",
+      "level": 4,
+      "title": "Wie die Pyramiden gebaut wurden",
+      "body": "In Ägypten, dem Land der heißen Wüsten und des Flusses Nil, ragen mächtige Pyramiden in den Himmel. Die Menschen bauten sie vor mehr als viertausend Jahren, als es noch keine Maschinen und keine Kräne gab.\n\nWie bewegten sie also so schwere Steine? Die Arbeiter zogen riesige Blöcke auf Schlitten aus dem Steinbruch, viele schwerer als ein Auto, und schleppten sie über Rampen langsam immer höher. Für einen einzigen solchen Bau brauchte man Tausende Hände und viele Jahre Arbeit.\n\nIn den Pyramiden begrub man die Pharaonen, die Könige Ägyptens. Man glaubte, der Herrscher reise nach dem Tod weiter und werde seine Schätze brauchen, darum versteckte man sie tief in der Pyramide. Die größte von ihnen war viele tausend Jahre lang das höchste Bauwerk der Welt.",
+      "syllable_body": "In Ä|gyp|ten, dem Land der hei|ßen Wüs|ten und des Flus|ses Nil, ra|gen mäch|ti|ge Py|ra|mi|den in den Him|mel. Die Men|schen bau|ten sie vor mehr als vier|tau|send Jah|ren, als es noch kei|ne Ma|schi|nen und kei|ne Krä|ne gab.\n\nWie be|weg|ten sie al|so so schwe|re Stei|ne? Die Ar|bei|ter zo|gen rie|si|ge Blö|cke auf Schlit|ten aus dem Stein|bruch, vie|le schwe|rer als ein Au|to, und schlepp|ten sie ü|ber Ram|pen lang|sam im|mer hö|her. Für ei|nen ein|zi|gen sol|chen Bau brauch|te man Tau|sen|de Hän|de und vie|le Jah|re Ar|beit.\n\nIn den Py|ra|mi|den be|grub man die Pha|ra|o|nen, die Kö|ni|ge Ä|gyp|tens. Man glaub|te, der Herr|scher rei|se nach dem Tod wei|ter und wer|de sei|ne Schät|ze brau|chen, dar|um ver|steck|te man sie tief in der Py|ra|mi|de. Die größ|te von ih|nen war vie|le tau|send Jah|re lang das höchs|te Bau|werk der Welt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "around_the_world_venedig_5",
+      "version": 1,
+      "theme": "around_the_world",
+      "level": 5,
+      "title": "Ein Spaziergang durch Venedig",
+      "body": "Venedig ist eine der ungewöhnlichsten und schönsten Städte der Welt. Sie liegt in Italien und ist auf mehr als hundert kleinen Inseln mitten in einer flachen Lagune gebaut.\n\nWas man sofort bemerkt, wenn man nach Venedig kommt: Es gibt keine Autos. Statt Straßen hat die Stadt Kanäle, statt Autos Boote. Zwischen den alten Häusern schlängeln sich schmale Wasserwege mit Hunderten kleiner Brücken. Die berühmtesten Boote sind die Gondeln, schlank, schwarz und elegant.\n\nAber wie baut man überhaupt eine Stadt auf dem Wasser? Vor langer Zeit rammten die Bewohner unzählige lange Holzpfähle in den schlammigen Meeresboden. Auf diese Pfähle setzten sie Häuser, Brücken, Kirchen und große Plätze. Der schönste ist der Markusplatz, auf dem Tausende Tauben spazieren.\n\nViele Jahrhunderte sind seither vergangen, doch Venedig steht noch immer. Jedes Jahr kommen Millionen Menschen aus aller Welt, um die Stadt ohne Straßen zu bewundern: die Stadt, die auf dem Wasser lebt.",
+      "syllable_body": "Ve|ne|dig ist ei|ne der un|ge|wöhn|lichs|ten und schöns|ten Städ|te der Welt. Sie liegt in I|ta|li|en und ist auf mehr als hun|dert klei|nen In|seln mit|ten in ei|ner fla|chen La|gu|ne ge|baut.\n\nWas man so|fort be|merkt, wenn man nach Ve|ne|dig kommt: Es gibt kei|ne Au|tos. Statt Stra|ßen hat die Stadt Ka|nä|le, statt Au|tos Boo|te. Zwi|schen den al|ten Häu|sern schlän|geln sich schma|le Was|ser|we|ge mit Hun|der|ten klei|ner Brü|cken. Die be|rühm|tes|ten Boo|te sind die Gon|deln, schlank, schwarz und e|le|gant.\n\nA|ber wie baut man ü|ber|haupt ei|ne Stadt auf dem Was|ser? Vor lan|ger Zeit ramm|ten die Be|woh|ner un|zäh|li|ge lan|ge Holz|pfäh|le in den schlam|mi|gen Mee|res|bo|den. Auf die|se Pfäh|le setz|ten sie Häu|ser, Brü|cken, Kir|chen und gro|ße Plät|ze. Der schöns|te ist der Mar|kus|platz, auf dem Tau|sen|de Tau|ben spa|zie|ren.\n\nVie|le Jahr|hun|der|te sind seit|her ver|gan|gen, doch Ve|ne|dig steht noch im|mer. Je|des Jahr kom|men Mil|li|o|nen Men|schen aus al|ler Welt, um die Stadt oh|ne Stra|ßen zu be|wun|dern: die Stadt, die auf dem Was|ser lebt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_regenbogen_1",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 1,
+      "title": "Der Regenbogen",
+      "body": "Nach dem Regen leuchtet manchmal ein Regenbogen. Er entsteht, wenn die Sonne durch die Regentropfen scheint. Der Regenbogen hat viele Farben. Sie kommen immer in derselben Reihenfolge. Oben ist Rot, unten ist Violett.",
+      "syllable_body": "Nach dem Re|gen leuch|tet manch|mal ein Re|gen|bo|gen. Er ent|steht, wenn die Son|ne durch die Re|gen|trop|fen scheint. Der Re|gen|bo|gen hat vie|le Far|ben. Sie kom|men im|mer in der|sel|ben Rei|hen|fol|ge. O|ben ist Rot, un|ten ist Vi|o|lett.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_schwerkraft_2",
+      "version": 1,
+      "theme": "amazing_science",
+      "level": 2,
+      "title": "Warum alles zu Boden fällt",
+      "body": "Wirf einen Ball in die Luft, und er fällt immer wieder zu Boden. Warum ist das so? Schuld ist eine unsichtbare Kraft, die wir Schwerkraft nennen. Mit dieser Kraft zieht die Erde alle Dinge zu sich. Deshalb fällt der Apfel vom Baum und der Regen vom Himmel. Die Schwerkraft hält auch uns auf dem Boden, damit wir nicht in die Luft davonschweben.",
+      "syllable_body": "Wirf ei|nen Ball in die Luft, und er fällt im|mer wie|der zu Bo|den. War|um ist das so? Schuld ist ei|ne un|sicht|ba|re Kraft, die wir Schwer|kraft nen|nen. Mit die|ser Kraft zieht die Er|de al|le Din|ge zu sich. Des|halb fällt der Ap|fel vom Baum und der Re|gen vom Him|mel. Die Schwer|kraft hält auch uns auf dem Bo|den, da|mit wir nicht in die Luft da|von|schwe|ben.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_regenbogen_3",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 3,
+      "title": "Wie ein Regenbogen entsteht",
+      "body": "Der Regenbogen ist eine der schönsten Erscheinungen am Himmel. Er zeigt sich, wenn zugleich die Sonne scheint und es regnet. Obwohl uns das Sonnenlicht weiß erscheint, besteht es in Wirklichkeit aus vielen Farben, die ineinander verborgen sind. Fällt ein Sonnenstrahl durch einen winzigen Regentropfen, wird er darin gebrochen und in alle diese Farben zerlegt. Die Tropfen wirken wie kleine Prismen, die das Licht auffächern. Weil das Tausende Tropfen gleichzeitig tun, sehen wir am Himmel einen großen bunten Bogen. Die Farben erscheinen im Regenbogen immer in derselben Reihenfolge, von Rot oben bis Violett unten.",
+      "syllable_body": "Der Re|gen|bo|gen ist ei|ne der schöns|ten Er|schei|nun|gen am Him|mel. Er zeigt sich, wenn zu|gleich die Son|ne scheint und es reg|net. Ob|wohl uns das Son|nen|licht weiß er|scheint, be|steht es in Wirk|lich|keit aus vie|len Far|ben, die in|ein|an|der ver|bor|gen sind. Fällt ein Son|nen|strahl durch ei|nen win|zi|gen Re|gen|trop|fen, wird er dar|in ge|bro|chen und in al|le die|se Far|ben zer|legt. Die Trop|fen wir|ken wie klei|ne Pris|men, die das Licht auf|fä|chern. Weil das Tau|sen|de Trop|fen gleich|zei|tig tun, se|hen wir am Him|mel ei|nen gro|ßen bun|ten Bo|gen. Die Far|ben er|schei|nen im Re|gen|bo|gen im|mer in der|sel|ben Rei|hen|fol|ge, von Rot o|ben bis Vi|o|lett un|ten.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_regenbogen_jagd_4",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 4,
+      "title": "Die Jagd nach dem Regenbogen",
+      "body": "Der Regenbogen ist eine der schönsten Erscheinungen, die man am Himmel sehen kann. Er zeigt sich, wenn zugleich die Sonne scheint und es regnet.\n\nObwohl uns das Sonnenlicht weiß erscheint, besteht es in Wirklichkeit aus vielen Farben, die ineinander verborgen sind. Fällt ein Sonnenstrahl durch einen winzigen Regentropfen, wird er darin gebrochen und in alle diese Farben zerlegt. Weil das Tausende Tropfen gleichzeitig tun, sehen wir am Himmel einen großen farbigen Bogen.\n\nDie Farben erscheinen im Regenbogen immer in derselben Reihenfolge: von Rot oben bis Violett unten. Wer einen Regenbogen sehen will, muss die Sonne im Rücken haben und den Regen vor sich. Und merke dir: Je näher du ihm kommen willst, desto weiter rückt er von dir weg, denn festhalten kann man ihn nicht.",
+      "syllable_body": "Der Re|gen|bo|gen ist ei|ne der schöns|ten Er|schei|nun|gen, die man am Him|mel se|hen kann. Er zeigt sich, wenn zu|gleich die Son|ne scheint und es reg|net.\n\nOb|wohl uns das Son|nen|licht weiß er|scheint, be|steht es in Wirk|lich|keit aus vie|len Far|ben, die in|ein|an|der ver|bor|gen sind. Fällt ein Son|nen|strahl durch ei|nen win|zi|gen Re|gen|trop|fen, wird er dar|in ge|bro|chen und in al|le die|se Far|ben zer|legt. Weil das Tau|sen|de Trop|fen gleich|zei|tig tun, se|hen wir am Him|mel ei|nen gro|ßen far|bi|gen Bo|gen.\n\nDie Far|ben er|schei|nen im Re|gen|bo|gen im|mer in der|sel|ben Rei|hen|fol|ge: von Rot o|ben bis Vi|o|lett un|ten. Wer ei|nen Re|gen|bo|gen se|hen will, muss die Son|ne im Rü|cken ha|ben und den Re|gen vor sich. Und mer|ke dir: Je nä|her du ihm kom|men willst, des|to wei|ter rückt er von dir weg, denn fest|hal|ten kann man ihn nicht.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "amazing_science_bunter_bogen_5",
+      "version": 2,
+      "theme": "amazing_science",
+      "level": 5,
+      "title": "Das Geheimnis des bunten Bogens",
+      "body": "Der Regenbogen ist eine der schönsten Erscheinungen, die man am Himmel sehen kann. Er zeigt sich, wenn zugleich die Sonne scheint und es regnet.\n\nObwohl uns das Sonnenlicht ganz weiß erscheint, besteht es in Wirklichkeit aus vielen Farben, die ineinander verborgen sind. Fällt ein Sonnenstrahl durch einen winzigen Regentropfen, wird er darin gebrochen und in alle diese Farben zerlegt. Jedes Tröpfchen wirkt wie ein winziges Glasprisma, das das weiße Licht zu einem bunten Band auffächert. Weil das Tausende Tropfen gleichzeitig tun, sehen wir am Himmel einen großen farbigen Bogen.\n\nDie Farben erscheinen im Regenbogen immer in genau derselben Reihenfolge: Rot, Orange, Gelb, Grün, Blau und Violett. Rot liegt stets außen am Bogen, Violett innen.\n\nWer einen Regenbogen mit den Augen einfangen will, merke sich eine einfache Regel: Die Sonne muss hinter dir stehen, der Regen vor dir. Und obwohl der Regenbogen wie eine bunte Brücke aussieht, kann man ihn nie berühren. Je näher du ihm kommst, desto weiter rückt er weg.",
+      "syllable_body": "Der Re|gen|bo|gen ist ei|ne der schöns|ten Er|schei|nun|gen, die man am Him|mel se|hen kann. Er zeigt sich, wenn zu|gleich die Son|ne scheint und es reg|net.\n\nOb|wohl uns das Son|nen|licht ganz weiß er|scheint, be|steht es in Wirk|lich|keit aus vie|len Far|ben, die in|ein|an|der ver|bor|gen sind. Fällt ein Son|nen|strahl durch ei|nen win|zi|gen Re|gen|trop|fen, wird er dar|in ge|bro|chen und in al|le die|se Far|ben zer|legt. Je|des Tröpf|chen wirkt wie ein win|zi|ges Glas|pris|ma, das das wei|ße Licht zu ei|nem bun|ten Band auf|fä|chert. Weil das Tau|sen|de Trop|fen gleich|zei|tig tun, se|hen wir am Him|mel ei|nen gro|ßen far|bi|gen Bo|gen.\n\nDie Far|ben er|schei|nen im Re|gen|bo|gen im|mer in ge|nau der|sel|ben Rei|hen|fol|ge: Rot, O|ran|ge, Gelb, Grün, Blau und Vi|o|lett. Rot liegt stets au|ßen am Bo|gen, Vi|o|lett in|nen.\n\nWer ei|nen Re|gen|bo|gen mit den Au|gen ein|fan|gen will, mer|ke sich ei|ne ein|fa|che Re|gel: Die Son|ne muss hin|ter dir ste|hen, der Re|gen vor dir. Und ob|wohl der Re|gen|bo|gen wie ei|ne bun|te Brü|cke aus|sieht, kann man ihn nie be|rüh|ren. Je nä|her du ihm kommst, des|to wei|ter rückt er weg.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_samen_1",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 1,
+      "title": "Aus dem Samen wächst",
+      "body": "Wir stecken einen kleinen Samen in die Erde. Der Samen bekommt Wasser und Sonne. Aus ihm wächst ein kleiner Keim. Der Keim wächst immer höher. Aus einem Samen wird eine Blume oder ein Baum.",
+      "syllable_body": "Wir ste|cken ei|nen klei|nen Sa|men in die Er|de. Der Sa|men be|kommt Was|ser und Son|ne. Aus ihm wächst ein klei|ner Keim. Der Keim wächst im|mer hö|her. Aus ei|nem Sa|men wird ei|ne Blu|me o|der ein Baum.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_regen_2",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 2,
+      "title": "Warum es regnet",
+      "body": "Regen ist für die Natur sehr wichtig. Ohne ihn könnten die Pflanzen nicht wachsen. Regen entsteht in den Wolken hoch am Himmel. In einer Wolke schweben Tausende winziger Wassertröpfchen. Wenn sich diese Tröpfchen zu größeren verbinden, werden sie zu schwer und fallen zu Boden. Dann sagen wir: Es regnet. Der Regen tränkt die Erde, und die Pflanzen freuen sich darüber.",
+      "syllable_body": "Re|gen ist für die Na|tur sehr wich|tig. Oh|ne ihn könn|ten die Pflan|zen nicht wach|sen. Re|gen ent|steht in den Wol|ken hoch am Him|mel. In ei|ner Wol|ke schwe|ben Tau|sen|de win|zi|ger Was|ser|tröpf|chen. Wenn sich die|se Tröpf|chen zu grö|ße|ren ver|bin|den, wer|den sie zu schwer und fal|len zu Bo|den. Dann sa|gen wir: Es reg|net. Der Re|gen tränkt die Er|de, und die Pflan|zen freu|en sich dar|ü|ber.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_wind_3",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 3,
+      "title": "Der Wind, den wir nicht sehen",
+      "body": "Den Wind können wir nicht sehen, aber wir können ihn fühlen und hören. Er streicht uns über das Gesicht, wiegt die Zweige und jagt die Wolken über den Himmel. Wind ist Luft, die sich bewegt. Wenn sich ein Teil der Luft erwärmt und ein anderer kalt bleibt, beginnt die Luft sich zu bewegen. Manchmal ist der Wind sanft und angenehm: Er trocknet die Wäsche und trägt den Duft der Blumen. Ein anderes Mal ist er so stark, dass er Äste abbricht. Der Wind ist auch nützlich: Er verbreitet die Samen der Pflanzen und treibt Windräder an.",
+      "syllable_body": "Den Wind kön|nen wir nicht se|hen, a|ber wir kön|nen ihn füh|len und hö|ren. Er streicht uns ü|ber das Ge|sicht, wiegt die Zwei|ge und jagt die Wol|ken ü|ber den Him|mel. Wind ist Luft, die sich be|wegt. Wenn sich ein Teil der Luft er|wärmt und ein an|de|rer kalt bleibt, be|ginnt die Luft sich zu be|we|gen. Manch|mal ist der Wind sanft und an|ge|nehm: Er trock|net die Wä|sche und trägt den Duft der Blu|men. Ein an|de|res Mal ist er so stark, dass er Äs|te ab|bricht. Der Wind ist auch nütz|lich: Er ver|brei|tet die Sa|men der Pflan|zen und treibt Wind|rä|der an.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_herbstblaetter_4",
+      "version": 1,
+      "theme": "nature_seasons",
+      "level": 4,
+      "title": "Warum der Baum seine Blätter abwirft",
+      "body": "Jeden Herbst geschieht etwas Wunderbares. Die Blätter an den Bäumen färben sich von Grün in feuriges Rot, Orange und goldenes Gelb.\n\nIm Sommer sind die Blätter voll von grünem Farbstoff. Mit seiner Hilfe stellt der Baum aus Sonnenlicht, Wasser und Luft seine Nahrung her. Das Grün deckt alle anderen Farben im Blatt zu.\n\nWenn im Herbst die Tage kürzer werden und es kühler wird, spürt der Baum, dass der Winter kommt. Er stellt den grünen Farbstoff nicht mehr her, und das Grün verblasst langsam. Erst jetzt kommen die gelben und roten Töne zum Vorschein, die unter dem Grün verborgen waren.\n\nZuletzt wirft der Baum die Blätter ab, um über den Winter Wasser und Kraft zu sparen. Die kahlen Bäume ruhen dann still, bis sie im Frühling die warme Sonne wieder aufweckt.",
+      "syllable_body": "Je|den Herbst ge|schieht et|was Wun|der|ba|res. Die Blät|ter an den Bäu|men fär|ben sich von Grün in feu|ri|ges Rot, O|ran|ge und gol|de|nes Gelb.\n\nIm Som|mer sind die Blät|ter voll von grü|nem Farb|stoff. Mit sei|ner Hil|fe stellt der Baum aus Son|nen|licht, Was|ser und Luft sei|ne Nah|rung her. Das Grün deckt al|le an|de|ren Far|ben im Blatt zu.\n\nWenn im Herbst die Ta|ge kür|zer wer|den und es küh|ler wird, spürt der Baum, dass der Win|ter kommt. Er stellt den grü|nen Farb|stoff nicht mehr her, und das Grün ver|blasst lang|sam. Erst jetzt kom|men die gel|ben und ro|ten Tö|ne zum Vor|schein, die un|ter dem Grün ver|bor|gen wa|ren.\n\nZu|letzt wirft der Baum die Blät|ter ab, um ü|ber den Win|ter Was|ser und Kraft zu spa|ren. Die kah|len Bäu|me ru|hen dann still, bis sie im Früh|ling die war|me Son|ne wie|der auf|weckt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "nature_seasons_jahreszeiten_5",
+      "version": 2,
+      "theme": "nature_seasons",
+      "level": 5,
+      "title": "Die große Reise des Jahres",
+      "body": "Weißt du, wie sich die Natur im Laufe des Jahres verändert? Das Jahr reist durch vier Jahreszeiten: Frühling, Sommer, Herbst und Winter.\n\nIm Frühling erwacht die Natur aus dem langen Winterschlaf. Die Bäume treiben frische Blätter, die Wiesen kleiden sich in bunte Blumen, und die Vögel kehren aus dem Süden zurück und bauen ihre Nester.\n\nIm Sommer herrscht die Wärme. Die Sonne geht früh auf und spät unter, die Tage sind lang. Jetzt reifen auf Bäumen und Feldern das meiste Obst und Gemüse.\n\nIm Herbst werden die Tage langsam kürzer und die Luft kühler. Die Blätter färben sich rot, orange und gelb und segeln dann im Wind zu Boden. Die Tiere bereiten sich auf die Kälte vor.\n\nIm Winter wird die Natur still und ruht sich aus. Schnee deckt oft die Landschaft zu, die Tage sind kurz, die Nächte lang und kalt. Manches Tier verschläft den ganzen Winter. Und wenn es scheint, als wäre alles zu Ende, dreht sich das große Rad des Jahres weiter, und ein neuer Frühling beginnt.",
+      "syllable_body": "Weißt du, wie sich die Na|tur im Lau|fe des Jah|res ver|än|dert? Das Jahr reist durch vier Jah|res|zei|ten: Früh|ling, Som|mer, Herbst und Win|ter.\n\nIm Früh|ling er|wacht die Na|tur aus dem lan|gen Win|ter|schlaf. Die Bäu|me trei|ben fri|sche Blät|ter, die Wie|sen klei|den sich in bun|te Blu|men, und die Vö|gel keh|ren aus dem Sü|den zu|rück und bau|en ih|re Nes|ter.\n\nIm Som|mer herrscht die Wär|me. Die Son|ne geht früh auf und spät un|ter, die Ta|ge sind lang. Jetzt rei|fen auf Bäu|men und Fel|dern das meis|te Obst und Ge|mü|se.\n\nIm Herbst wer|den die Ta|ge lang|sam kür|zer und die Luft küh|ler. Die Blät|ter fär|ben sich rot, o|ran|ge und gelb und se|geln dann im Wind zu Bo|den. Die Tie|re be|rei|ten sich auf die Käl|te vor.\n\nIm Win|ter wird die Na|tur still und ruht sich aus. Schnee deckt oft die Land|schaft zu, die Ta|ge sind kurz, die Näch|te lang und kalt. Man|ches Tier ver|schläft den gan|zen Win|ter. Und wenn es scheint, als wä|re al|les zu En|de, dreht sich das gro|ße Rad des Jah|res wei|ter, und ein neu|er Früh|ling be|ginnt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-21",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_gemuesesuppe_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Gemüsesuppe",
+      "body": "Draußen ist es schon dunkel. Mama kocht Gemüsesuppe. Emma wäscht die Möhren. Ben holt die Erbsen aus den Schoten. Mama rührt im großen Topf. Die ganze Küche riecht gut. Bald ist die Suppe fertig.",
+      "syllable_body": "Drau|ßen ist es schon dun|kel. Ma|ma kocht Ge|mü|se|sup|pe. Em|ma wäscht die Möh|ren. Ben holt die Erb|sen aus den Scho|ten. Ma|ma rührt im gro|ßen Topf. Die gan|ze Kü|che riecht gut. Bald ist die Sup|pe fer|tig.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_paket_im_schnee_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "Ein Paket im Schnee",
+      "body": "Es hat die ganze Nacht geschneit. Auf dem Zaun liegt eine dicke weiße Schicht. Emma wartet am Gartentor. Der Briefträger stapft durch den Schnee zu ihr. Er hat rote Wangen und eine schwere Tasche. „Ein Paket für dich!“, sagt er. Es hat eine rote Schleife und ist von Opa. Auf dem roten Briefkasten sitzt ein Rotkehlchen und schaut zu.",
+      "syllable_body": "Es hat die gan|ze Nacht ge|schneit. Auf dem Zaun liegt ei|ne di|cke wei|ße Schicht. Em|ma war|tet am Gar|ten|tor. Der Brief|trä|ger stapft durch den Schnee zu ihr. Er hat ro|te Wan|gen und ei|ne schwe|re Ta|sche. „Ein Pa|ket für dich!“, sagt er. Es hat ei|ne ro|te Schlei|fe und ist von O|pa. Auf dem ro|ten Brief|kas|ten sitzt ein Rot|kehl|chen und schaut zu.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_samstagsorchester_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Das Samstagsorchester",
+      "body": "Jeden Samstag wird Omas Wohnzimmer zum Musikzimmer. Emma spielt Geige, Jonas spielt Flöte, und Lisa hält ein großes Cello zwischen den Knien. Der kleine Ben sitzt hinten an seiner Trommel. Oma steht vor den Kindern und hebt die Hände. Als sie nickt, fangen alle gleichzeitig an. Zuerst ist die Trommel viel zu laut, denn Ben trommelt so gern. „Hört einander zu“, sagt Oma. Sie versuchen es noch einmal, diesmal leiser, und plötzlich klingt alles wie ein einziges Lied. Durch das offene Fenster singen die Vögel mit.",
+      "syllable_body": "Je|den Sams|tag wird O|mas Wohn|zim|mer zum Mu|sik|zim|mer. Em|ma spielt Gei|ge, Jo|nas spielt Flö|te, und Li|sa hält ein gro|ßes Cel|lo zwi|schen den Knien. Der klei|ne Ben sitzt hin|ten an sei|ner Trom|mel. O|ma steht vor den Kin|dern und hebt die Hän|de. Als sie nickt, fan|gen al|le gleich|zei|tig an. Zu|erst ist die Trom|mel viel zu laut, denn Ben trom|melt so gern. „Hört ein|an|der zu“, sagt O|ma. Sie ver|su|chen es noch ein|mal, dies|mal lei|ser, und plötz|lich klingt al|les wie ein ein|zi|ges Lied. Durch das of|fe|ne Fens|ter sin|gen die Vö|gel mit.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_laterne_am_strand_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "Die Laterne am Strand",
+      "body": "Seit vierzig Jahren wohnte der alte Hannes im Leuchtturm auf den Klippen. Jeden Abend schaltete er das große Licht ein, damit die Schiffe die gefährlichen Felsen sahen.\n\nAn einem stürmischen Abend, als die Sonne orange und violett unterging, entdeckte er ein kleines Fischerboot. Der Motor war ausgefallen, und die Wellen trieben das Boot auf die Felsen zu. Hannes rief sofort die Seenotretter im Hafen an. Dann nahm er seine alte Laterne, lief hinunter zum Strand und schwenkte sie hoch über dem Kopf.\n\nBald kam ein rotes Rettungsboot durch die Wellen. Zwei Retter in gelben Jacken warfen den Fischern ein Seil zu und zogen das Boot im letzten Moment von den Felsen weg. Auf dem Rückweg winkten sie dem alten Mann am Ufer, und über ihm leuchtete ruhig der Leuchtturm.",
+      "syllable_body": "Seit vier|zig Jah|ren wohn|te der al|te Han|nes im Leucht|turm auf den Klip|pen. Je|den A|bend schal|te|te er das gro|ße Licht ein, da|mit die Schif|fe die ge|fähr|li|chen Fel|sen sa|hen.\n\nAn ei|nem stür|mi|schen A|bend, als die Son|ne o|ran|ge und vi|o|lett un|ter|ging, ent|deck|te er ein klei|nes Fi|scher|boot. Der Mo|tor war aus|ge|fal|len, und die Wel|len trie|ben das Boot auf die Fel|sen zu. Han|nes rief so|fort die See|not|ret|ter im Ha|fen an. Dann nahm er sei|ne al|te La|ter|ne, lief hin|un|ter zum Strand und schwenk|te sie hoch ü|ber dem Kopf.\n\nBald kam ein ro|tes Ret|tungs|boot durch die Wel|len. Zwei Ret|ter in gel|ben Ja|cken war|fen den Fi|schern ein Seil zu und zo|gen das Boot im letz|ten Mo|ment von den Fel|sen weg. Auf dem Rück|weg wink|ten sie dem al|ten Mann am U|fer, und ü|ber ihm leuch|te|te ru|hig der Leucht|turm.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_feuerwache_5",
+      "version": 2,
+      "theme": "stories",
+      "level": 5,
+      "title": "Besuch bei der Feuerwehr",
+      "body": "Am Freitag ging Emmas ganze Klasse zur Feuerwache am Ende der Straße. Das große Tor stand offen, und drinnen stand ein riesiges rotes Feuerwehrauto. Die Kinder staunten sehr. Ein gelb-schwarzes Band und eine Reihe orangefarbener Kegel hielten sie auf Abstand.\n\nFeuerwehrmann Markus kniete neben einem langen gelben Schlauch. „Wir rollen den Schlauch ganz fest auf“, sagte er ruhig, „damit wir ihn bei einem Brand schnell ausrollen können.“ Er zeigte, wie es geht, bis der Schlauch wie ein flaches Rad auf dem Boden lag. Hinter ihm prüfte ein Kollege die Geräte am Auto.\n\nBen fragte, warum die Helme auf der Bank so schwer sind. Markus lachte laut und ließ ihn einen hochheben. Er war viel, viel schwerer, als er aussah! Dann durften alle Kinder einmal vorne im Auto sitzen. Emma drückte kurz auf die Hupe, und alle Kinder lachten. Zum Schluss sagte Markus die wichtigste Regel: Wenn es einmal brennt, geh sofort nach draußen, bleib draußen und ruf Hilfe.",
+      "syllable_body": "Am Frei|tag ging Em|mas gan|ze Klas|se zur Feu|er|wa|che am En|de der Stra|ße. Das gro|ße Tor stand of|fen, und drin|nen stand ein rie|si|ges ro|tes Feu|er|wehr|au|to. Die Kin|der staun|ten sehr. Ein gelb-schwar|zes Band und ei|ne Rei|he o|ran|ge|far|be|ner Ke|gel hiel|ten sie auf Ab|stand.\n\nFeu|er|wehr|mann Mar|kus knie|te ne|ben ei|nem lan|gen gel|ben Schlauch. „Wir rol|len den Schlauch ganz fest auf“, sag|te er ru|hig, „da|mit wir ihn bei ei|nem Brand schnell aus|rol|len kön|nen.“ Er zeig|te, wie es geht, bis der Schlauch wie ein fla|ches Rad auf dem Bo|den lag. Hin|ter ihm prüf|te ein Kol|le|ge die Ge|rä|te am Au|to.\n\nBen frag|te, war|um die Hel|me auf der Bank so schwer sind. Mar|kus lach|te laut und ließ ihn ei|nen hoch|he|ben. Er war viel, viel schwe|rer, als er aus|sah! Dann durf|ten al|le Kin|der ein|mal vor|ne im Au|to sit|zen. Em|ma drück|te kurz auf die Hu|pe, und al|le Kin|der lach|ten. Zum Schluss sag|te Mar|kus die wich|tigs|te Re|gel: Wenn es ein|mal brennt, geh so|fort nach drau|ßen, bleib drau|ßen und ruf Hil|fe.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-26",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_pfuetze_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Platsch!",
+      "body": "Der Regen hat aufgehört. Emma zieht ihre roten Gummistiefel und ihre gelbe Regenjacke an. Im Park sieht sie eine große Pfütze. Platsch! Emma springt mitten hinein. Auch ihr kleiner brauner Hund wird nass.",
+      "syllable_body": "Der Re|gen hat auf|ge|hört. Em|ma zieht ih|re ro|ten Gum|mi|stie|fel und ih|re gel|be Re|gen|ja|cke an. Im Park sieht sie ei|ne gro|ße Pfüt|ze. Platsch! Em|ma springt mit|ten hin|ein. Auch ihr klei|ner brau|ner Hund wird nass.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_schneemann_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "Der Schneemann",
+      "body": "Es hat die ganze Nacht geschneit. Emma und Ben laufen in den Garten. Sie rollen drei große Schneekugeln und setzen sie aufeinander. Ben holt eine Möhre für die Nase. Emma findet zwei schwarze Steine für die Augen. Ben schenkt dem Schneemann seinen roten Schal, und ein alter grüner Eimer ist sein Hut. Sofort landet ein kleiner Vogel auf dem Eimer.",
+      "syllable_body": "Es hat die gan|ze Nacht ge|schneit. Em|ma und Ben lau|fen in den Gar|ten. Sie rol|len drei gro|ße Schnee|ku|geln und set|zen sie auf|ein|an|der. Ben holt ei|ne Möh|re für die Na|se. Em|ma fin|det zwei schwar|ze Stei|ne für die Au|gen. Ben schenkt dem Schnee|mann sei|nen ro|ten Schal, und ein al|ter grü|ner Ei|mer ist sein Hut. So|fort lan|det ein klei|ner Vo|gel auf dem Ei|mer.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_sandburg_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Die Burg und das Meer",
+      "body": "Am letzten Ferientag bauten Emma und Ben am Strand eine Sandburg. Ben füllte den roten Eimer mit nassem Sand, und Emma strich die Mauern mit der blauen Schaufel glatt. Bald hatte die Burg vier Türme. Auf den höchsten steckte Emma eine weiße Feder als Fahne. „Das Meer kommt!“, rief Ben. Schnell gruben sie einen tiefen Graben rund um die Burg. Eine Welle rollte heran und füllte den Graben mit Wasser. Jetzt hatte die Burg einen echten Wassergraben und stand sicher in der Mitte.",
+      "syllable_body": "Am letz|ten Fe|ri|en|tag bau|ten Em|ma und Ben am Strand ei|ne Sand|burg. Ben füll|te den ro|ten Ei|mer mit nas|sem Sand, und Em|ma strich die Mau|ern mit der blau|en Schau|fel glatt. Bald hat|te die Burg vier Tür|me. Auf den höchs|ten steck|te Em|ma ei|ne wei|ße Fe|der als Fah|ne. „Das Meer kommt!“, rief Ben. Schnell gru|ben sie ei|nen tie|fen Gra|ben rund um die Burg. Ei|ne Wel|le roll|te her|an und füll|te den Gra|ben mit Was|ser. Jetzt hat|te die Burg ei|nen ech|ten Was|ser|gra|ben und stand si|cher in der Mit|te.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_vogelhaus_4",
+      "version": 2,
+      "theme": "stories",
+      "level": 4,
+      "title": "Ein Restaurant für Vögel",
+      "body": "Seit drei Tagen schneite es, und der Garten war weiß und still. „Die Vögel haben Hunger“, sagte Emma. „Bauen wir ihnen ein kleines Restaurant.“\n\nIm Schuppen half Papa ihnen, die Bretter zu sägen, und Ben schlug die Nägel ein. Emma strich das Dach rot an. Dann trugen sie das Vogelhaus zum alten Baum. Emma hängte es an einen kräftigen Ast, während ihr kleiner Bruder den Beutel mit den Sonnenblumenkernen hielt und sie hineinschüttete.\n\nKaum hatte Emma es losgelassen, landete schon eine Kohlmeise mit gelber Brust und schwarzem Kopf darauf. „Das Restaurant ist geöffnet!“, lachte Ben. Papa hatte ihnen eine wichtige Regel erklärt: Wer im Winter anfängt, Vögel zu füttern, muss bis zum Frühling weitermachen. Seitdem füllte Ben jeden Morgen das Vogelhaus.",
+      "syllable_body": "Seit drei Ta|gen schnei|te es, und der Gar|ten war weiß und still. „Die Vö|gel ha|ben Hun|ger“, sag|te Em|ma. „Bau|en wir ih|nen ein klei|nes Re|stau|rant.“\n\nIm Schup|pen half Pa|pa ih|nen, die Bret|ter zu sä|gen, und Ben schlug die Nä|gel ein. Em|ma strich das Dach rot an. Dann tru|gen sie das Vo|gel|haus zum al|ten Baum. Em|ma häng|te es an ei|nen kräf|ti|gen Ast, wäh|rend ihr klei|ner Bru|der den Beu|tel mit den Son|nen|blu|men|ker|nen hielt und sie hin|ein|schüt|te|te.\n\nKaum hat|te Em|ma es los|ge|las|sen, lan|de|te schon ei|ne Kohl|mei|se mit gel|ber Brust und schwar|zem Kopf dar|auf. „Das Re|stau|rant ist ge|öff|net!“, lach|te Ben. Pa|pa hat|te ih|nen ei|ne wich|ti|ge Re|gel er|klärt: Wer im Win|ter an|fängt, Vö|gel zu füt|tern, muss bis zum Früh|ling wei|ter|ma|chen. Seit|dem füll|te Ben je|den Mor|gen das Vo|gel|haus.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_dinosaurier_museum_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "Der Riese im Museum",
+      "body": "Am Montag besuchte Bens Klasse das Naturkundemuseum. Im größten Saal blieben alle mit offenem Mund stehen. Vor ihnen stand das Skelett eines Dinosauriers mit einem langen Hals und einem noch längeren Schwanz. Sein kleiner Kopf reichte fast bis an die Decke, und die Kinder reichten ihm nur bis zu den Knien.\n\n„Das ist ein Diplodocus“, sagte der Museumsführer, ein Mann mit grauem Bart. „Er lebte vor etwa hundertfünfzig Millionen Jahren und war so lang wie zwei Busse. Aber keine Sorge: Er fraß nur Pflanzen.“ Alle lachten. Dann erklärte er, dass die Knochen in Millionen von Jahren zu Stein geworden waren. Forscher hatten sie aus dem Fels gegraben und wie ein riesiges Puzzle zusammengesetzt.\n\nBen setzte sich mit seinem Heft auf den Boden und zeichnete den langen Hals, den winzigen Kopf und jede einzelne Rippe. Als der Museumsführer seine Zeichnung sah, lächelte er. „Vielleicht gräbst du eines Tages selbst einen Dinosaurier aus“, sagte er.",
+      "syllable_body": "Am Mon|tag be|such|te Bens Klas|se das Na|tur|kun|de|mu|se|um. Im größ|ten Saal blie|ben al|le mit of|fe|nem Mund ste|hen. Vor ih|nen stand das Ske|lett ei|nes Di|no|sau|ri|ers mit ei|nem lan|gen Hals und ei|nem noch län|ge|ren Schwanz. Sein klei|ner Kopf reich|te fast bis an die De|cke, und die Kin|der reich|ten ihm nur bis zu den Knien.\n\n„Das ist ein Di|plo|do|cus“, sag|te der Mu|se|ums|füh|rer, ein Mann mit grau|em Bart. „Er leb|te vor et|wa hun|dert|fünf|zig Mil|li|o|nen Jah|ren und war so lang wie zwei Bus|se. A|ber kei|ne Sor|ge: Er fraß nur Pflan|zen.“ Al|le lach|ten. Dann er|klär|te er, dass die Kno|chen in Mil|li|o|nen von Jah|ren zu Stein ge|wor|den wa|ren. For|scher hat|ten sie aus dem Fels ge|gra|ben und wie ein rie|si|ges Puz|zle zu|sam|men|ge|setzt.\n\nBen setz|te sich mit sei|nem Heft auf den Bo|den und zeich|ne|te den lan|gen Hals, den win|zi|gen Kopf und je|de ein|zel|ne Rip|pe. Als der Mu|se|ums|füh|rer sei|ne Zeich|nung sah, lä|chel|te er. „Viel|leicht gräbst du ei|nes Ta|ges selbst ei|nen Di|no|sau|ri|er aus“, sag|te er.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_marienkaefer_1",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 1,
+      "title": "Der Marienkäfer",
+      "body": "Ein Marienkäfer sitzt auf einem grünen Blatt. Er ist rot und hat schwarze Punkte. Er hat sechs Beine. Auf dem Blatt frisst er winzige grüne Insekten. Dann öffnet er seine Flügel und fliegt davon.",
+      "syllable_body": "Ein Ma|ri|en|kä|fer sitzt auf ei|nem grü|nen Blatt. Er ist rot und hat schwar|ze Punk|te. Er hat sechs Bei|ne. Auf dem Blatt frisst er win|zi|ge grü|ne In|sek|ten. Dann öff|net er sei|ne Flü|gel und fliegt da|von.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_kaenguru_2",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 2,
+      "title": "Ein Baby im Beutel",
+      "body": "Das Känguru lebt in Australien. Mit seinen kräftigen Hinterbeinen hüpft es sehr schnell, und sein langer Schwanz hilft ihm, das Gleichgewicht zu halten. Bei der Geburt ist das Junge nur so groß wie eine Bohne. Es wächst in einem warmen Beutel am Bauch seiner Mutter, die es überallhin mitnimmt. Wenn es größer ist, schaut es heraus und betrachtet die Welt.",
+      "syllable_body": "Das Kän|gu|ru lebt in Aus|tra|li|en. Mit sei|nen kräf|ti|gen Hin|ter|bei|nen hüpft es sehr schnell, und sein lan|ger Schwanz hilft ihm, das Gleich|ge|wicht zu hal|ten. Bei der Ge|burt ist das Jun|ge nur so groß wie ei|ne Boh|ne. Es wächst in ei|nem war|men Beu|tel am Bauch sei|ner Mut|ter, die es ü|ber|all|hin mit|nimmt. Wenn es grö|ßer ist, schaut es her|aus und be|trach|tet die Welt.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_storch_3",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 3,
+      "title": "Der Storch kommt zurück",
+      "body": "Jedes Frühjahr kehrt der Weißstorch aus Afrika zurück. Oft fliegt er Jahr für Jahr zum selben Nest auf demselben Dach. Das Nest ist aus Zweigen gebaut, und ein altes Nest kann zwei Meter breit sein. Der Storch hat lange rote Beine und einen langen roten Schnabel. Langsam stolziert er über feuchte Wiesen und fängt Frösche, Mäuse und Insekten. Störche singen nicht. Stattdessen klappern sie laut mit dem Schnabel. Im Frühling schlüpfen ein paar Junge im Nest, und beide Eltern bringen ihnen Futter. Im Spätsommer fliegen die Störche wieder nach Süden.",
+      "syllable_body": "Je|des Früh|jahr kehrt der Weiß|storch aus A|fri|ka zu|rück. Oft fliegt er Jahr für Jahr zum sel|ben Nest auf dem|sel|ben Dach. Das Nest ist aus Zwei|gen ge|baut, und ein al|tes Nest kann zwei Me|ter breit sein. Der Storch hat lan|ge ro|te Bei|ne und ei|nen lan|gen ro|ten Schna|bel. Lang|sam stol|ziert er ü|ber feuch|te Wie|sen und fängt Frö|sche, Mäu|se und In|sek|ten. Stör|che sin|gen nicht. Statt|des|sen klap|pern sie laut mit dem Schna|bel. Im Früh|ling schlüp|fen ein paar Jun|ge im Nest, und bei|de El|tern brin|gen ih|nen Fut|ter. Im Spät|som|mer flie|gen die Stör|che wie|der nach Sü|den.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_braunbaer_4",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 4,
+      "title": "Die Bärin und ihre Jungen",
+      "body": "Der Braunbär ist eines der größten Tiere in den Wäldern Europas. Trotzdem frisst er vor allem Pflanzen: Gras, Wurzeln, Nüsse und süße Beeren. Er gräbt auch nach Ameisen und Käfern, und manchmal frisst er Fleisch. Sein bestes Werkzeug ist die Nase, die Futter schon von Weitem riecht.\n\nIm Herbst frisst der Bär, so viel er kann. Dann kriecht er in eine Höhle und verschläft den größten Teil des Winters. Dort bringt die Bärin ihre Jungen zur Welt. Anfangs sind sie winzig und blind. Im Frühling führt sie sie in den Wald und zeigt ihnen, wo die besten Heidelbeeren wachsen.\n\nDie Jungen bleiben etwa zwei Jahre bei ihr. Wenn du einmal einen Bären siehst, geh nie nah heran. Bleib ruhig und entferne dich langsam.",
+      "syllable_body": "Der Braun|bär ist ei|nes der größ|ten Tie|re in den Wäl|dern Eu|ro|pas. Trotz|dem frisst er vor al|lem Pflan|zen: Gras, Wur|zeln, Nüs|se und sü|ße Bee|ren. Er gräbt auch nach A|mei|sen und Kä|fern, und manch|mal frisst er Fleisch. Sein bes|tes Werk|zeug ist die Na|se, die Fut|ter schon von Wei|tem riecht.\n\nIm Herbst frisst der Bär, so viel er kann. Dann kriecht er in ei|ne Höh|le und ver|schläft den größ|ten Teil des Win|ters. Dort bringt die Bä|rin ih|re Jun|gen zur Welt. An|fangs sind sie win|zig und blind. Im Früh|ling führt sie sie in den Wald und zeigt ih|nen, wo die bes|ten Hei|del|bee|ren wach|sen.\n\nDie Jun|gen blei|ben et|wa zwei Jah|re bei ihr. Wenn du ein|mal ei|nen Bä|ren siehst, geh nie nah her|an. Bleib ru|hig und ent|fer|ne dich lang|sam.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "animal_facts_elefantenfamilie_5",
+      "version": 1,
+      "theme": "animal_facts",
+      "level": 5,
+      "title": "Die Elefantenfamilie",
+      "body": "Der Afrikanische Elefant ist das größte Landtier. Ein erwachsener Bulle kann so viel wiegen wie sechs Autos, und schon ein neugeborenes Kalb wiegt etwa hundert Kilo.\n\nDer Rüssel ist Nase und Oberlippe in einem. Er hat keine Knochen, aber Tausende Muskeln. Damit kann der Elefant einen schweren Stamm heben oder eine einzelne Nuss aufsammeln. Er riecht mit dem Rüssel, begrüßt seine Familie und trinkt: Er saugt Wasser ein und spritzt es sich ins Maul. An heißen Tagen spritzt er sich Wasser oder Staub auf den Rücken. Auch die riesigen Ohren helfen: Wenn er mit ihnen fächelt, kühlt das Blut darin ab.\n\nElefanten leben in Familien aus Müttern, Schwestern, Tanten und Kälbern. Die Anführerin ist die älteste Kuh. Sie weiß, wo es Wasser gibt, selbst in den trockensten Monaten. Alle kümmern sich um die Kälber. Junge Bullen ziehen fort, wenn sie erwachsen sind, doch die Weibchen bleiben ein Leben lang zusammen.",
+      "syllable_body": "Der A|fri|ka|ni|sche E|le|fant ist das größ|te Land|tier. Ein er|wach|se|ner Bul|le kann so viel wie|gen wie sechs Au|tos, und schon ein neu|ge|bo|re|nes Kalb wiegt et|wa hun|dert Ki|lo.\n\nDer Rüs|sel ist Na|se und O|ber|lip|pe in ei|nem. Er hat kei|ne Kno|chen, a|ber Tau|sen|de Mus|keln. Da|mit kann der E|le|fant ei|nen schwe|ren Stamm he|ben o|der ei|ne ein|zel|ne Nuss auf|sam|meln. Er riecht mit dem Rüs|sel, be|grüßt sei|ne Fa|mi|lie und trinkt: Er saugt Was|ser ein und spritzt es sich ins Maul. An hei|ßen Ta|gen spritzt er sich Was|ser o|der Staub auf den Rü|cken. Auch die rie|si|gen Oh|ren hel|fen: Wenn er mit ih|nen fä|chelt, kühlt das Blut dar|in ab.\n\nE|le|fan|ten le|ben in Fa|mi|li|en aus Müt|tern, Schwes|tern, Tan|ten und Käl|bern. Die An|füh|re|rin ist die äl|tes|te Kuh. Sie weiß, wo es Was|ser gibt, selbst in den tro|ckens|ten Mo|na|ten. Al|le küm|mern sich um die Käl|ber. Jun|ge Bul|len zie|hen fort, wenn sie er|wach|sen sind, doch die Weib|chen blei|ben ein Le|ben lang zu|sam|men.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_gemalter_vogel_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Der gemalte Vogel",
+      "body": "Emma malt einen blauen Vogel. Da öffnet der Vogel die Augen. Er schlägt mit den Flügeln und fliegt aus dem Bild! Er singt im sonnigen Zimmer. Emma lacht. Die Katze schläft einfach weiter.",
+      "syllable_body": "Em|ma malt ei|nen blau|en Vo|gel. Da öff|net der Vo|gel die Au|gen. Er schlägt mit den Flü|geln und fliegt aus dem Bild! Er singt im son|ni|gen Zim|mer. Em|ma lacht. Die Kat|ze schläft ein|fach wei|ter.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_wolkenschaf_1",
+      "version": 1,
+      "theme": "stories",
+      "level": 1,
+      "title": "Das Wolkenschaf",
+      "body": "Ben sieht eine Wolke, die wie ein Schaf aussieht. Das Wolkenschaf kommt herunter und lächelt. Ben klettert auf seinen weichen Rücken. Schon fliegen sie über den Fluss und das kleine Dorf.",
+      "syllable_body": "Ben sieht ei|ne Wol|ke, die wie ein Schaf aus|sieht. Das Wol|ken|schaf kommt her|un|ter und lä|chelt. Ben klet|tert auf sei|nen wei|chen Rü|cken. Schon flie|gen sie ü|ber den Fluss und das klei|ne Dorf.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_winzige_tuer_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "Die winzige Tür",
+      "body": "Emma liegt im Gras unter einem großen alten Baum. Zwischen den Wurzeln entdeckt sie eine winzige Holztür mit einem runden Fenster. Daneben hängt eine kleine Laterne. Dann geht die Tür auf. Heraus kommt eine Maus in einem roten Mantel, mit einer Teekanne in den Pfoten. „Möchtest du eine Tasse Tee?“, fragt die Maus. Emma lächelt. Sie ist viel zu groß für das Haus!",
+      "syllable_body": "Em|ma liegt im Gras un|ter ei|nem gro|ßen al|ten Baum. Zwi|schen den Wur|zeln ent|deckt sie ei|ne win|zi|ge Holz|tür mit ei|nem run|den Fens|ter. Da|ne|ben hängt ei|ne klei|ne La|ter|ne. Dann geht die Tür auf. Her|aus kommt ei|ne Maus in ei|nem ro|ten Man|tel, mit ei|ner Tee|kan|ne in den Pfo|ten. „Möch|test du ei|ne Tas|se Tee?“, fragt die Maus. Em|ma lä|chelt. Sie ist viel zu groß für das Haus!",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_riesensocke_2",
+      "version": 1,
+      "theme": "stories",
+      "level": 2,
+      "title": "Die Socke des Riesen",
+      "body": "Auf der Wiese findet Ben etwas Seltsames: eine riesige rot-weiß gestreifte Socke! Sie ist so groß wie ein Zelt. Ben klettert hinein und lacht. Die Schafe starren ihn an. Plötzlich bebt der Boden. Weit hinter den Hügeln steht ein Riese mit einem nackten Fuß. „Da ist ja meine Socke!“, ruft er fröhlich.",
+      "syllable_body": "Auf der Wie|se fin|det Ben et|was Selt|sa|mes: ei|ne rie|si|ge rot-weiß ge|streif|te So|cke! Sie ist so groß wie ein Zelt. Ben klet|tert hin|ein und lacht. Die Scha|fe star|ren ihn an. Plötz|lich bebt der Bo|den. Weit hin|ter den Hü|geln steht ein Rie|se mit ei|nem nack|ten Fuß. „Da ist ja mei|ne So|cke!“, ruft er fröh|lich.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_einhorn_garten_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Das Einhorn im Garten",
+      "body": "Eines Morgens ging Emma früh in den Gemüsegarten, um Möhren zu holen. Zwischen den Salatköpfen stand ein kleines weißes Einhorn mit einem silbernen Horn und einer langen goldenen Mähne. Es hielt ein Vorderbein hoch. Emma kniete sich langsam hin. „Tut dir etwas weh?“, flüsterte sie. Ein kleiner Stein steckte in seinem Huf. Vorsichtig zog Emma ihn heraus. Das Einhorn stupste sie sanft mit der Nase an. Dann wuchsen rings um seine Hufe bunte Blumen aus der Erde. So etwas Schönes hatte Emma noch nie gesehen.",
+      "syllable_body": "Ei|nes Mor|gens ging Em|ma früh in den Ge|mü|se|gar|ten, um Möh|ren zu ho|len. Zwi|schen den Sa|lat|köp|fen stand ein klei|nes wei|ßes Ein|horn mit ei|nem sil|ber|nen Horn und ei|ner lan|gen gol|de|nen Mäh|ne. Es hielt ein Vor|der|bein hoch. Em|ma knie|te sich lang|sam hin. „Tut dir et|was weh?“, flüs|ter|te sie. Ein klei|ner Stein steck|te in sei|nem Huf. Vor|sich|tig zog Em|ma ihn her|aus. Das Ein|horn stups|te sie sanft mit der Na|se an. Dann wuch|sen rings um sei|ne Hu|fe bun|te Blu|men aus der Er|de. So et|was Schö|nes hat|te Em|ma noch nie ge|se|hen.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_zauberhut_3",
+      "version": 1,
+      "theme": "stories",
+      "level": 3,
+      "title": "Der Zauberhut",
+      "body": "An einem sonnigen Nachmittag spielte Ben auf dem Dachboden. In einer alten Holztruhe fand er einen großen blauen Hut mit goldenen Sternen und Monden. Er war ihm viel zu groß, aber er setzte ihn trotzdem auf. Sofort hob die graue Katze auf dem Sessel eine Pfote und sagte: „Endlich! Ich warte schon lange darauf, dass jemand diesen Hut trägt.“ Ben blieb der Mund offen stehen. „Du kannst sprechen?“ „Alle Katzen können sprechen“, sagte die Katze. „Aber nur Zauberer können uns hören.“ Ben sah die Katze an, dann den Hut, und grinste.",
+      "syllable_body": "An ei|nem son|ni|gen Nach|mit|tag spiel|te Ben auf dem Dach|bo|den. In ei|ner al|ten Holz|tru|he fand er ei|nen gro|ßen blau|en Hut mit gol|de|nen Ster|nen und Mon|den. Er war ihm viel zu groß, a|ber er setz|te ihn trotz|dem auf. So|fort hob die grau|e Kat|ze auf dem Ses|sel ei|ne Pfo|te und sag|te: „End|lich! Ich war|te schon lan|ge dar|auf, dass je|mand die|sen Hut trägt.“ Ben blieb der Mund of|fen ste|hen. „Du kannst spre|chen?“ „Al|le Kat|zen kön|nen spre|chen“, sag|te die Kat|ze. „A|ber nur Zau|be|rer kön|nen uns hö|ren.“ Ben sah die Kat|ze an, dann den Hut, und grins|te.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_drache_laterne_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "Der Drache, der Angst im Dunkeln hatte",
+      "body": "Auf dem Hügel über dem Dorf wohnte ein großer lila Drache. Er hatte spitze Hörner und riesige Flügel, und alle im Dorf hielten ihn für schrecklich mutig. Doch der Drache hatte ein Geheimnis: Er hatte Angst im Dunkeln.\n\nEines Nachts stieg Emma mit ihrer Laterne auf den Hügel. Sie fand den Drachen zusammengerollt, und er zitterte. „Was ist los?“, fragte sie. „Es ist so dunkel“, flüsterte der Drache. „Ich sehe gar nichts.“\n\nEmma hob ihre Laterne hoch, und das warme Licht fiel auf das Gesicht des Drachen. „Schau“, sagte sie. „Die Dunkelheit ist nicht leer. Da sind der Mond und die Sterne, und im Gras tanzen Glühwürmchen. Und dort unten leuchten die Lichter unseres Dorfes.“\n\nDer Drache schaute, und langsam begann er zu lächeln.",
+      "syllable_body": "Auf dem Hü|gel ü|ber dem Dorf wohn|te ein gro|ßer li|la Dra|che. Er hat|te spit|ze Hör|ner und rie|si|ge Flü|gel, und al|le im Dorf hiel|ten ihn für schreck|lich mu|tig. Doch der Dra|che hat|te ein Ge|heim|nis: Er hat|te Angst im Dun|keln.\n\nEi|nes Nachts stieg Em|ma mit ih|rer La|ter|ne auf den Hü|gel. Sie fand den Dra|chen zu|sam|men|ge|rollt, und er zit|ter|te. „Was ist los?“, frag|te sie. „Es ist so dun|kel“, flüs|ter|te der Dra|che. „Ich se|he gar nichts.“\n\nEm|ma hob ih|re La|ter|ne hoch, und das war|me Licht fiel auf das Ge|sicht des Dra|chen. „Schau“, sag|te sie. „Die Dun|kel|heit ist nicht leer. Da sind der Mond und die Ster|ne, und im Gras tan|zen Glüh|würm|chen. Und dort un|ten leuch|ten die Lich|ter un|se|res Dor|fes.“\n\nDer Dra|che schau|te, und lang|sam be|gann er zu lä|cheln.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_meerjungfrau_4",
+      "version": 1,
+      "theme": "stories",
+      "level": 4,
+      "title": "Die Muschel der Meerjungfrau",
+      "body": "Ben erkundete gern die Felsen am Meer. Eines Abends, als die Sonne unterging, fand er in einem Tümpel zwischen den Felsen eine große rosa Muschel. Als er sie ans Ohr hielt, hörte er jemanden singen.\n\nPlötzlich tauchte ein Mädchen aus dem Wasser auf. Es hatte lange braune Haare mit kleinen Seesternen darin, und hinter ihm glitzerte ein grüner Schwanz in den Wellen. Eine Meerjungfrau!\n\n„Du hast meine Muschel gefunden“, sagte sie. „Darin ist das Lied meiner Großmutter. Ich habe sie bei Ebbe verloren.“ Ben kniete sich auf den flachen Felsen und reichte ihr die Muschel. Die Meerjungfrau nahm sie und lächelte glücklich.\n\n„Danke“, sagte sie. „Wann immer du zu diesen Felsen kommst, hör den Wellen zu. Dann singe ich für dich.“",
+      "syllable_body": "Ben er|kun|de|te gern die Fel|sen am Meer. Ei|nes A|bends, als die Son|ne un|ter|ging, fand er in ei|nem Tüm|pel zwi|schen den Fel|sen ei|ne gro|ße ro|sa Mu|schel. Als er sie ans Ohr hielt, hör|te er je|man|den sin|gen.\n\nPlötz|lich tauch|te ein Mäd|chen aus dem Was|ser auf. Es hat|te lan|ge brau|ne Haa|re mit klei|nen See|ster|nen dar|in, und hin|ter ihm glit|zer|te ein grü|ner Schwanz in den Wel|len. Ei|ne Meer|jung|frau!\n\n„Du hast mei|ne Mu|schel ge|fun|den“, sag|te sie. „Dar|in ist das Lied mei|ner Groß|mut|ter. Ich ha|be sie bei Eb|be ver|lo|ren.“ Ben knie|te sich auf den fla|chen Fel|sen und reich|te ihr die Mu|schel. Die Meer|jung|frau nahm sie und lä|chel|te glück|lich.\n\n„Dan|ke“, sag|te sie. „Wann im|mer du zu die|sen Fel|sen kommst, hör den Wel|len zu. Dann sin|ge ich für dich.“",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_wolkenschloss_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "Das Schloss auf den Wolken",
+      "body": "Eines Morgens erschien ein Regenbogen über dem Tal. Er leuchtete so hell, dass er ganz fest aussah, und ein Ende reichte bis direkt neben den Garten von Emma und Ben. „Ob man darauf gehen kann?“, fragte Ben. Emma setzte einen Fuß auf den roten Streifen. Er war fest und warm wie Sand in der Sonne. Sie packten ihre Rucksäcke, nahmen sich an der Hand und kletterten los.\n\nBald lag das Dorf tief unter ihnen: der Fluss, die Steinbrücke und die kleine Kirche. Da flog eine braune Eule neben ihnen her. „Folgt mir“, rief sie. „Die Wolkenkönigin erwartet euch.“ Oben stand auf den Wolken ein weißes Schloss mit blauen Türmen. Die Wolkenkönigin erzählte ihnen, dass sie den Regen schickt, damit die Felder grün bleiben, und dass der Regenbogen ihr Dank an die Sonne ist.\n\nAm Abend zeigte ihnen die Eule den Weg nach Hause. In der Nacht leuchteten in der Ferne noch ein paar Türme auf den Wolken.",
+      "syllable_body": "Ei|nes Mor|gens er|schien ein Re|gen|bo|gen ü|ber dem Tal. Er leuch|te|te so hell, dass er ganz fest aus|sah, und ein En|de reich|te bis di|rekt ne|ben den Gar|ten von Em|ma und Ben. „Ob man dar|auf ge|hen kann?“, frag|te Ben. Em|ma setz|te ei|nen Fuß auf den ro|ten Strei|fen. Er war fest und warm wie Sand in der Son|ne. Sie pack|ten ih|re Ruck|sä|cke, nah|men sich an der Hand und klet|ter|ten los.\n\nBald lag das Dorf tief un|ter ih|nen: der Fluss, die Stein|brü|cke und die klei|ne Kir|che. Da flog ei|ne brau|ne Eu|le ne|ben ih|nen her. „Folgt mir“, rief sie. „Die Wol|ken|kö|ni|gin er|war|tet euch.“ O|ben stand auf den Wol|ken ein wei|ßes Schloss mit blau|en Tür|men. Die Wol|ken|kö|ni|gin er|zähl|te ih|nen, dass sie den Re|gen schickt, da|mit die Fel|der grün blei|ben, und dass der Re|gen|bo|gen ihr Dank an die Son|ne ist.\n\nAm A|bend zeig|te ih|nen die Eu|le den Weg nach Hau|se. In der Nacht leuch|te|ten in der Fer|ne noch ein paar Tür|me auf den Wol|ken.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    },
+    {
+      "id": "stories_gartenzwerge_5",
+      "version": 1,
+      "theme": "stories",
+      "level": 5,
+      "title": "Die Nacht, in der die Zwerge erwachten",
+      "body": "Der Sturm hatte den alten Gartenzaun kaputt gemacht, und Papa wollte ihn am Samstag reparieren. Doch in dieser Nacht schien der Vollmond so hell, dass Ben nicht schlafen konnte. Er ging zum Fenster und rieb sich die Augen: Die fünf Gartenzwerge, die sonst still zwischen den Blumen standen, liefen mit ihren roten Zipfelmützen über den Rasen!\n\nSie hatten eine Leiter, einen Hammer und eine Holzkiste voller Nägel mitgebracht. Ein Zwerg stieg auf die Leiter und hämmerte los. Zwei andere trugen zusammen ein neues Brett und schnauften und lachten dabei. Der vierte hielt den Zaun gerade, und der fünfte reichte Nägel aus der Kiste. Im Gras leuchtete eine kleine Laterne. Ben sah zu, bis der Zaun wieder ganz war. Dann gingen die Zwerge an ihre Plätze zurück und standen still.\n\nAm Morgen ging Papa mit seinem Werkzeugkasten hinaus und blieb verwundert stehen. „Wer hat den Zaun repariert?“, fragte er. Ben lächelte nur.",
+      "syllable_body": "Der Sturm hat|te den al|ten Gar|ten|zaun ka|putt ge|macht, und Pa|pa woll|te ihn am Sams|tag re|pa|rie|ren. Doch in die|ser Nacht schien der Voll|mond so hell, dass Ben nicht schla|fen konn|te. Er ging zum Fens|ter und rieb sich die Au|gen: Die fünf Gar|ten|zwer|ge, die sonst still zwi|schen den Blu|men stan|den, lie|fen mit ih|ren ro|ten Zip|fel|müt|zen ü|ber den Ra|sen!\n\nSie hat|ten ei|ne Lei|ter, ei|nen Ham|mer und ei|ne Holz|kis|te vol|ler Nä|gel mit|ge|bracht. Ein Zwerg stieg auf die Lei|ter und häm|mer|te los. Zwei an|de|re tru|gen zu|sam|men ein neu|es Brett und schnauf|ten und lach|ten da|bei. Der vier|te hielt den Zaun ge|ra|de, und der fünf|te reich|te Nä|gel aus der Kis|te. Im Gras leuch|te|te ei|ne klei|ne La|ter|ne. Ben sah zu, bis der Zaun wie|der ganz war. Dann gin|gen die Zwer|ge an ih|re Plät|ze zu|rück und stan|den still.\n\nAm Mor|gen ging Pa|pa mit sei|nem Werk|zeug|kas|ten hin|aus und blieb ver|wun|dert ste|hen. „Wer hat den Zaun re|pa|riert?“, frag|te er. Ben lä|chel|te nur.",
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Claude (original German text, not a native speaker; syllable breaks checked)",
+        "date": "2026-09-28",
+        "nativeSpeaker": false,
+        "syllablesReviewed": true,
+        "imageAccuracy": "verified"
+      }
+    }
+  ]
+}
