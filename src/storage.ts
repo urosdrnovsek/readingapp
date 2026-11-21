@@ -1,11 +1,13 @@
 import type { Anchor, Highlight, Preferences } from './reading';
 import type { Language } from './content';
+import type { InkStroke } from './drawing';
 
 export type Bookmark = { key: string; sentence: Anchor };
 export type ReadingData = {
   preferences?: Preferences;
   bookmark?: Bookmark;
   highlights: Record<string, Highlight[]>;
+  ink?: Record<string, InkStroke[]>;
   interfaceLanguage?: 'en' | 'sl';
   passageLanguage?: Language;
 };

@@ -5,6 +5,8 @@ import { emptyData, loadStore, type ReadingData } from './storage';
 import { strings, type Message } from './strings';
 import { icon } from './icons';
 import { createSpeech, speechRates, type SpeechRate } from './speech';
+import { appendInkPoint, renderInkCanvas, type InkColour, type InkStroke, type InkSurface } from './drawing';
+import pictureData from './passage-pictures.json';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const PAGE_SIZE = 12;
@@ -31,10 +33,12 @@ let startWord = 0;
 let endWord = 0;
 let awaitingEnd = false;
 let paintOpen = false;
-let paintColour: PaintColour | 'eraser' = 'sun';
-let stroke: { pointer: number; first: number; last: number } | undefined;
-let swatchTap: { pointer: number; control: HTMLElement } | undefined;
-let undoStack: Highlight[][] = [];
+let paintColour: InkColour = 'sun';
+let stroke: { pointer: number; canvas: HTMLCanvasElement; ink: InkStroke } | undefined;
+let inkFrame = 0;
+let dockTap: { pointer: number; control: HTMLButtonElement } | undefined;
+let activatedByTouch: HTMLButtonElement | undefined;
+let undoStack: ({ marks: Highlight[] } | { strokeCount: number })[] = [];
 let scrollFrame = 0;
 let ignoreScrollUntil = 0;
 let settingTimer: number | undefined;
@@ -57,10 +61,14 @@ const option = (value: string, label: string, selected: string) =>
 const button = (action: string, label: Message, classes = 'button') =>
   `<button type="button" class="${classes}" data-action="${action}">${t(label)}</button>`;
 const marks = () => current ? activeData().highlights[current.key] ?? [] : [];
+const inkKey = (passage: Passage) => `${passage.key}/${passage.version}`;
+const inkStrokes = () => current ? activeData().ink?.[inkKey(current)] ?? [] : [];
+const passagePictures: Record<string, string> = pictureData;
 const colourLabels: Record<PaintColour, Message> = { sun: 'sun', rose: 'rose', mint: 'mintInk', sky: 'sky', lilac: 'lilac' };
 const measureDock = new ResizeObserver(([entry]) => {
   app.style.setProperty('--dock-height', `${entry.target.getBoundingClientRect().height}px`);
 });
+const measureInk = new ResizeObserver(scheduleInkRender);
 
 function persist() {
   if (!guestData) database?.save(data).catch(() => {
@@ -138,7 +146,8 @@ function showRoute(finished = false) {
   current = route();
   structure = current && readStructure(current);
   guide = selecting = toolsOpen = awaitingEnd = false;
-  paintOpen = false;
+  paintOpen = !!current && !preferences.plain;
+  if (paintColour === 'eraser') paintColour = 'sun';
   stroke = undefined;
   undoStack = [];
   sentence = 0;
@@ -167,6 +176,8 @@ function showRoute(finished = false) {
 
 function render() {
   measureDock.disconnect();
+  measureInk.disconnect();
+  stroke = undefined;
   document.documentElement.lang = activeData().interfaceLanguage ?? 'en';
   document.title = current ? `${current.title} · ${t('brand')}` : t('brand');
   app.dataset.view = current ? 'reader' : 'library';
@@ -190,6 +201,7 @@ function render() {
     refreshPassage();
     const dock = app.querySelector('#paint-dock');
     if (dock) measureDock.observe(dock);
+    app.querySelectorAll('.ink-layer').forEach(canvas => measureInk.observe(canvas));
   } else renderResults();
 }
 
@@ -257,6 +269,7 @@ function renderResults() {
   results.innerHTML = matching.length
     ? `<ul class="cards">${matching.slice(0, pageLimit).map(p => `<li>
       <button class="card" data-action="open" data-card data-key="${escape(p.key)}">
+        <img class="passage-thumb" src="${import.meta.env.BASE_URL}thumbnails/${encodeURIComponent(passagePictures[p.key])}.webp" width="144" height="144" loading="lazy" alt="">
         <span class="card-content">
           <strong lang="${p.language}">${escape(p.title)}</strong>
           <span>${t(p.theme)} <span aria-hidden="true">·</span> ${t('level')} ${p.level}</span>
@@ -288,7 +301,16 @@ function renderReader(passage: Passage) {
         <div class="reader-title"><h1 tabindex="-1" lang="${passage.language}">${escape(passage.title)}</h1>${picture}</div>
         <div id="guide-tools" hidden></div>
         ${renderListening(passage)}
-        <p class="passage-body" id="passage" lang="${passage.language}"></p>
+        <div class="ink-paper">
+          <p class="passage-body" id="passage" lang="${passage.language}"></p>
+          <canvas class="ink-layer" data-ink-surface="text" aria-hidden="true"></canvas>
+        </div>
+        <div class="sketch" id="sketch">
+          <p>${t('drawHere')}</p>
+          <div class="ink-paper sketch-paper">
+            <canvas class="ink-layer" data-ink-surface="sketch" aria-hidden="true"></canvas>
+          </div>
+        </div>
       </article>
     </div>
     <div id="paint-dock" class="paint-dock"><div id="paint-controls"></div><div id="range-tools" hidden></div></div>
@@ -324,12 +346,16 @@ function refreshPassage() {
   const marksOnPage = resolvedMarks(current, structure.words);
   const body = app.querySelector<HTMLElement>('#passage')!;
   body.classList.toggle('is-selecting', selecting);
-  body.classList.toggle('is-painting', paintOpen && !selecting);
   body.dataset.ink = paintColour;
   body.innerHTML = passageMarkup(current, structure, {
-    preferences, wordTargets: paintOpen || selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
+    preferences, wordTargets: selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
     pending: selecting ? wordRange(startWord, endWord) : undefined, guide: guide && !preferences.plain ? sentence : -1,
   });
+  const drawing = paintOpen && !selecting && !preferences.plain;
+  reader.dataset.drawing = String(drawing);
+  const sketch = app.querySelector<HTMLElement>('#sketch')!;
+  sketch.hidden = preferences.plain || (!paintOpen && !inkStrokes().some(item => item.surface === 'sketch' && item.colour !== 'eraser'));
+  scheduleInkRender();
   updateListeningTarget();
   const sample = app.querySelector('#cue-sample');
   if (sample) {
@@ -555,6 +581,28 @@ function togglePaint() {
     : controlFor('paint'))?.focus({ preventScroll: true });
 }
 
+function scheduleInkRender() {
+  if (inkFrame) return;
+  inkFrame = requestAnimationFrame(() => {
+    inkFrame = 0;
+    const saved = inkStrokes();
+    app.querySelectorAll<HTMLCanvasElement>('.ink-layer').forEach(canvas => renderInkCanvas(canvas, saved, stroke?.ink));
+  });
+}
+
+function addUndo(undo: (typeof undoStack)[number]) {
+  undoStack.push(undo);
+  if (undoStack.length > 30) undoStack.shift();
+}
+
+function saveInk(next: InkStroke[]) {
+  if (!current) return;
+  (activeData().ink ??= {})[inkKey(current)] = next;
+  persist();
+  scheduleInkRender();
+  refreshPaintControls();
+}
+
 function saveMarks(next: Highlight[]) {
   if (!current) return;
   activeData().highlights[current.key] = next;
@@ -566,8 +614,7 @@ function saveMarks(next: Highlight[]) {
 function changeMarks(next: Highlight[]) {
   const previous = marks();
   if (previous === next) return;
-  undoStack.push(previous);
-  if (undoStack.length > 30) undoStack.shift();
+  addUndo({ marks: previous });
   saveMarks(next);
 }
 
@@ -579,7 +626,7 @@ function paintRange(range: Span) {
   if (announcement) announcement.textContent = `${t(colour ? 'coloured' : 'erased')}: ${current.body.slice(range.start, range.end)}`;
 }
 
-function chooseColour(colour: PaintColour | 'eraser') {
+function chooseColour(colour: InkColour) {
   if (paintColour === colour) return;
   paintColour = colour;
   refreshPaintControls();
@@ -719,64 +766,61 @@ function resetFilters() {
   pageLimit = PAGE_SIZE;
 }
 
-function wordAtPointer(event: PointerEvent) {
-  const word = document.elementFromPoint(event.clientX, event.clientY)?.closest<HTMLElement>('#passage [data-word]');
-  return word ? Number(word.dataset.word) : undefined;
-}
-
-function paintStrokePreview() {
-  const first = stroke ? Math.min(stroke.first, stroke.last) : -1;
-  const last = stroke ? Math.max(stroke.first, stroke.last) : -1;
-  app.querySelectorAll<HTMLElement>('#passage [data-word]').forEach(word => {
-    const index = Number(word.dataset.word);
-    word.classList.toggle('stroke-preview', first <= index && index <= last);
-  });
-}
-
 app.addEventListener('pointerdown', event => {
   if (!paintOpen || !event.isPrimary || event.button !== 0) return;
-  const swatch = (event.target as Element).closest<HTMLElement>('[data-colour]');
-  if (swatch && event.pointerType === 'touch') {
-    swatchTap = { pointer: event.pointerId, control: swatch };
+  activatedByTouch = undefined;
+  const target = event.target as Element;
+  const control = target.closest<HTMLButtonElement>('#paint-controls button');
+  if (control && event.pointerType === 'touch') {
+    dockTap = { pointer: event.pointerId, control };
     return;
   }
-  if (selecting || stroke) return;
-  const word = wordAtPointer(event);
-  if (word === undefined) return;
-  stroke = { pointer: event.pointerId, first: word, last: word };
+  if (selecting || preferences.plain || stroke || !(target instanceof HTMLCanvasElement)) return;
+  const surface = target.dataset.inkSurface as InkSurface;
+  if (!surface) return;
+  const ink: InkStroke = { surface, colour: paintColour, points: [] };
+  stroke = { pointer: event.pointerId, canvas: target, ink };
+  appendInkPoint(ink, event, target.getBoundingClientRect());
+  event.preventDefault();
   app.setPointerCapture(event.pointerId);
-  paintStrokePreview();
+  scheduleInkRender();
 });
 
 app.addEventListener('pointermove', event => {
   if (stroke?.pointer !== event.pointerId) return;
-  const word = wordAtPointer(event);
-  if (word === undefined || word === stroke.last) return;
-  stroke.last = word;
-  paintStrokePreview();
+  const bounds = stroke.canvas.getBoundingClientRect();
+  for (const sample of event.getCoalescedEvents?.() ?? []) appendInkPoint(stroke.ink, sample, bounds);
+  appendInkPoint(stroke.ink, event, bounds);
+  scheduleInkRender();
 });
 
 app.addEventListener('pointerup', event => {
-  if (swatchTap?.pointer === event.pointerId) {
-    const { control } = swatchTap;
-    swatchTap = undefined;
+  if (dockTap?.pointer === event.pointerId) {
+    const { control } = dockTap;
+    dockTap = undefined;
     if (control.contains(document.elementFromPoint(event.clientX, event.clientY))) {
-      chooseColour(control.dataset.colour as PaintColour | 'eraser');
+      // A browser can suppress the first synthesized click after a drag.
+      activatedByTouch = control;
+      control.click();
     }
     return;
   }
   if (stroke?.pointer !== event.pointerId) return;
-  const range = wordRange(stroke.first, wordAtPointer(event) ?? stroke.last);
+  const { ink, canvas } = stroke;
   stroke = undefined;
-  paintStrokePreview();
-  if (range) paintRange(range);
+  appendInkPoint(ink, event, canvas.getBoundingClientRect());
+  const saved = inkStrokes();
+  if (ink.colour !== 'eraser' || saved.some(item => item.surface === ink.surface)) {
+    addUndo({ strokeCount: saved.length });
+    saveInk([...saved, ink]);
+  } else scheduleInkRender();
 });
 
 function cancelStroke(event: PointerEvent) {
-  if (swatchTap?.pointer === event.pointerId) swatchTap = undefined;
+  if (dockTap?.pointer === event.pointerId) dockTap = undefined;
   if (stroke?.pointer !== event.pointerId) return;
   stroke = undefined;
-  paintStrokePreview();
+  scheduleInkRender();
 }
 app.addEventListener('pointercancel', cancelStroke);
 app.addEventListener('lostpointercapture', cancelStroke);
@@ -796,6 +840,10 @@ function newSession(guest: boolean) {
 app.addEventListener('click', event => {
   const target = event.target as Element;
   const control = target.closest<HTMLButtonElement>('[data-action]');
+  if (control === activatedByTouch && event.isTrusted && event.detail) {
+    activatedByTouch = undefined;
+    return;
+  }
   if (!control) {
     const word = target.closest<HTMLElement>('[data-word]');
     if (selecting && word) {
@@ -849,7 +897,7 @@ app.addEventListener('click', event => {
       else app.querySelector<HTMLButtonElement>('#toggle-tools')?.focus({ preventScroll: true });
       break;
     case 'paint': togglePaint(); break;
-    case 'colour': chooseColour(control.dataset.colour as PaintColour | 'eraser'); break;
+    case 'colour': chooseColour(control.dataset.colour as InkColour); break;
     case 'highlight': setHighlight(!selecting); break;
     case 'cancel': setHighlight(false); break;
     case 'listen':
@@ -910,7 +958,8 @@ app.addEventListener('click', event => {
     case 'undo': {
       const before = undoStack.pop();
       if (!before) break;
-      saveMarks(before);
+      if ('marks' in before) saveMarks(before.marks);
+      else saveInk(inkStrokes().slice(0, before.strokeCount));
       const dialog = app.querySelector<HTMLDialogElement>('#highlights-dialog');
       if (dialog?.open) {
         showHighlights();
@@ -919,6 +968,10 @@ app.addEventListener('click', event => {
       break;
     }
     case 'plain':
+      if (!preferences.plain) {
+        paintOpen = selecting = false;
+        stroke = undefined;
+      }
       setPreferences({ ...preferences, plain: !preferences.plain });
       control.setAttribute('aria-pressed', String(preferences.plain));
       refreshControls();

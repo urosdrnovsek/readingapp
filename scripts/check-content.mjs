@@ -5,6 +5,8 @@ import { readdir, readFile } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
 const languages = Object.keys(await readJson('src/languages.json'));
+const pictures = await readJson('src/passage-pictures.json');
+const thumbnailFiles = new Set(await readdir(new URL('public/thumbnails/', root)));
 const themes = ['stories', 'animal_facts', 'around_the_world', 'amazing_science', 'nature_seasons'];
 const source = process.argv[2];
 const revision = process.argv[3] ?? '5504627c69f04c27b9f6c56dee509792cf5920d6';
@@ -33,6 +35,7 @@ for (const language of languages) {
 
   for (const entry of pack.entries) {
     const label = `${language}/${entry.id}`;
+    assert.ok(thumbnailFiles.has(`${pictures[label]}.webp`), `Missing thumbnail for ${label}`);
     assert.match(entry.id, /^[\p{L}\p{M}\p{N}_-]+$/u, label);
     assert.ok(!knownIds.has(entry.id), `Duplicate entry ${label}`);
     knownIds.add(entry.id);
@@ -52,7 +55,12 @@ for (const language of languages) {
     const approved = upstream.entries.filter(entry => entry.review.status === 'reviewed')
       .map(({ imageId, ...entry }) => entry);
     assert.deepEqual(pack, { ...upstream, entries: approved }, `Approved snapshot differs for ${language}`);
+    for (const entry of upstream.entries.filter(entry => entry.review.status === 'reviewed')) {
+      const key = `${language}/${entry.id}`;
+      assert.equal(pictures[key], entry.imageId, `Thumbnail source differs for ${key}`);
+    }
   }
 }
 
-console.log(`Validated ${count} reviewed passages in ${languages.length} languages${source ? ` against Text Generator ${revision.slice(0, 7)}` : ''}.`);
+assert.equal(Object.keys(pictures).length, count, 'Thumbnail map has extra entries');
+console.log(`Validated ${count} reviewed passages and their thumbnails in ${languages.length} languages${source ? ` against Text Generator ${revision.slice(0, 7)}` : ''}.`);
