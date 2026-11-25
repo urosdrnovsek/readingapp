@@ -8,6 +8,7 @@ export type ReadingData = {
   bookmark?: Bookmark;
   highlights: Record<string, Highlight[]>;
   ink?: Record<string, InkStroke[]>;
+  favourites?: string[];
   interfaceLanguage?: 'en' | 'sl';
   passageLanguage?: Language;
 };

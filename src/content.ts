@@ -17,7 +17,7 @@ type Entry = {
   level: number;
   review: { status: string; syllablesReviewed: boolean };
 };
-export type Passage = Entry & { language: Language; key: string };
+export type Passage = Entry & { language: Language; key: string; readingMinutes: number };
 type Pack = { language: Language; entries: Entry[] };
 
 const files = import.meta.glob<Pack>('../content/*.json', { import: 'default' });
@@ -27,9 +27,12 @@ export const byKey = new Map<string, Passage>();
 export async function loadLibrary() {
   const packs = await Promise.all(Object.values(files).map(load => load()));
   for (const { language, entries } of packs) {
+    const segmenter = new Intl.Segmenter(language, { granularity: 'word' });
     for (const entry of entries) {
       if (entry.review.status !== 'reviewed') continue;
-      const passage = { ...entry, language, key: `${language}/${entry.id}` };
+      const words = [...segmenter.segment(entry.body)].filter(segment => segment.isWordLike).length;
+      const readingMinutes = Math.max(1, Math.round(words / 100));
+      const passage = { ...entry, language, key: `${language}/${entry.id}`, readingMinutes };
       passages.push(passage);
       byKey.set(passage.key, passage);
     }

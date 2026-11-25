@@ -15,9 +15,11 @@ For installation and offline testing, run `npm run build` followed by `npm run p
 
 The interface is available in English and Slovenian. Choose any of the eight passage languages from the library. Personal reading preferences, progress and highlights live in the browser. **Guest reading** starts a temporary session.
 
-**Listen** reads a word or sentence using an installed device voice that matches the passage language. If the device has no matching local voice, it shows a message and the text remains available.
+**Listen** on the marker tray reads and underlines the current sentence. For word-by-word listening and speed controls, open **Listen** in **Reading tools**. Both use a matching installed device voice.
 
-The **Markers** tray starts open. Draw over the words or sketch below the story. Repeated passes deepen the colour. Use the eraser or undo to make changes, and tap **Done** to scroll. **Choose words** lets readers place word highlights by keyboard or screen reader. Drawings and highlights are saved on the device.
+The **Markers** tray starts in **Read** mode, so you can scroll. Pick a colour or tap **Draw** to draw over the words or sketch below the story. Repeated passes deepen the colour. Tap **Read** to scroll again. In **Draw** mode, **Choose words** lets readers place word highlights by keyboard or screen reader. Open **Try this** on selected passages for a short drawing prompt.
+
+Tap a heart to save a passage to **Favourites**, which brings together saved titles across all languages. Reading times are rough estimates based on 100 words per minute. Favourites, drawings and highlights are saved on the device.
 
 Passage thumbnails use the illustrations paired with each text in the pinned Text Generator snapshot.
 

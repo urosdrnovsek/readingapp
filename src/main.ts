@@ -7,6 +7,7 @@ import { icon } from './icons';
 import { createSpeech, speechRates, type SpeechRate } from './speech';
 import { appendInkPoint, renderInkCanvas, type InkColour, type InkStroke, type InkSurface } from './drawing';
 import pictureData from './passage-pictures.json';
+import { storyPrompts } from './prompts';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const PAGE_SIZE = 12;
@@ -21,6 +22,8 @@ let theme: Theme | '' = '';
 let level = '';
 let search = '';
 let pageLimit = PAGE_SIZE;
+let favouritesOnly = false;
+let favouriteSearch = '';
 let libraryScroll = 0;
 let originCard: string | undefined;
 let current: Passage | undefined;
@@ -33,11 +36,12 @@ let startWord = 0;
 let endWord = 0;
 let awaitingEnd = false;
 let paintOpen = false;
+let drawingEnabled = false;
 let paintColour: InkColour = 'sun';
 let stroke: { pointer: number; canvas: HTMLCanvasElement; ink: InkStroke } | undefined;
 let inkFrame = 0;
 let dockTap: { pointer: number; control: HTMLButtonElement } | undefined;
-let activatedByTouch: HTMLButtonElement | undefined;
+let handledDockTap = false;
 let undoStack: ({ marks: Highlight[] } | { strokeCount: number })[] = [];
 let scrollFrame = 0;
 let ignoreScrollUntil = 0;
@@ -47,10 +51,16 @@ let listenMode: 'word' | 'sentence' = 'sentence';
 let listenWord = 0;
 let hasPlayed = false;
 let playback: 'idle' | 'playing' | 'error' = 'idle';
+let speakingSentence: number | undefined;
+let quickListening = false;
+let quickMessage: Message | undefined;
 const speech = createSpeech(status => {
   playback = status;
+  if (status !== 'playing') speakingSentence = undefined;
+  if (status === 'error' && quickListening) quickMessage = 'voiceError';
   refreshListening();
-  if (listenOpen) updateListeningTarget();
+  refreshQuickListen();
+  updateListeningTarget();
 });
 
 const activeData = () => guestData ?? data;
@@ -61,6 +71,7 @@ const option = (value: string, label: string, selected: string) =>
 const button = (action: string, label: Message, classes = 'button') =>
   `<button type="button" class="${classes}" data-action="${action}">${t(label)}</button>`;
 const marks = () => current ? activeData().highlights[current.key] ?? [] : [];
+const favourites = () => activeData().favourites ?? [];
 const inkKey = (passage: Passage) => `${passage.key}/${passage.version}`;
 const inkStrokes = () => current ? activeData().ink?.[inkKey(current)] ?? [] : [];
 const passagePictures: Record<string, string> = pictureData;
@@ -147,6 +158,8 @@ function showRoute(finished = false) {
   structure = current && readStructure(current);
   guide = selecting = toolsOpen = awaitingEnd = false;
   paintOpen = !!current && !preferences.plain;
+  drawingEnabled = quickListening = false;
+  quickMessage = undefined;
   if (paintColour === 'eraser') paintColour = 'sun';
   stroke = undefined;
   undoStack = [];
@@ -232,6 +245,7 @@ function renderLibrary() {
     <section aria-labelledby="browse" class="collection">
       <div class="section-title"><h2 id="browse">${t('browse')}</h2><span id="result-count" aria-live="polite"></span>
         <div class="theme-reset" hidden>${button('clearTheme', 'allThemes', 'button quiet')}</div>
+        <button class="button shelf-favourites" data-action="favourites" aria-pressed="false">${icon('heart')} ${t('favourites')}</button>
       </div>
       <ul class="picture-shelf" aria-label="${t('theme')}">
         ${themes.map(item => `<li><button class="picture-card ${item}" data-action="theme-picture" data-theme="${item}" aria-pressed="false">
@@ -240,9 +254,9 @@ function renderLibrary() {
         </button></li>`).join('')}
       </ul>
       <div class="filters">
-        <label>${t('passageLanguage')}<select id="language">${Object.entries(languages).map(([code, label]) => option(code, label, language)).join('')}</select></label>
-        <label>${t('level')}<select id="level">${option('', t('allLevels'), level)}${[1, 2, 3, 4, 5].map(item => option(String(item), `${t('level')} ${item}`, level)).join('')}</select></label>
-        <label>${t('search')}<span class="search-input">${icon('search')}<input type="search" id="search" value="${escape(search)}" placeholder="${t('search')}"></span></label>
+        <label class="library-filter">${t('passageLanguage')}<select id="language">${Object.entries(languages).map(([code, label]) => option(code, label, language)).join('')}</select></label>
+        <label class="library-filter">${t('level')}<select id="level">${option('', t('allLevels'), level)}${[1, 2, 3, 4, 5].map(item => option(String(item), `${t('level')} ${item}`, level)).join('')}</select></label>
+        <label>${t('search')}<span class="search-input">${icon('search')}<input type="search" id="search" value="${escape(favouritesOnly ? favouriteSearch : search)}" placeholder="${t('search')}"></span></label>
       </div>
       <div id="results"></div><div id="more" class="more"></div>
     </section>
@@ -251,6 +265,14 @@ function renderLibrary() {
 }
 
 function matchingPassages() {
+  if (favouritesOnly) {
+    const query = favouriteSearch.trim().normalize('NFC');
+    return favourites().flatMap(key => {
+      const passage = byKey.get(key);
+      return passage && passage.title.normalize('NFC').toLocaleLowerCase(passage.language)
+        .includes(query.toLocaleLowerCase(passage.language)) ? [passage] : [];
+    });
+  }
   const needle = search.trim().normalize('NFC').toLocaleLowerCase(language);
   return passages.filter(p => p.language === language && (!theme || p.theme === theme) &&
     (!level || String(p.level) === level) && p.title.normalize('NFC').toLocaleLowerCase(language).includes(needle));
@@ -260,11 +282,14 @@ function renderResults() {
   const results = app.querySelector<HTMLDivElement>('#results');
   if (!results) return;
   const matching = matchingPassages();
+  app.querySelector<HTMLElement>('.collection')!.classList.toggle('favourites-only', favouritesOnly);
+  app.querySelector<HTMLElement>('.picture-shelf')!.hidden = favouritesOnly;
+  controlFor('favourites')?.setAttribute('aria-pressed', String(favouritesOnly));
   controlFor('surprise')!.disabled = !matching.length;
   app.querySelectorAll<HTMLButtonElement>('[data-theme]').forEach(card => {
     card.setAttribute('aria-pressed', String(card.dataset.theme === theme));
   });
-  app.querySelector<HTMLElement>('.theme-reset')!.hidden = !theme;
+  app.querySelector<HTMLElement>('.theme-reset')!.hidden = favouritesOnly || !theme;
   app.querySelector('#result-count')!.textContent = `${matching.length} ${t('allPassages').toLocaleLowerCase()}`;
   results.innerHTML = matching.length
     ? `<ul class="cards">${matching.slice(0, pageLimit).map(p => `<li>
@@ -272,10 +297,13 @@ function renderResults() {
         <img class="passage-thumb" src="${import.meta.env.BASE_URL}thumbnails/${encodeURIComponent(passagePictures[p.key])}.webp" width="144" height="144" loading="lazy" alt="">
         <span class="card-content">
           <strong lang="${p.language}">${escape(p.title)}</strong>
-          <span>${t(p.theme)} <span aria-hidden="true">·</span> ${t('level')} ${p.level}</span>
+          <span>${t('level')} ${p.level} <span aria-hidden="true">·</span> ${t('aboutMinutes').replace('{minutes}', String(p.readingMinutes))}
+            ${favouritesOnly ? `<span aria-hidden="true">·</span> <span lang="${p.language}">${escape(languages[p.language])}</span>` : ''}</span>
         </span>
-      </button></li>`).join('')}</ul>`
-    : `<div class="empty"><p>${t('noResults')}</p>${button('clearFilters', 'clearFilters')}</div>`;
+      </button>${favouriteButton(p)}</li>`).join('')}</ul>`
+    : favouritesOnly && !favourites().length
+      ? `<div class="empty"><p>${t('noFavourites')}</p></div>`
+      : `<div class="empty"><p>${t('noResults')}</p>${button('clearFilters', 'clearFilters')}</div>`;
   app.querySelector('#more')!.innerHTML = matching.length > pageLimit ? button('more', 'more') : '';
   if (!activeData().bookmark) {
     const featured = language === 'en' ? byKey.get('en/animal_facts_weaverbird_1')! : passages.find(p => p.language === language)!;
@@ -286,14 +314,37 @@ function renderResults() {
   }
 }
 
+function favouriteButton(passage: Passage) {
+  return `<button type="button" class="button favourite-button" data-action="favourite" data-key="${escape(passage.key)}"
+    aria-label="${t('favourite')} · ${escape(passage.title)}" aria-pressed="${favourites().includes(passage.key)}">${icon('heart')}</button>`;
+}
+
+function toggleFavourite(control: HTMLButtonElement) {
+  const key = control.dataset.key;
+  if (!key || !byKey.has(key)) return;
+  const previous = favourites();
+  const saved = previous.includes(key);
+  activeData().favourites = saved ? previous.filter(item => item !== key) : [key, ...previous];
+  persist();
+  if (favouritesOnly && !current) {
+    const index = [...app.querySelectorAll('[data-action="favourite"]')].indexOf(control);
+    renderResults();
+    const remaining = app.querySelectorAll<HTMLButtonElement>('[data-action="favourite"]');
+    (remaining[Math.min(index, remaining.length - 1)] ?? controlFor('favourites'))?.focus({ preventScroll: true });
+  } else control.setAttribute('aria-pressed', String(!saved));
+}
+
 function renderReader(passage: Passage) {
+  const prompt = storyPrompts[passage.key];
   const picture = passage.key === 'en/animal_facts_weaverbird_1'
     ? `<img class="passage-illustration" src="${import.meta.env.BASE_URL}pictures/woven-nest.webp" width="480" height="480" alt="${t('wovenNestPicture')}">`
     : '';
   return `<div class="reader-wrap">
     <div class="reader-nav">
       <button class="button" data-action="library">${icon('back')} ${t('library')}</button>
-      <button class="button" id="toggle-tools" data-action="tools" aria-controls="reader-tools" aria-expanded="false">${icon('settings')} ${t('tools')}</button>
+      <div class="reader-nav-actions">${favouriteButton(passage)}
+        <button class="button" id="toggle-tools" data-action="tools" aria-controls="reader-tools" aria-expanded="false">${icon('settings')} ${t('tools')}</button>
+      </div>
     </div>
     <div class="reader-layout">
       <aside id="reader-tools" aria-label="${t('tools')}" hidden></aside>
@@ -305,8 +356,10 @@ function renderReader(passage: Passage) {
           <p class="passage-body" id="passage" lang="${passage.language}"></p>
           <canvas class="ink-layer" data-ink-surface="text" aria-hidden="true"></canvas>
         </div>
+        ${prompt ? `<details class="story-prompt"><summary>${t('tryPrompt')}</summary>
+          <p lang="${passage.language}">${escape(prompt)}</p>${button('prompt-draw', 'drawIt', 'button primary')}</details>` : ''}
         <div class="sketch" id="sketch">
-          <p>${t('drawHere')}</p>
+          <p id="sketch-label" tabindex="-1">${t('drawHere')}</p>
           <div class="ink-paper sketch-paper">
             <canvas class="ink-layer" data-ink-surface="sketch" aria-hidden="true"></canvas>
           </div>
@@ -351,10 +404,10 @@ function refreshPassage() {
     preferences, wordTargets: selecting || (listenOpen && listenMode === 'word'), marks: marksOnPage,
     pending: selecting ? wordRange(startWord, endWord) : undefined, guide: guide && !preferences.plain ? sentence : -1,
   });
-  const drawing = paintOpen && !selecting && !preferences.plain;
+  const drawing = paintOpen && drawingEnabled && !selecting && !preferences.plain;
   reader.dataset.drawing = String(drawing);
   const sketch = app.querySelector<HTMLElement>('#sketch')!;
-  sketch.hidden = preferences.plain || (!paintOpen && !inkStrokes().some(item => item.surface === 'sketch' && item.colour !== 'eraser'));
+  sketch.hidden = preferences.plain || (!drawing && !inkStrokes().some(item => item.surface === 'sketch' && item.colour !== 'eraser'));
   scheduleInkRender();
   updateListeningTarget();
   const sample = app.querySelector('#cue-sample');
@@ -447,7 +500,9 @@ function updateListeningTarget() {
   const available = !!canListen();
   body.classList.toggle('is-listening', available);
   body.querySelector('.listen-target')?.classList.remove('listen-target');
+  body.querySelector('.speaking-sentence')?.classList.remove('speaking-sentence');
   if (available && !preferences.plain) body.querySelector(listenSelector())?.classList.add('listen-target');
+  if (speakingSentence !== undefined) body.querySelector(`[data-sentence="${speakingSentence}"]`)?.classList.add('speaking-sentence');
 }
 
 function resetListeningTarget() {
@@ -487,10 +542,12 @@ function refreshListening() {
 
 function toggleListening() {
   speech.stop();
+  quickListening = false;
+  quickMessage = undefined;
   listenOpen = !listenOpen;
   if (listenOpen) {
     selecting = false;
-    paintOpen = false;
+    drawingEnabled = false;
     stroke = undefined;
     resetListeningTarget();
   }
@@ -524,16 +581,62 @@ function playSelection() {
   const span = listenMode === 'word' ? structure.words[listenWord] : structure.sentences[sentence];
   if (!span) return;
   hasPlayed = true;
+  speakSpan(span, listenMode === 'sentence' ? sentence : undefined);
+}
+
+function speakSpan(span: Span, sentenceIndex?: number) {
+  if (!current) return;
+  speech.stop();
+  speakingSentence = sentenceIndex;
   speech.play(current.body.slice(span.start, span.end).trim(), current.language, preferences.speechRate);
 }
 
+function refreshQuickListen() {
+  const control = controlFor('quick-listen');
+  if (!control || !current) return;
+  const name = playback === 'playing' && quickListening ? 'stop' : 'listen';
+  const label = control.querySelector('span')!;
+  if (label.textContent !== t(name)) label.textContent = t(name);
+  const status = app.querySelector('#quick-listen-status')!;
+  if (quickMessage === 'voiceUnavailable' && speech.voiceFor(current.language)) quickMessage = undefined;
+  const message = quickMessage ? t(quickMessage) : '';
+  if (status.textContent !== message) status.textContent = message;
+}
+
+function quickListen() {
+  if (!current || !structure) return;
+  quickMessage = undefined;
+  if (playback === 'playing' && quickListening) {
+    speech.stop();
+    return;
+  }
+  speech.stop();
+  drawingEnabled = selecting = listenOpen = false;
+  stroke = undefined;
+  quickListening = true;
+  if (!speech.voiceFor(current.language)) quickMessage = 'voiceUnavailable';
+  refreshControls();
+  refreshPassage();
+  const span = structure.sentences[sentence];
+  if (span && !quickMessage) {
+    speakSpan(span, sentence);
+    showSentence();
+  }
+}
+
 function renderPaintControls() {
+  const quick = `<button class="button quick-listen" data-action="quick-listen">${icon('listen')} <span>${t('listen')}</span></button>`;
+  const status = '<p id="quick-listen-status" class="quick-listen-status" role="status"></p>';
   if (!paintOpen) {
-    return `<button class="button paint-launch" data-action="paint" aria-expanded="false" aria-controls="paint-controls">
+    return `<div class="paint-mode-bar"><button class="button paint-launch" data-action="paint" aria-expanded="false" aria-controls="paint-controls">
       <span class="paint-emblem">${icon('highlight')}</span>${t('paint')}
-    </button>`;
+    </button>${quick}</div>${status}`;
   }
   return `<div class="paint-tray" role="group" aria-label="${t('paint')}">
+    <div class="paint-mode-bar"><div class="paint-mode-switch">
+      <button class="button" data-action="mode-read" aria-pressed="true">${t('readMode')}</button>
+      <button class="button" data-action="mode-draw" aria-pressed="false">${t('drawMode')}</button>
+    </div>${quick}</div>
     <div class="paint-swatches">
       ${paintColours.map(colour => `<button class="swatch ink-${colour}" data-action="colour" data-colour="${colour}"
         aria-label="${t(colourLabels[colour])}" title="${t(colourLabels[colour])}" aria-pressed="false">
@@ -543,10 +646,9 @@ function renderPaintControls() {
       <button class="button quiet" data-action="colour" data-colour="eraser" aria-label="${t('eraser')}" title="${t('eraser')}" aria-pressed="false">${icon('eraser')}</button>
       <button class="button quiet" data-action="undo-paint" aria-label="${t('undo')}" title="${t('undo')}">${icon('undo')}</button>
       <button class="button quiet choose-words" data-action="highlight" aria-controls="range-tools" aria-expanded="false">${t('chooseWords')}</button>
-      ${button('paint', 'done', 'button primary')}
     </div>
   </div>
-  <p class="paint-help" id="paint-hint"></p>`;
+  <p class="paint-help" id="paint-hint"></p>${status}`;
 }
 
 function refreshPaintControls() {
@@ -556,17 +658,22 @@ function refreshPaintControls() {
     dock.dataset.open = String(paintOpen);
     controls.innerHTML = renderPaintControls();
   }
+  refreshQuickListen();
   if (!paintOpen) return;
+  controls.querySelector<HTMLElement>('.paint-actions')!.hidden = !drawingEnabled && !selecting;
+  controlFor('mode-read')?.setAttribute('aria-pressed', String(!drawingEnabled));
+  controlFor('mode-draw')?.setAttribute('aria-pressed', String(drawingEnabled));
   controls.querySelectorAll<HTMLButtonElement>('[data-colour]').forEach(swatch => {
-    swatch.setAttribute('aria-pressed', String(swatch.dataset.colour === paintColour));
+    swatch.setAttribute('aria-pressed', String((drawingEnabled || selecting) && swatch.dataset.colour === paintColour));
   });
-  controls.querySelector('#paint-hint')!.textContent = t(paintColour === 'eraser' ? 'eraseHint' : 'paintHint');
+  controls.querySelector('#paint-hint')!.textContent = t(!drawingEnabled ? 'readHint' : paintColour === 'eraser' ? 'eraseHint' : 'paintHint');
   controlFor('undo-paint')?.setAttribute('aria-disabled', String(!undoStack.length));
   controlFor('highlight')?.setAttribute('aria-expanded', String(selecting));
 }
 
 function togglePaint() {
   paintOpen = !paintOpen;
+  drawingEnabled = false;
   selecting = false;
   stroke = undefined;
   if (paintOpen) {
@@ -577,8 +684,23 @@ function togglePaint() {
   refreshControls();
   refreshPassage();
   (paintOpen
-    ? app.querySelector<HTMLButtonElement>('#paint-controls [aria-pressed="true"]')
+    ? controlFor('mode-read')
     : controlFor('paint'))?.focus({ preventScroll: true });
+}
+
+function changeDrawingMode(enabled: boolean) {
+  drawingEnabled = enabled;
+  selecting = false;
+  stroke = undefined;
+  if (enabled) {
+    speech.stop();
+    quickListening = listenOpen = false;
+    quickMessage = undefined;
+    paintOpen = true;
+    if (preferences.plain) setPreferences({ ...preferences, plain: false });
+  }
+  refreshControls();
+  refreshPassage();
 }
 
 function scheduleInkRender() {
@@ -627,10 +749,11 @@ function paintRange(range: Span) {
 }
 
 function chooseColour(colour: InkColour) {
-  if (paintColour === colour) return;
   paintColour = colour;
-  refreshPaintControls();
-  refreshPassage();
+  if (selecting) {
+    refreshPaintControls();
+    refreshPassage();
+  } else changeDrawingMode(true);
 }
 
 function endpoint(name: string, label: Message) {
@@ -669,8 +792,11 @@ function setHighlight(on: boolean) {
   selecting = on && !!structure?.words.length;
   awaitingEnd = false;
   if (selecting) {
+    speech.stop();
+    quickListening = false;
+    quickMessage = undefined;
+    drawingEnabled = false;
     if (listenOpen) {
-      speech.stop();
       listenOpen = false;
     }
     const from = structure!.sentences[sentence]?.start ?? 0;
@@ -767,15 +893,16 @@ function resetFilters() {
 }
 
 app.addEventListener('pointerdown', event => {
-  if (!paintOpen || !event.isPrimary || event.button !== 0) return;
-  activatedByTouch = undefined;
+  if (!event.isPrimary || event.button !== 0) return;
+  handledDockTap = false;
+  if (!paintOpen) return;
   const target = event.target as Element;
   const control = target.closest<HTMLButtonElement>('#paint-controls button');
   if (control && event.pointerType === 'touch') {
     dockTap = { pointer: event.pointerId, control };
     return;
   }
-  if (selecting || preferences.plain || stroke || !(target instanceof HTMLCanvasElement)) return;
+  if (!drawingEnabled || selecting || preferences.plain || stroke || !(target instanceof HTMLCanvasElement)) return;
   const surface = target.dataset.inkSurface as InkSurface;
   if (!surface) return;
   const ink: InkStroke = { surface, colour: paintColour, points: [] };
@@ -800,7 +927,7 @@ app.addEventListener('pointerup', event => {
     dockTap = undefined;
     if (control.contains(document.elementFromPoint(event.clientX, event.clientY))) {
       // A browser can suppress the first synthesized click after a drag.
-      activatedByTouch = control;
+      handledDockTap = true;
       control.click();
     }
     return;
@@ -831,6 +958,8 @@ function newSession(guest: boolean) {
   preferences = { ...defaults, ...activeData().preferences };
   language = activeData().passageLanguage ?? 'en';
   resetFilters();
+  favouritesOnly = false;
+  favouriteSearch = '';
   libraryScroll = 0;
   originCard = undefined;
   history.replaceState(null, '', location.pathname + location.search);
@@ -840,8 +969,10 @@ function newSession(guest: boolean) {
 app.addEventListener('click', event => {
   const target = event.target as Element;
   const control = target.closest<HTMLButtonElement>('[data-action]');
-  if (control === activatedByTouch && event.isTrusted && event.detail) {
-    activatedByTouch = undefined;
+  if (handledDockTap && event.isTrusted && event.detail) {
+    // The tray can resize on pointerup, sending the compatibility click to
+    // a different control. The tap was already handled at its original target.
+    handledDockTap = false;
     return;
   }
   if (!control) {
@@ -867,6 +998,13 @@ app.addEventListener('click', event => {
   switch (action) {
     case 'library': if (current) closePassage(); else window.scrollTo(0, 0); break;
     case 'open': if (control.dataset.key) openPassage(control.dataset.key); break;
+    case 'favourite': toggleFavourite(control); break;
+    case 'favourites':
+      favouritesOnly = !favouritesOnly;
+      pageLimit = PAGE_SIZE;
+      app.querySelector<HTMLInputElement>('#search')!.value = favouritesOnly ? favouriteSearch : search;
+      renderResults();
+      break;
     case 'surprise': {
       const choices = matchingPassages();
       const pick = choices[Math.floor(Math.random() * choices.length)];
@@ -897,6 +1035,16 @@ app.addEventListener('click', event => {
       else app.querySelector<HTMLButtonElement>('#toggle-tools')?.focus({ preventScroll: true });
       break;
     case 'paint': togglePaint(); break;
+    case 'mode-read': changeDrawingMode(false); break;
+    case 'mode-draw': changeDrawingMode(true); break;
+    case 'quick-listen': quickListen(); break;
+    case 'prompt-draw': {
+      changeDrawingMode(true);
+      const label = app.querySelector<HTMLElement>('#sketch-label');
+      label?.focus({ preventScroll: true });
+      label?.scrollIntoView({ block: 'start' });
+      break;
+    }
     case 'colour': chooseColour(control.dataset.colour as InkColour); break;
     case 'highlight': setHighlight(!selecting); break;
     case 'cancel': setHighlight(false); break;
@@ -969,7 +1117,7 @@ app.addEventListener('click', event => {
     }
     case 'plain':
       if (!preferences.plain) {
-        paintOpen = selecting = false;
+        paintOpen = selecting = drawingEnabled = false;
         stroke = undefined;
       }
       setPreferences({ ...preferences, plain: !preferences.plain });
@@ -991,7 +1139,10 @@ app.addEventListener('click', event => {
       }
       break;
     case 'clearFilters':
-      resetFilters();
+      if (favouritesOnly) {
+        favouriteSearch = '';
+        pageLimit = PAGE_SIZE;
+      } else resetFilters();
       render();
       app.querySelector<HTMLInputElement>('#search')?.focus();
       break;
@@ -1012,7 +1163,8 @@ function controlFor(action: string) {
 app.addEventListener('input', event => {
   const input = event.target as HTMLInputElement;
   if (input.id === 'search') {
-    search = input.value;
+    if (favouritesOnly) favouriteSearch = input.value;
+    else search = input.value;
     pageLimit = PAGE_SIZE;
     renderResults();
   } else if (input.type === 'range' && input.dataset.preference) {
