@@ -1,7 +1,7 @@
 export const strings = {
   brand: ['Reading Room', 'Bralnica'],
   library: ['Library', 'Knjižnica'],
-  heroTitle: ['Find your next read.', 'Poišči naslednje branje.'],
+  heroTitle: ['Find your next read.', 'Poišči zanimivo besedilo'],
   heroDescription: ['Choose a story or something new to learn. Make the page feel right for you.', 'Izberi zgodbo ali spoznaj kaj novega. Prilagodi si stran za branje.'],
   start: ['Start reading', 'Začni brati'],
   resume: ['Continue reading', 'Nadaljuj branje'],
