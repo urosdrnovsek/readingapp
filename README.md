@@ -2,6 +2,8 @@
 
 A tablet and web reader for children. Its library contains 618 reviewed passages in eight languages from Text Generator.
 
+[Deploy Reading Room (bralna soba) to urosedu.com](DEPLOY.md)
+
 ## Run locally
 
 Use Node.js 22.12 or newer.
