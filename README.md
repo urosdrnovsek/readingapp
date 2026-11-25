@@ -17,7 +17,7 @@ The interface is available in English and Slovenian. Choose any of the eight pas
 
 **Listen** on the marker tray reads and underlines the current sentence. For word-by-word listening and speed controls, open **Listen** in **Reading tools**. Both use a matching installed device voice.
 
-The **Markers** tray starts in **Read** mode, so you can scroll. Pick a colour or tap **Draw** to draw over the words or sketch below the story. Repeated passes deepen the colour. Tap **Read** to scroll again. In **Draw** mode, **Choose words** lets readers place word highlights by keyboard or screen reader. Open **Try this** on selected passages for a short drawing prompt.
+The **Markers** tray starts in **Read** mode, so you can scroll. Tap **Draw** to use the colours on small screens, then draw over the words or sketch below the story. Repeated passes deepen the colour. Tap **Read** to scroll again. In **Reading tools**, **Choose words** lets readers place word highlights by keyboard or screen reader. Open **Try this** on selected passages for a short drawing prompt.
 
 Tap a heart to save a passage to **Favourites**, which brings together saved titles across all languages. Reading times are rough estimates based on 100 words per minute. Favourites, drawings and highlights are saved on the device.
 

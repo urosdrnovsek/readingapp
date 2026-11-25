@@ -632,7 +632,7 @@ function renderPaintControls() {
       <span class="paint-emblem">${icon('highlight')}</span>${t('paint')}
     </button>${quick}</div>${status}`;
   }
-  return `<div class="paint-tray" role="group" aria-label="${t('paint')}">
+  return `<div class="paint-tray" role="group" aria-label="${t('paint')}" aria-describedby="paint-hint">
     <div class="paint-mode-bar"><div class="paint-mode-switch">
       <button class="button" data-action="mode-read" aria-pressed="true">${t('readMode')}</button>
       <button class="button" data-action="mode-draw" aria-pressed="false">${t('drawMode')}</button>
@@ -641,14 +641,11 @@ function renderPaintControls() {
       ${paintColours.map(colour => `<button class="swatch ink-${colour}" data-action="colour" data-colour="${colour}"
         aria-label="${t(colourLabels[colour])}" title="${t(colourLabels[colour])}" aria-pressed="false">
         <span>${icon('check')}</span></button>`).join('')}
+      <button class="button quiet paint-eraser" data-action="colour" data-colour="eraser" aria-label="${t('eraser')}" title="${t('eraser')}" aria-pressed="false" hidden>${icon('eraser')}</button>
     </div>
-    <div class="paint-actions">
-      <button class="button quiet" data-action="colour" data-colour="eraser" aria-label="${t('eraser')}" title="${t('eraser')}" aria-pressed="false">${icon('eraser')}</button>
-      <button class="button quiet" data-action="undo-paint" aria-label="${t('undo')}" title="${t('undo')}">${icon('undo')}</button>
-      <button class="button quiet choose-words" data-action="highlight" aria-controls="range-tools" aria-expanded="false">${t('chooseWords')}</button>
-    </div>
+    <button class="button quiet paint-undo" data-action="undo-paint" aria-label="${t('undo')}" title="${t('undo')}" hidden>${icon('undo')}</button>
   </div>
-  <p class="paint-help" id="paint-hint"></p>${status}`;
+  <p class="sr-only" id="paint-hint"></p>${status}`;
 }
 
 function refreshPaintControls() {
@@ -660,7 +657,10 @@ function refreshPaintControls() {
   }
   refreshQuickListen();
   if (!paintOpen) return;
-  controls.querySelector<HTMLElement>('.paint-actions')!.hidden = !drawingEnabled && !selecting;
+  const editing = drawingEnabled || selecting;
+  dock.dataset.editing = String(editing);
+  controls.querySelector<HTMLButtonElement>('.paint-eraser')!.hidden = !editing;
+  controls.querySelector<HTMLButtonElement>('.paint-undo')!.hidden = !editing;
   controlFor('mode-read')?.setAttribute('aria-pressed', String(!drawingEnabled));
   controlFor('mode-draw')?.setAttribute('aria-pressed', String(drawingEnabled));
   controls.querySelectorAll<HTMLButtonElement>('[data-colour]').forEach(swatch => {
@@ -668,7 +668,6 @@ function refreshPaintControls() {
   });
   controls.querySelector('#paint-hint')!.textContent = t(!drawingEnabled ? 'readHint' : paintColour === 'eraser' ? 'eraseHint' : 'paintHint');
   controlFor('undo-paint')?.setAttribute('aria-disabled', String(!undoStack.length));
-  controlFor('highlight')?.setAttribute('aria-expanded', String(selecting));
 }
 
 function togglePaint() {
@@ -792,19 +791,22 @@ function setHighlight(on: boolean) {
   selecting = on && !!structure?.words.length;
   awaitingEnd = false;
   if (selecting) {
+    paintOpen = true;
     speech.stop();
     quickListening = false;
     quickMessage = undefined;
     drawingEnabled = false;
+    stroke = undefined;
     if (listenOpen) {
       listenOpen = false;
     }
     const from = structure!.sentences[sentence]?.start ?? 0;
     startWord = endWord = Math.max(0, structure!.words.findIndex(word => word.start >= from));
+    if (preferences.plain) setPreferences({ ...preferences, plain: false });
   }
   refreshControls();
   refreshPassage();
-  controlFor('highlight')?.focus({ preventScroll: true });
+  (selecting ? controlFor('first-1') : controlFor('mode-read'))?.focus({ preventScroll: true });
 }
 
 function showHighlights() {
@@ -843,6 +845,7 @@ function renderTools() {
     <div class="panel-actions">
       <button class="button" data-action="listen" aria-controls="listen-tools" aria-expanded="${listenOpen}">${icon('listen')} ${t('listen')}</button>
       <button class="button" data-action="guide" aria-pressed="${guide && !preferences.plain}">${icon('guide')} ${t('guide')}</button>
+      <button class="button" data-action="highlight" aria-controls="range-tools" aria-expanded="${selecting}">${t('chooseWords')}</button>
       ${button('highlights', 'highlights')}
     </div>
     <div class="tool-preview"><p id="cue-sample" lang="${current!.language}"></p></div>
@@ -1046,7 +1049,11 @@ app.addEventListener('click', event => {
       break;
     }
     case 'colour': chooseColour(control.dataset.colour as InkColour); break;
-    case 'highlight': setHighlight(!selecting); break;
+    case 'highlight':
+      toolsOpen = false;
+      renderTools();
+      setHighlight(!selecting);
+      break;
     case 'cancel': setHighlight(false); break;
     case 'listen':
       toggleListening();

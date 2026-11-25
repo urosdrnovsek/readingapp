@@ -31,7 +31,7 @@ export const strings = {
   paint: ['Markers', 'Flomastri'],
   readMode: ['Read', 'Beri'],
   drawMode: ['Draw', 'Riši'],
-  readHint: ['Swipe to scroll. Pick a colour to draw.', 'Podrsaj za pomikanje. Za risanje izberi barvo.'],
+  readHint: ['Swipe to scroll. Tap Draw to use markers.', 'Podrsaj za pomikanje. Za risanje tapni Riši.'],
   paintHint: ['Draw on the page. Tap Read to scroll.', 'Riši po strani. Za pomikanje tapni Beri.'],
   eraseHint: ['Drag the eraser across the ink. Tap Read to scroll.', 'Povleci radirko čez barvo. Za pomikanje tapni Beri.'],
   drawHere: ['Draw here', 'Riši tukaj'],

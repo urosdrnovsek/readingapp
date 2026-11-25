@@ -274,52 +274,56 @@ select, .search-input input, .extra-letter input {
 .panel-actions { margin-block: .55rem; }
 .paint-dock {
   z-index: 3; position: fixed; inset-inline-start: 50%; transform: translateX(-50%);
-  bottom: max(.8rem, env(safe-area-inset-bottom)); width: max-content; max-width: calc(100% - 1.25rem);
+  bottom: max(.5rem, env(safe-area-inset-bottom)); width: max-content; max-width: calc(100% - 1rem);
 }
 .paint-dock button { -webkit-tap-highlight-color: transparent; }
+.paint-dock .button { min-width: 44px; min-height: 44px; padding: .25rem .65rem; }
 .paint-launch.button {
-  padding: .25rem 1rem .25rem .25rem; border-radius: 40px;
+  padding: .15rem .7rem .15rem .3rem; border-radius: 40px;
   border-color: #89749d; background: #fffaf1; box-shadow: 0 4px 18px #382a5225;
 }
 .paint-emblem {
-  display: grid; width: 39px; height: 39px; place-items: center; border-radius: 50%;
+  display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%;
   color: #363047; background: linear-gradient(135deg, #ffe58c 23%, #ffcce4 50%, #d9d0ff 75%, #c7eafa);
 }
 .paint-dock[data-open="true"] {
-  background: #fffdf9; border: 1px solid #b3a3bb; border-radius: 21px;
-  padding: .45rem; box-shadow: 0 8px 32px #382a5230;
+  background: #fffdf9; border: 1px solid #b3a3bb; border-radius: 16px;
+  padding: .22rem; box-shadow: 0 4px 18px #382a5225;
   max-height: 57dvh; overflow: auto; overscroll-behavior: contain;
 }
-.paint-tray { display: flex; gap: .4rem; align-items: center; justify-content: center; flex-wrap: wrap; }
-.paint-mode-bar, .paint-mode-switch { display: flex; gap: .25rem; align-items: center; justify-content: center; }
-.paint-mode-bar { flex: 0 0 100%; flex-wrap: wrap; }
-.paint-mode-switch { padding: 2px; border-radius: 16px; background: #f3eafa; }
-.paint-mode-switch .button { border: 1px solid transparent; border-radius: 13px; background: transparent; }
+.paint-tray, .paint-mode-bar, .paint-mode-switch, .paint-swatches {
+  display: flex; gap: .16rem; align-items: center; justify-content: center;
+}
+.paint-tray, .paint-mode-bar, .paint-swatches { flex-wrap: wrap; }
+.paint-mode-switch { padding: 0; border-radius: 12px; background: #f3eafa; }
+.paint-mode-switch .button { border: 1px solid transparent; border-radius: 12px; background: transparent; }
 .paint-mode-switch .button[aria-pressed="true"] { background: var(--pine); color: white; }
-.quick-listen.button { border-radius: 13px; gap: .35rem; }
+.quick-listen.button { border-radius: 12px; gap: .28rem; }
+.quick-listen svg { width: 18px; }
 .quick-listen-status { margin: .3rem .45rem; text-align: center; color: #6a344a; font-size: .9rem; }
 .quick-listen-status:empty { display: none; }
-.paint-swatches, .paint-actions { display: flex; gap: .12rem; flex-wrap: wrap; justify-content: center; }
 .swatch {
-  min-width: 48px; min-height: 48px; border: 0; background: transparent; padding: 4px;
+  min-width: 44px; min-height: 44px; border: 0; background: transparent; padding: 4px;
   border-radius: 50%; display: grid; place-items: center;
   -webkit-tap-highlight-color: transparent;
 }
 .swatch span {
-  width: 34px; height: 34px; border-radius: 50%; border: 1px solid #382a524d;
+  width: 27px; height: 27px; border-radius: 50%; border: 1px solid #382a524d;
   background: var(--swatch); display: grid; place-items: center; color: #332740;
   transition: transform 160ms ease-out;
 }
-.swatch svg { opacity: 0; width: 19px; }
+.swatch svg { opacity: 0; width: 16px; }
 .swatch[aria-pressed="true"] { outline: 1px solid #382a52; outline-offset: -2px; }
 .swatch:focus-visible { outline: 3px solid #5a389d; outline-offset: 1px; }
 .swatch[aria-pressed="true"] svg { opacity: 1; }
 .swatch:active span { transform: scale(.85) rotate(-12deg); }
-.paint-actions .button { border-radius: 13px; }
-.paint-help { margin: .3rem .35rem; text-align: center; font-size: .91rem; color: var(--muted); }
-.choose-words.button { font-weight: 500; padding-inline: .45rem; }
+.paint-eraser.button, .paint-undo.button { padding: .25rem; border-radius: 10px; }
 #range-tools p { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .swatch span { transition: none; } }
+@media (max-width: 570px) {
+  .paint-dock[data-editing="false"] .paint-swatches { display: none; }
+  .paint-swatches { order: 1; flex: 0 0 100%; }
+}
 
 #listen-title { font-size: 1.14rem; }
 #listen-status:empty { margin: 0; }
